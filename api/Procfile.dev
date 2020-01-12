@@ -1,0 +1,2 @@
+web: bundle exec rails s
+worker: bundle exec sidekiq ${SIDEKIQ_OPTS:--c 5 -t 10 -q default}

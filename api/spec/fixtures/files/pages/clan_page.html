@@ -1,0 +1,4036 @@
+<!doctype html>
+<html lang="en">
+<head> <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pierwsza liga #Y8YU8L08 | Clan - RoyaleAPI - Clash Royale Analytics</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://royaleapi.com/static/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://royaleapi.com/static/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://royaleapi.com/static/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://royaleapi.com/static/img/favicon/manifest.json">
+<link rel="mask-icon" href="https://royaleapi.com/static/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://royaleapi.com/static/img/favicon/favicon.ico">
+<meta name="msapplication-config" content="https://royaleapi.com/static/img/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<meta name="google" content="notranslate" />
+
+<meta name="title" content="Pierwsza liga #Y8YU8L08 | Clan - RoyaleAPI - Clash Royale Analytics">
+<meta name="description" content="The definitive source about decks, players and teams in Clash Royale. Explore advanced statistics about decks and cards based on millions of games per week.">
+<meta name="keywords" content="Clash Royale, API, games, mobile, CR, cr-api, Clash Royale API, RoyaleAPI, data, stats, statistics, meta, best, strategy, analytics">
+<meta property="og:title" content="Pierwsza liga #Y8YU8L08 | Clan - RoyaleAPI - Clash Royale Analytics">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Royale API">
+
+<link rel="stylesheet" type="text/css" href="/static/semantic/dist/semantic.min.css?t=1548314452.2199435" />
+<link rel="stylesheet" type="text/css" href="/static/css/app.css?t=1556551405.910108" />
+<link rel="stylesheet" type="text/css" href="/static/css/cards-150.css?t=1555347632.937212" />
+<link rel="stylesheet" type="text/css" href="/static/css/cards-75.css?t=1555347632.937212" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.semanticui.min.css" />
+<style type="text/css">
+        .arena_icon {
+            display: inline-block !important;
+        }
+
+        #roster td a {
+            display: block;
+        }
+
+        #roster td .ui.list {
+            margin-top: 0.5rem;
+        }
+
+        #roster td.crowns img {
+            width: auto;
+            height: 1.4rem;
+            vertical-align: middle;
+            margin-left: 0.2rem;
+        }
+
+        #roster td.donations img {
+            width: auto;
+            height: 1.4rem;
+            vertical-align: middle;
+            margin-left: 0.2rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .mobile-hide {
+                display: none;
+            }
+
+            #roster th.mobile-hide {
+                display: none;
+            }
+
+            #roster td.mobile-hide {
+                display: none;
+            }
+
+            .mobile-show .meta {
+                font-weight: 400 !important;
+                display: block;
+                color: rgba(1, 1, 1, 0.7);
+            }
+
+            .mobile-show .icon-meta {
+                content: ' ';
+                background-size: contain;
+                background-position: left center;
+                background-repeat: no-repeat;
+                display: inline-block;
+                padding-left: 2rem;
+            }
+
+            .mobile-show .icon-meta.donations {
+                background-image: url(/static/img/icon/ic-cards.png);
+            }
+
+            .mobile-show .icon-meta.crowns {
+                background-image: url(/static/img/icon/ic-crowns.png);
+                height: calc(100% - 0.5rem)
+            }
+
+            #roster.ui.table td.inactivity, #roster th.inactivity {
+                width: 20px;
+                height: 20px;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            .clan_stats h5 {
+                margin: 0 !important;
+            }
+
+        }
+
+        #inactivity_filter_menu {
+            height: 48px !important;
+        }
+
+        .inactivity img {
+            height: 2rem !important;
+            border: 1px solid white !important;
+        }
+
+        th.inactivity, td.inactivity {
+            width: 5px !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            border-left: 0;
+            border-right: 0;
+        }
+
+        tbody tr.inactive_trophies .in_trophies img {
+            visibility: visible;
+        }
+
+        tbody tr .in_trophies img {
+            visibility: hidden;
+        }
+
+        th.inactivity.in_crowns, td.inactivity.in_crowns {
+            padding-right: 1rem !important;
+        }
+
+        div.join_status {
+            font-size: 0.7rem;
+            background-color: rgb(255, 248, 179) !important;
+            line-height: 1rem;
+        }
+
+        .clan_stats .content {
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: 2rem;
+            padding-left: 3rem;
+        }
+
+        .clan_stats h5 {
+            margin: 1rem 0 0 0 !important;
+        }
+
+        div.mobile-member-summary div {
+            width: 30%;
+            display: inline-block;
+        }
+
+        /**
+        Inactivity container
+        hidden on load
+         */
+        .inactivity_content {
+            display: none;
+            cursor: pointer;
+        }
+
+        .last_seen {
+            color: rgb(139, 139, 139);
+            font-size: 0.9rem;
+            margin-top:-0.1rem;
+        }
+
+    </style>
+<meta property="og:image" content="/static/img/badge/Orange_02.png">
+<meta property="og:description" content="Wymagamy🛑Czynny udział w wojnach⚔️Komplet ataków w zaczętej wojnie☠️ Dajemy🐑Niekończące się wojny⚔️Top 💯i brak przekleństw 👮">
+
+<script>
+    window.ga = window.ga || function () {
+        (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', 'UA-100687612-4', 'auto');
+    ga('send', 'pageview');
+    </script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<script>
+    if (window.self !== window.top) {
+        window.top.location.href = window.location.href;
+    }
+    </script>
+
+<script data-cfasync="false" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.1/mobile-detect.min.js"></script>
+<script data-cfasync="false" src="/static/semantic/dist/semantic.min.js?t=1548314452.2199435"></script>
+
+<script src="/static/jslib/newrelic.js"></script>
+
+</head>
+<body class="">
+
+<div class="ui inverted sidebar vertical menu right" id="toc" style="">
+<div class="brand header item">
+<a class="ui logo mini image" href="/">
+<img src="/static/img/branding/cr-api-logo.png" style="padding-right: 0.7rem;" />
+</a>
+<a href="/">RoyaleAPI</a>
+<a class="ui blue label margin0" href="/donate">
+Donate </a>
+</div>
+<div id="language_sidebar_button" class="link item language_button" style="text-align: right;">
+<i class="us flag"></i>
+English
+</div>
+<a class="item" href="/decks">
+Decks </a>
+<a class="item" href="/players">
+Players </a>
+<a class="item" href="/clans">
+Clans </a>
+<a class="item" href="/cards">
+Cards </a>
+<a class="item" href="/rls">
+<img class="ui image sidebar_logo" src="/static/img/event/rls.png?t=1551840924.041366" />
+RLS </a>
+<a class="item" href="/crl">
+<img class="ui image sidebar_logo" src="/static/img/event/crl.png?t=1551178154.3668382" />
+CRL </a>
+<a class="item" href="/league/slo">
+<img class="ui image sidebar_logo" src="/static/img/event/slo.png?t=1551178154.3768382" />
+SLO </a>
+<a class="item" href="/tournaments">
+Tournaments </a>
+<div class="item">
+<div class="header">
+Content </div>
+<div class="menu">
+<a class="item" href="/feature/gc">
+GC Portal </a>
+<a class="item" href="/crl">
+CRL Portal </a>
+<a class="item" href="/content/coltonw83">
+ColtonW83
+</a>
+<a class="item" href="/content/sirtagcr">
+SirTagCR
+</a>
+<a class="item" href="/content/malcaidecr">
+MalcaideCR
+</a>
+</div>
+</div>
+<div class="item">
+<div class="header">
+Leaderboard </div>
+<div class="menu">
+<a class="item" href="/players/leaderboard">
+Top Ladder Players </a>
+<a class="item" href="/decks/leaderboard">
+Top Ladder Decks </a>
+<a class="item" href="/decks/popular?players=PvP&type=Top200Ladder">
+Top Ladder Meta </a>
+<a class="item" href="/players/12wins">
+GC 12-win Players </a>
+<a class="item" href="/clans/leaderboard">
+Top Global Clans </a>
+</div>
+</div>
+<div class="item">
+<div class="header">Search</div>
+<div class="menu">
+<div class="item">
+<form id="sidebar_player_search_form" class="ui fluid form" action="/player">
+<div class="ui transparent inverted icon input">
+<i class="search link icon"></i>
+<input id="sidebar-player-search" name="tag" type="text" class="prompt" placeholder="Player Tag…">
+</div>
+<div class="ui error message pointing label">
+Please enter a value
+</div>
+</form>
+</div>
+<div class="item">
+<form id="sidebar_clan_search_form" class="ui fluid form" action="/clan">
+<div class="ui transparent inverted icon input">
+<input id="sidebar-clan-search" name="tag" type="text" placeholder="Clan Tag…">
+<i class="search link icon"></i>
+</div>
+<div class="ui error message pointing label">
+Please enter a value
+</div>
+</form>
+</div>
+<div class="item">
+<form id="sidebar_clan_name_search_form" class="ui fluid form" action="/clans/search">
+<div class="ui transparent inverted icon input">
+<input id="sidebar-clan-name-search" name="name" type="text" placeholder="Clan Name…">
+<i class="search link icon"></i>
+</div>
+<div class="ui error message pointing label">
+Please enter a value
+</div>
+</form>
+</div>
+<div class="item">
+<form id="sidebar_tournament_search_form" class="ui fluid form" action="/tournament">
+<div class="ui transparent inverted icon input">
+<input id="sidebar-tournament-search" name="tag" type="text" placeholder="Tournament Tag…">
+<i class="search link icon"></i>
+</div>
+<div class="ui error message pointing label">
+Please enter a value
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="header">
+Help </div>
+<div class="menu">
+ <a class="item" href="/about">About Us</a>
+<a class="item" href="/blog">Blog</a>
+<a class="item" href="/faq">FAQ</a>
+<a class="item" href="/business-inquiries">Business Inquiries</a>
+<a class="item" href="https://github.com/RoyaleAPI/cr-api-ux/issues/new/choose">
+UX Feature Requests </a>
+<a class="item" href="http://docs.royaleapi.com">
+API Documentation </a>
+<a class="item" href="https://github.com/RoyaleAPI/cr-api">
+API Support </a>
+</div>
+</div>
+<div class="item">
+<a class="header">
+Social </a>
+<div class="menu">
+<a class="item" href="https://github.com/RoyaleAPI/cr-api">
+<i class="github icon"></i>
+Github
+</a>
+<a class="item" href="https://discord.royaleapi.com">
+<i class="discord icon"></i>
+Discord (Users)
+</a>
+<a class="item" href="http://discord.me/RoyaleAPI">
+<i class="discord icon"></i>
+Discord (Developers)
+</a>
+<a class="item" href="http://twitter.com/RoyaleAPI">
+<i class="twitter icon"></i>
+Twitter
+</a>
+<a class="item" href="http://facebook.com/RoyaleAPI">
+<i class="facebook icon"></i>
+Facebook
+</a>
+</div>
+</div>
+<a class="item" href="/donate">
+Donate </a>
+</div>
+
+
+<div class="pusher">
+<div id="top_menu" class="ui sticky borderless fluid menu">
+<a class="brand item header" href="/">
+<img src="/static/img/branding/cr-api-logo.png" style="padding-right: 0.7rem; height:2rem; width: auto;" />
+<span class="mobile-hide">RoyaleAPI</span>
+</a>
+<div class="right compact menu">
+<a class="mobile-hide nav item" href="/decks">
+Decks </a>
+<a class="mobile-hide nav item" href="/players">
+Players </a>
+<a class="mobile-hide nav item" href="/clans">
+Clans </a>
+<a class="mobile-hide nav item" href="/cards">
+Cards </a>
+<a class="mobile-hide nav item" href="/tournaments">
+Tournaments </a>
+
+<div id="search_all_button" class="link item">
+<i class="search icon"></i>
+</div>
+
+<a id="user_button" class="link item" href="/login">
+<i class="user icon"></i>
+</a>
+
+
+<div id="top-fave" class="ui dropdown item">
+<i class="heart icon"></i>
+<i class="dropdown icon"></i>
+<div id="player_saved_menu" class="menu">
+</div>
+</div>
+<div id="sidebar-toggle" class="link item">
+<i class="content icon"></i>
+</div>
+</div>
+</div>
+
+<div id="page_content_container">
+<div id="fullpage_screenshot_branding" class="ui attached borderless stackable menu" style="display:none;">
+<div class="ui header item">
+<img class="ui small image" src="/static/img/branding/cr-api-logo.png" />
+RoyaleAPI
+</div>
+<div class="item">http://royaleapi.com/clan/Y8YU8L08</div>
+<div id="fullpage_screenshot_datetime" class="right item"></div>
+</div>
+<div id="page_content">
+
+<style>
+    .section-header {
+        width: 100%;
+        height: 2rem;
+        border: 0 !important;
+    }
+
+    .nav_menu {
+        display: flex;
+    }
+</style>
+<div class="ui grid margin0">
+<div class="mobile only pad0 margin0 row">
+<div class="section-header ui attached mini purple inverted borderless menu">
+<a class="ui tiny header item" href="/clans">Clans</a>
+</div>
+</div>
+</div>
+<form id="clan_search_attached_form" class="ui fluid form" action="/clan">
+<div class="ui attached purple inverted menu nav_menu">
+<a class="header item mobile-hide" href="/clans" style="flex:1;">Clans</a>
+<div class="ui search item" style="flex:5;">
+<div class="ui transparent icon input">
+<input id="clan_search_input" name="tag" class="prompt" type="text" placeholder="Name or tag, e.g. 2CCCP">
+<i class="inverted search link icon"></i>
+</div>
+</div>
+<a class="item" href="/clans/families" style="flex:1;">
+<span class="mobile-hide">Families</span>
+<span class="mobile-show">Fam</span>
+</a>
+<div class="ui dropdown item" style="flex:1;">
+<span class="mobile-hide">Leaderboard</span>
+<span class="mobile-show">LB</span>
+<i class="dropdown icon"></i>
+<div class="menu">
+<a class="item" href="/clans/leaderboard">
+Ladder </a>
+<a class="item" href="/clans/war">
+War </a>
+</div>
+</div>
+<a class="item" href="/clans/search" style="flex:1;">Search</a>
+</div>
+<div class="ui error message attached segment" style=" border:none;">
+Please enter a value
+</div>
+</form>
+
+
+<div id="player-bg" class="mobile-hide"></div>
+<div class="ui hidden divider mobile-hide" style="margin:1rem;"></div>
+<div class="ui container sidemargin0">
+<style type="text/css">
+    .p_header_container {
+        display: flex
+    }
+
+    .p_head_item {
+        margin-right: 1rem;
+    }
+
+    .p_head_item .button {
+        margin: 0.2rem;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .p_header_container {
+            flex-direction: column;
+        }
+    }
+</style>
+<div class="ui top attached padded segment" style="margin-top:0;">
+<div style="float:right; text-align:center; width:20vw; max-width:10rem; position:relative;">
+<img class="ui floated tiny right image" src="/static/img/badge/bronze-1/Orange_02.png?t=1533013028.3748786" />
+</div>
+<div class="p_header_container">
+<div class="p_head_item">
+<h1 class="ui header margin0">
+Pierwsza liga
+</h1>
+</div>
+<div class="p_head_item">
+<div class="follow_button ui basic  pink icon circular button button_popup" data-action="follow" data-content="Follow clan" data-position="top center" data-category="clan" data-tag="Y8YU8L08" data-name="Pierwsza liga" data-badge_name="Orange_02">
+<i class="outline heart icon"></i>
+</div>
+<a href="clashroyale://clanInfo?id=Y8YU8L08" target="_blank" class="ui circular icon blue basic button  button_popup" data-content="Open in Clash Royale" data-position="top center">
+<i class="external icon"></i>
+</a> </div>
+</div>
+<div class="ui horizontal list" style="margin-top:0.5rem;">
+<div class="item">
+#Y8YU8L08
+</div>
+<div class="item">
+<img class="ui verytiny image" src="/static/img/ui/64x64/trophy.png" />
+29,689
+</div>
+<div class="item">
+<img class="ui verytiny image" src="/static/img/ui/64x64/cw-trophy.png" />
+9
+</div>
+</div>
+<div style="clear:both">
+</div>
+</div>
+
+<div class="ui attached segment pad0">
+<div class="striped ad_container">
+<div id="google_ad_div" class="google_ad_div"></div>
+</div>
+<style>
+    .negative_margin {
+        margin-left: -3.0px;
+    }
+</style>
+<script type="text/javascript">
+function showAds(delay) {
+    delay = parseInt(delay);
+    setTimeout(function () {
+        let ad_div, ad_width, google_ad_size, google_ad_client, google_ad_slot;
+
+            ad_div = document.getElementById('google_ad_div');
+            if (ad_div.getBoundingClientRect().width) {
+                ad_width = ad_div.getBoundingClientRect().width; // for modern browsers
+            } else {
+                ad_width = ad_div.offsetWidth; // for old IE
+            }
+
+        let width_delta = 6 || 0;
+
+        /* Replace ca-pub-XXX with your AdSense Publisher ID */
+        google_ad_client = "ca-pub-7508750482993527";
+
+        /* Replace 1234567890 with the AdSense Ad Slot ID */
+        google_ad_slot = "3954188813";
+
+        let google_ad_sizes = [
+            ['970', '90'],
+            ['728', '90'],
+            ['468', '60'],
+            ['320', '50']
+        ];
+
+        for (let i = 0; i < google_ad_sizes.length; i++) {
+            // set ad size if not set
+            let size = google_ad_sizes[i];
+            if (google_ad_size === undefined) {
+                if (ad_width >= (size[0] - width_delta)) {
+                    google_ad_size = size;
+                }
+            }
+            // console.log(google_ad_size);
+        }
+
+        if (google_ad_size === undefined) {
+            google_ad_size = google_ad_sizes[google_ad_sizes.length - 1];
+        }
+
+        ad_div.innerHTML = (
+            '<ins class="adsbygoogle" style="display:inline-block;width:'
+            + google_ad_size[0] + 'px;height:'
+            + google_ad_size[1] + 'px" data-ad-client="'
+            + google_ad_client + '" data-ad-slot="'
+            + google_ad_slot + '"></ins>'
+        );
+
+        (adsbygoogle = window.adsbygoogle || []).push({});
+
+        // fix margin left if not smallest size
+        if (google_ad_size !== google_ad_sizes[google_ad_sizes.length - 1]) {
+            ad_div.parentElement.classList.add('negative_margin');
+        }
+        //console.log(ad_width, google_ad_size, google_ad_client, google_ad_slot);
+    }, delay)
+}
+
+    $(document).ready(function () {
+        showAds(0);
+    });
+
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</div>
+<div class="ui attached menu">
+<a class="item active" href="/clan/Y8YU8L08">
+Info </a>
+<a class="item " href="/clan/Y8YU8L08/war">
+War </a>
+<a class="item " href="/clan/Y8YU8L08/battles">
+Battles </a>
+<a class="item " href="/clan/Y8YU8L08/stats">
+Stats </a>
+<a class="item " href="/clan/Y8YU8L08/history">
+History </a>
+</div>
+
+
+
+</div>
+<div class="ui attached container sidemargin0 content_container">
+<div class="ui attached segment">
+<div class="ui grid clan_stats">
+<div class="one column row">
+<div class="column">Wymagamy🛑Czynny udział w wojnach⚔️Komplet ataków w zaczętej wojnie☠️ Dajemy🐑Niekończące się wojny⚔️Top 💯i brak przekleństw 👮</div>
+</div>
+<div class="doubling three column row">
+<div class="column">
+<div class="content" style="background-image:url(/static/img/ui/trophy-ribbon.png)">
+<h5 class="ui header">Trophies</h5>
+<div class="value">29,689</div>
+</div>
+</div>
+<div class="column">
+<div class="content" style="background-image:url(/static/img/ui/trophy.png)">
+<h5 class="ui header">Required trophies</h5>
+<div class="value">2,300</div>
+</div>
+</div>
+<div class="column">
+<div class="content" style="background-image:url(/static/img/ui/cards.png)">
+<h5 class="ui header">Donations per week</h5>
+ <div class="value">6,691</div>
+</div>
+</div>
+<div class="column">
+<div class="content" style="background-image:url(/static/img/ui/social.png)">
+<h5 class="ui header">Members</h5>
+<div class="value">43 / 50</div>
+</div>
+</div>
+<div class="column">
+<div class="content" style="background-image:url(/static/img/flags2/pl.png)">
+<h5 class="ui header">Region</h5>
+<a class="value" href="/clans/leaderboard/pl">Poland</a>
+</div>
+</div>
+<div class="column">
+<div class="content" style="background-image:url(/static/img/ui/people.png)">
+<h5 class="ui header">Type</h5>
+<div class="value">Open</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="ui attached segment">
+<h4 class="ui header">
+Roster
+<a class="ui label" href="/clan/Y8YU8L08/csv">Export to CSV</a>
+</h4>
+</div>
+
+
+<div id="table-filter" class="tablefilter " style="padding-top:0; padding-bottom:0; margin:0;">
+<div class="ui stackable menu attached ">
+<div class="ui pointing dropdown link item">
+<i class="filter icon"></i>
+<span class="text">Filter Roles</span>
+<div class="menu">
+<a class="rolefilter item">Leader</a>
+<a class="rolefilter item">Co-Leader</a>
+<a class="rolefilter item">Elder</a>
+<a class="rolefilter item">Member</a>
+<a class="rolefilter item">All</a>
+</div>
+</div>
+<div class="ui pointing dropdown link item">
+<i class="paint brush icon"></i>
+<span class="text">Highlight</span>
+<div class="menu">
+<a class="rowhighlight item">Roles</a>
+<a class="rowhighlight item">Clear</a>
+</div>
+</div>
+<div class="right menu">
+<div class="ui right aligned category search item">
+<div class="ui transparent icon input">
+<input id="membersearch" class="prompt" type="text" placeholder="Search members...">
+<i class="search link icon"></i>
+</div>
+<div class="results"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row attached">
+<div id="compare-selection-container" class="ui hidden borderless attached menu " style="display:none;">
+<div class="ui header item">Compare:</div>
+<div class="item">
+<div id="compare-selection" class="ui teal labels">
+</div>
+</div>
+<div class="right item">
+<button class="ui button">Go</button>
+</div>
+</div>
+</div>
+
+
+<div class="inactivity_content">
+<div class="row attached">
+<div class="ui lightwash attached menu">
+<div class="item">Inactivity</div>
+<div class="inactivity_time item link" data-time="7d">7d</div>
+<div class="inactivity_time item link" data-time="14d">14d</div>
+<div class="inactivity_time item link" data-time="28d">28d</div>
+</div>
+<div id="inactivity_filter_menu" class="ui attached  mini three item menu sticky">
+<div class="link filter_inactive reset item  active ">
+<i class="icon filter"></i>
+Reset Filters
+</div>
+<div class="link filter_inactive trophies item orange active">
+<i class="icon trophy"></i>
+Trophies
+</div>
+<div class="link filter_inactive donations item blue active">
+<i class="icon square"></i>
+Donations
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row attached">
+<div id="ajax_dimmer" class="ui inverted dimmer">
+<div class="ui loader"></div>
+</div>
+<table id="roster" class="ui unstackable hover striped  attached compact  sortable table">
+<thead>
+<tr>
+<th class="sorted ascending">R<span class="mobile-hide">ank</span></th>
+<th id="table_th_name">Name</th>
+<th class="inactivity_content inactivity in_trophies" style="border-left: 0; border-right: 0;">
+<img class="inactive_bar" src="/static/img/ui/inactivity-trophies.png" />
+</th>
+<th class="inactivity_content inactivity in_donations" style="border-left: 0; border-right: 0;">
+<img class="inactive_bar" src="/static/img/ui/inactivity-donations.png" />
+</th>
+<th class="mobile-hide role">Role</th>
+<th class="mobile-hide tablet-hide">Tag</th>
+<th><span class="mobile-show"><i class="trophy icon"></i></span><span class="mobile-hide">Trophies</span>
+</th>
+<th class="mobile-hide">Level</th>
+<th class="mobile-hide donations">Donated</th>
+<th class="mobile-hide donations">Received</th>
+<th class="mobile-hide"><i class="adjust icon"></i></th>
+</tr>
+</thead>
+<tbody>
+<tr data-tag="U8VJRG8" data-role="Leader" class="role-Leader tr_member">
+<td data-sort-value="1">1</td>
+<td data-sort-value=John>
+<a class="block member_link" data-tag="U8VJRG8" href="/player/U8VJRG8">
+John
+<div class="last_seen" data-seconds="" data-datetime="20190504T205406.000Z">
+6h 1m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Leader
+</div>
+</div>
+ <div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+1045
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+397
+</div>
+</div>
+<div class="join_status" id="join-U8VJRG8"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="0">Leader</td>
+<td class="mobile-hide tablet-hide" data-sort-value="65840189624">
+U8VJRG8
+</td>
+<td class="" data-sort-value="5253">
+5,253
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena16.png?t=1529143289.5961695" alt="Master I / Master I" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="13">13</td>
+<td class="donations right aligned mobile-hide" data-sort-value="1045">
+1,045
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="397">
+397
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-U8VJRG8" class="compareme" type="checkbox" data-tag="U8VJRG8" data-name="John" />
+</div>
+</td>
+</tr>
+<tr data-tag="8JVQ9C8J" data-role="Co-Leader" class="role-Co-Leader tr_member">
+<td data-sort-value="2">2</td>
+<td data-sort-value=WojciechKo>
+<a class="block member_link" data-tag="8JVQ9C8J" href="/player/8JVQ9C8J">
+ WojciechKo
+<div class="last_seen" data-seconds="" data-datetime="20190505T012105.000Z">
+1h 34m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Co-Leader
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+450
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+200
+</div>
+</div>
+<div class="join_status" id="join-8JVQ9C8J"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="1">Co-Leader</td>
+<td class="mobile-hide tablet-hide" data-sort-value="670190734387">
+8JVQ9C8J
+</td>
+<td class="" data-sort-value="5134">
+5,134
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena16.png?t=1529143289.5961695" alt="Master I / Master I" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="12">12</td>
+<td class="donations right aligned mobile-hide" data-sort-value="450">
+450
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="200">
+200
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-8JVQ9C8J" class="compareme" type="checkbox" data-tag="8JVQ9C8J" data-name="WojciechKo" />
+</div>
+</td>
+</tr>
+<tr data-tag="82LV9Q9J" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="3">3</td>
+<td data-sort-value=Chara &lt;3>
+<a class="block member_link" data-tag="82LV9Q9J" href="/player/82LV9Q9J">
+Chara &lt;3
+<div class="last_seen" data-seconds="" data-datetime="20190504T073450.000Z">
+19h 21m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+205
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+102
+</div>
+</div>
+<div class="join_status" id="join-82LV9Q9J"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="632589189175">
+82LV9Q9J
+</td>
+<td class="" data-sort-value="4313">
+4,313
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena14.png?t=1529143289.5961695" alt="Challenger II / Challenger II" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="12">12</td>
+<td class="donations right aligned mobile-hide" data-sort-value="205">
+205
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="102">
+102
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-82LV9Q9J" class="compareme" type="checkbox" data-tag="82LV9Q9J" data-name="Chara <3" />
+</div>
+</td>
+</tr>
+<tr data-tag="9RU8PV8CJ" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="4">4</td>
+<td data-sort-value=MatixGaming>
+<a class="block member_link" data-tag="9RU8PV8CJ" href="/player/9RU8PV8CJ">
+MatixGaming
+<div class="last_seen" data-seconds="" data-datetime="20190504T070109.000Z">
+19h 54m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+14
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+0
+</div>
+</div>
+<div class="join_status" id="join-9RU8PV8CJ"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="27571652244739">
+9RU8PV8CJ
+</td>
+<td class="" data-sort-value="4005">
+4,005
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena13.png?t=1529143289.5961695" alt="Legendary Arena / Legendary Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="10">10</td>
+<td class="donations right aligned mobile-hide" data-sort-value="14">
+14
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-9RU8PV8CJ" class="compareme" type="checkbox" data-tag="9RU8PV8CJ" data-name="MatixGaming" />
+</div>
+</td>
+</tr>
+<tr data-tag="P9P9QYJYG" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="5">5</td>
+<td data-sort-value=KapiraGamer>
+<a class="block member_link" data-tag="P9P9QYJYG" href="/player/P9P9QYJYG">
+KapiraGamer
+<div class="last_seen" data-seconds="" data-datetime="20190504T173847.000Z">
+9h 17m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+151
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+74
+</div>
+</div>
+<div class="join_status" id="join-P9P9QYJYG"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="71288034199432">
+P9P9QYJYG
+</td>
+<td class="" data-sort-value="3433">
+3,433
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena11.png?t=1529143289.5928361" alt="Arena 11 / Electro Valley" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="10">10</td>
+<td class="donations right aligned mobile-hide" data-sort-value="151">
+151
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="74">
+74
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P9P9QYJYG" class="compareme" type="checkbox" data-tag="P9P9QYJYG" data-name="KapiraGamer" />
+</div>
+</td>
+</tr>
+<tr data-tag="PL02UCRV0" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="6">6</td>
+<td data-sort-value=michał>
+<a class="block member_link" data-tag="PL02UCRV0" href="/player/PL02UCRV0">
+michał
+<div class="last_seen" data-seconds="" data-datetime="20190504T154048.000Z">
+11h 15m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+46
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+104
+</div>
+</div>
+<div class="join_status" id="join-PL02UCRV0"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+ <img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="72173567049228">
+PL02UCRV0
+</td>
+<td class="" data-sort-value="3413">
+3,413
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena11.png?t=1529143289.5928361" alt="Arena 11 / Electro Valley" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="9">9</td>
+<td class="donations right aligned mobile-hide" data-sort-value="46">
+46
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="104">
+104
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-PL02UCRV0" class="compareme" type="checkbox" data-tag="PL02UCRV0" data-name="michał" />
+</div>
+</td>
+</tr>
+<tr data-tag="8P8JQ90Y0" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="7">7</td>
+<td data-sort-value=POLSKI BÓG>
+<a class="block member_link" data-tag="8P8JQ90Y0" href="/player/8P8JQ90Y0">
+POLSKI BÓG
+<div class="last_seen" data-seconds="" data-datetime="20190504T173628.000Z">
+9h 19m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+74
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+178
+ </div>
+</div>
+<div class="join_status" id="join-8P8JQ90Y0"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="24546590569224">
+8P8JQ90Y0
+</td>
+<td class="" data-sort-value="3190">
+3,190
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena10.png?t=1529143289.5928361" alt="Arena 10 / Hog Mountain" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="10">10</td>
+<td class="donations right aligned mobile-hide" data-sort-value="74">
+74
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="178">
+178
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-8P8JQ90Y0" class="compareme" type="checkbox" data-tag="8P8JQ90Y0" data-name="POLSKI BÓG" />
+</div>
+</td>
+</tr>
+<tr data-tag="P8Q098GRP" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="8">8</td>
+<td data-sort-value=Obywatel_Snejk>
+<a class="block member_link" data-tag="P8Q098GRP" href="/player/P8Q098GRP">
+Obywatel_Snejk
+<div class="last_seen" data-seconds="" data-datetime="20190504T220303.000Z">
+4h 52m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+10
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+30
+</div>
+</div>
+<div class="join_status" id="join-P8Q098GRP"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="71211272851429">
+P8Q098GRP
+</td>
+<td class="" data-sort-value="2925">
+2,925
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena9.png?t=1529143289.6061695" alt="Arena 9 / Jungle Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="10">
+10
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="30">
+30
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P8Q098GRP" class="compareme" type="checkbox" data-tag="P8Q098GRP" data-name="Obywatel_Snejk" />
+</div>
+</td>
+</tr>
+<tr data-tag="P8UV8JVQ2" data-role="Elder" class="role-Elder tr_member">
+<td data-sort-value="9">9</td>
+<td data-sort-value=marcel>
+<a class="block member_link" data-tag="P8UV8JVQ2" href="/player/P8UV8JVQ2">
+marcel
+<div class="last_seen" data-seconds="" data-datetime="20190504T203027.000Z">
+6h 25m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Elder
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+335
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+406
+</div>
+</div>
+<div class="join_status" id="join-P8UV8JVQ2"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="2">Elder</td>
+<td class="mobile-hide tablet-hide" data-sort-value="71221853285210">
+P8UV8JVQ2
+</td>
+<td class="" data-sort-value="2871">
+2,871
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena9.png?t=1529143289.6061695" alt="Arena 9 / Jungle Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="9">9</td>
+<td class="donations right aligned mobile-hide" data-sort-value="335">
+335
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="406">
+406
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P8UV8JVQ2" class="compareme" type="checkbox" data-tag="P8UV8JVQ2" data-name="marcel" />
+</div>
+</td>
+</tr>
+<tr data-tag="8V22LGRGV" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="10">10</td>
+<td data-sort-value=jan i krzys>
+<a class="block member_link" data-tag="8V22LGRGV" href="/player/8V22LGRGV">
+jan i krzys
+<div class="last_seen" data-seconds="" data-datetime="20190503T070751.000Z">
+1d 19h 48m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+0
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+30
+</div>
+</div>
+<div class="join_status" id="join-8V22LGRGV"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="25002678897679">
+8V22LGRGV
+</td>
+<td class="" data-sort-value="2800">
+2,800
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena9.png?t=1529143289.6061695" alt="Arena 9 / Jungle Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="9">9</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="30">
+30
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-8V22LGRGV" class="compareme" type="checkbox" data-tag="8V22LGRGV" data-name="jan i krzys" />
+</div>
+</td>
+</tr>
+<tr data-tag="PU8L2Y89Q" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="11">11</td>
+<td data-sort-value=Rafterpl>
+<a class="block member_link" data-tag="PU8L2Y89Q" href="/player/PU8L2Y89Q">
+Rafterpl
+<div class="last_seen" data-seconds="" data-datetime="20190504T220319.000Z">
+4h 52m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+361
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+386
+</div>
+</div>
+<div class="join_status" id="join-PU8L2Y89Q"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="72897361613918">
+PU8L2Y89Q
+</td>
+<td class="" data-sort-value="2665">
+2,665
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena9.png?t=1529143289.6061695" alt="Arena 9 / Jungle Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="361">
+361
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="386">
+386
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-PU8L2Y89Q" class="compareme" type="checkbox" data-tag="PU8L2Y89Q" data-name="Rafterpl" />
+</div>
+</td>
+</tr>
+<tr data-tag="P2YLU2L2L" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="12">12</td>
+<td data-sort-value=Tobiasz>
+<a class="block member_link" data-tag="P2YLU2L2L" href="/player/P2YLU2L2L">
+Tobiasz
+<div class="last_seen" data-seconds="" data-datetime="20190504T194049.000Z">
+7h 15m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+98
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+120
+</div>
+</div>
+<div class="join_status" id="join-P2YLU2L2L"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="70759806912813">
+P2YLU2L2L
+</td>
+<td class="" data-sort-value="2650">
+2,650
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena9.png?t=1529143289.6061695" alt="Arena 9 / Jungle Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="98">
+98
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="120">
+120
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P2YLU2L2L" class="compareme" type="checkbox" data-tag="P2YLU2L2L" data-name="Tobiasz" />
+</div>
+</td>
+</tr>
+<tr data-tag="P2RGCUP28" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="13">13</td>
+<td data-sort-value=patryk kam>
+<a class="block member_link" data-tag="P2RGCUP28" href="/player/P2RGCUP28">
+patryk kam
+<div class="last_seen" data-seconds="" data-datetime="20190504T181257.000Z">
+8h 43m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+12
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+90
+</div>
+</div>
+<div class="join_status" id="join-P2RGCUP28"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+ <td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="70744238184032">
+P2RGCUP28
+</td>
+<td class="" data-sort-value="2638">
+2,638
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena9.png?t=1529143289.6061695" alt="Arena 9 / Jungle Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="12">
+12
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="90">
+90
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P2RGCUP28" class="compareme" type="checkbox" data-tag="P2RGCUP28" data-name="patryk kam" />
+</div>
+</td>
+</tr>
+<tr data-tag="P9GYGVU2J" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="14">14</td>
+<td data-sort-value=Stachu>
+<a class="block member_link" data-tag="P9GYGVU2J" href="/player/P9GYGVU2J">
+Stachu
+<div class="last_seen" data-seconds="" data-datetime="20190504T191433.000Z">
+7h 41m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+71
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+90
+</div>
+</div>
+<div class="join_status" id="join-P9GYGVU2J"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="71269937889787">
+P9GYGVU2J
+</td>
+<td class="" data-sort-value="2600">
+2,600
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena9.png?t=1529143289.6061695" alt="Arena 9 / Jungle Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="71">
+71
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="90">
+90
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P9GYGVU2J" class="compareme" type="checkbox" data-tag="P9GYGVU2J" data-name="Stachu" />
+</div>
+</td>
+</tr>
+<tr data-tag="8PQY808P9" data-role="Elder" class="role-Elder tr_member">
+<td data-sort-value="15">15</td>
+<td data-sort-value=Janekdzbanek>
+<a class="block member_link" data-tag="8PQY808P9" href="/player/8PQY808P9">
+Janekdzbanek
+<div class="last_seen" data-seconds="" data-datetime="20190504T224208.000Z">
+4h 13m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Elder
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+339
+ </div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+300
+</div>
+</div>
+<div class="join_status" id="join-8PQY808P9"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="2">Elder</td>
+<td class="mobile-hide tablet-hide" data-sort-value="24586649000973">
+8PQY808P9
+</td>
+<td class="" data-sort-value="2600">
+2,600
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena9.png?t=1529143289.6061695" alt="Arena 9 / Jungle Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="339">
+339
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="300">
+300
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-8PQY808P9" class="compareme" type="checkbox" data-tag="8PQY808P9" data-name="Janekdzbanek" />
+</div>
+</td>
+</tr>
+<tr data-tag="PY0CYYV98" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="16">16</td>
+<td data-sort-value=CLASH ROYALE>
+<a class="block member_link" data-tag="PY0CYYV98" href="/player/PY0CYYV98">
+CLASH ROYALE
+<div class="last_seen" data-seconds="" data-datetime="20190505T003013.000Z">
+2h 25m ago
+</div>
+</a>
+<div class="mobile-show">
+ <div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+20
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+30
+</div>
+</div>
+<div class="join_status" id="join-PY0CYYV98"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="73192913593532">
+PY0CYYV98
+</td>
+<td class="" data-sort-value="2593">
+2,593
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena8.png?t=1529143289.6061695" alt="Arena 8 / Frozen Peak" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="20">
+20
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="30">
+30
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-PY0CYYV98" class="compareme" type="checkbox" data-tag="PY0CYYV98" data-name="CLASH ROYALE" />
+</div>
+</td>
+</tr>
+<tr data-tag="LJGQRURV" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="17">17</td>
+<td data-sort-value=BannyQ>
+<a class="block member_link" data-tag="LJGQRURV" href="/player/LJGQRURV">
+BannyQ
+<div class="last_seen" data-seconds="" data-datetime="20190504T140517.000Z">
+12h 50m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+0
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+0
+</div>
+</div>
+<div class="join_status" id="join-LJGQRURV"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+ <img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="1688018738827">
+LJGQRURV
+</td>
+<td class="" data-sort-value="2580">
+2,580
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena8.png?t=1529143289.6061695" alt="Arena 8 / Frozen Peak" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-LJGQRURV" class="compareme" type="checkbox" data-tag="LJGQRURV" data-name="BannyQ" />
+</div>
+</td>
+</tr>
+<tr data-tag="PYVY9YG89" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="18">18</td>
+<td data-sort-value=pawlo>
+<a class="block member_link" data-tag="PYVY9YG89" href="/player/PYVY9YG89">
+pawlo
+<div class="last_seen" data-seconds="" data-datetime="20190504T191545.000Z">
+7h 40m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+96
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+220
+</div>
+ </div>
+<div class="join_status" id="join-PYVY9YG89"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="73261682091945">
+PYVY9YG89
+</td>
+<td class="" data-sort-value="2476">
+2,476
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena8.png?t=1529143289.6061695" alt="Arena 8 / Frozen Peak" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="96">
+96
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="220">
+220
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-PYVY9YG89" class="compareme" type="checkbox" data-tag="PYVY9YG89" data-name="pawlo" />
+</div>
+</td>
+</tr>
+<tr data-tag="P8PQ0GRQV" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="19">19</td>
+<td data-sort-value=OskuseQ>
+<a class="block member_link" data-tag="P8PQ0GRQV" href="/player/P8PQ0GRQV">
+OskuseQ
+<div class="last_seen" data-seconds="" data-datetime="20190504T194058.000Z">
+7h 15m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+158
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+210
+</div>
+</div>
+<div class="join_status" id="join-P8PQ0GRQV"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="71210653460599">
+P8PQ0GRQV
+</td>
+<td class="" data-sort-value="2370">
+2,370
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena8.png?t=1529143289.6061695" alt="Arena 8 / Frozen Peak" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="158">
+158
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="210">
+210
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P8PQ0GRQV" class="compareme" type="checkbox" data-tag="P8PQ0GRQV" data-name="OskuseQ" />
+</div>
+</td>
+</tr>
+<tr data-tag="89Q20U2JQ" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="20">20</td>
+<td data-sort-value=oliwierKxD>
+<a class="block member_link" data-tag="89Q20U2JQ" href="/player/89Q20U2JQ">
+oliwierKxD
+<div class="last_seen" data-seconds="" data-datetime="20190504T230011.000Z">
+ 3h 55m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+316
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+210
+</div>
+</div>
+<div class="join_status" id="join-89Q20U2JQ"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="23330875412582">
+89Q20U2JQ
+</td>
+<td class="" data-sort-value="2339">
+2,339
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena8.png?t=1529143289.6061695" alt="Arena 8 / Frozen Peak" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="9">9</td>
+<td class="donations right aligned mobile-hide" data-sort-value="316">
+316
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="210">
+210
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-89Q20U2JQ" class="compareme" type="checkbox" data-tag="89Q20U2JQ" data-name="oliwierKxD" />
+</div>
+</td>
+</tr>
+<tr data-tag="9QRJLQCV2" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="21">21</td>
+<td data-sort-value=game kameleon>
+<a class="block member_link" data-tag="9QRJLQCV2" href="/player/9QRJLQCV2">
+game kameleon
+<div class="last_seen" data-seconds="" data-datetime="20190428T155238.000Z">
+6d 11h 3m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+0
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+0
+</div>
+</div>
+<div class="join_status" id="join-9QRJLQCV2"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="27487415915678">
+9QRJLQCV2
+</td>
+<td class="" data-sort-value="2334">
+2,334
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena8.png?t=1529143289.6061695" alt="Arena 8 / Frozen Peak" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+ <div class="">
+<input id="compare-checkbox-9QRJLQCV2" class="compareme" type="checkbox" data-tag="9QRJLQCV2" data-name="game kameleon" />
+</div>
+</td>
+</tr>
+<tr data-tag="P8U0CJCV9" data-role="Elder" class="role-Elder tr_member">
+<td data-sort-value="22">22</td>
+<td data-sort-value=Aisog>
+<a class="block member_link" data-tag="P8U0CJCV9" href="/player/P8U0CJCV9">
+Aisog
+<div class="last_seen" data-seconds="" data-datetime="20190504T223538.000Z">
+4h 20m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Elder
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+188
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+330
+</div>
+</div>
+<div class="join_status" id="join-P8U0CJCV9"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="2">Elder</td>
+<td class="mobile-hide tablet-hide" data-sort-value="71219985527781">
+P8U0CJCV9
+</td>
+<td class="" data-sort-value="2324">
+2,324
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena8.png?t=1529143289.6061695" alt="Arena 8 / Frozen Peak" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="188">
+188
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="330">
+330
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P8U0CJCV9" class="compareme" type="checkbox" data-tag="P8U0CJCV9" data-name="Aisog" />
+</div>
+</td>
+</tr>
+<tr data-tag="P8GRPJY09" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="23">23</td>
+<td data-sort-value=szymon>
+<a class="block member_link" data-tag="P8GRPJY09" href="/player/P8GRPJY09">
+szymon
+<div class="last_seen" data-seconds="" data-datetime="20190504T181110.000Z">
+8h 44m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+24
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+30
+</div>
+</div>
+<div class="join_status" id="join-P8GRPJY09"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="71191165024233">
+P8GRPJY09
+</td>
+<td class="" data-sort-value="2308">
+2,308
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena8.png?t=1529143289.6061695" alt="Arena 8 / Frozen Peak" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="9">9</td>
+<td class="donations right aligned mobile-hide" data-sort-value="24">
+24
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="30">
+30
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P8GRPJY09" class="compareme" type="checkbox" data-tag="P8GRPJY09" data-name="szymon" />
+</div>
+</td>
+</tr>
+<tr data-tag="2VCRRC2UU" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="24">24</td>
+<td data-sort-value=kskd>
+<a class="block member_link" data-tag="2VCRRC2UU" href="/player/2VCRRC2UU">
+kskd
+<div class="last_seen" data-seconds="" data-datetime="20190504T105650.000Z">
+15h 59m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+8
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+0
+</div>
+</div>
+<div class="join_status" id="join-2VCRRC2UU"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="8099308789878">
+2VCRRC2UU
+</td>
+<td class="" data-sort-value="2300">
+2,300
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena8.png?t=1529143289.6061695" alt="Arena 8 / Frozen Peak" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="8">
+8
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-2VCRRC2UU" class="compareme" type="checkbox" data-tag="2VCRRC2UU" data-name="kskd" />
+</div>
+</td>
+</tr>
+<tr data-tag="9LJPJ8CJC" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="25">25</td>
+<td data-sort-value=placek>
+<a class="block member_link" data-tag="9LJPJ8CJC" href="/player/9LJPJ8CJC">
+placek
+<div class="last_seen" data-seconds="" data-datetime="20190505T023203.000Z">
+23m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+12
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+30
+</div>
+</div>
+<div class="join_status" id="join-9LJPJ8CJC"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+ <img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="27078539434104">
+9LJPJ8CJC
+</td>
+<td class="" data-sort-value="2300">
+2,300
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena8.png?t=1529143289.6061695" alt="Arena 8 / Frozen Peak" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="9">9</td>
+<td class="donations right aligned mobile-hide" data-sort-value="12">
+12
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="30">
+30
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-9LJPJ8CJC" class="compareme" type="checkbox" data-tag="9LJPJ8CJC" data-name="placek" />
+</div>
+</td>
+</tr>
+<tr data-tag="P9V98229Y" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="26">26</td>
+<td data-sort-value=Barteb>
+<a class="block member_link" data-tag="P9V98229Y" href="/player/P9V98229Y">
+Barteb
+<div class="last_seen" data-seconds="" data-datetime="20190504T093430.000Z">
+17h 21m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+0
+</div>
+<div>
+ <i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+0
+</div>
+</div>
+<div class="join_status" id="join-P9V98229Y"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="71301063144454">
+P9V98229Y
+</td>
+<td class="" data-sort-value="2206">
+2,206
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena7.png?t=1529143289.6061695" alt="Arena 7 / Royal Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="9">9</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P9V98229Y" class="compareme" type="checkbox" data-tag="P9V98229Y" data-name="Barteb" />
+</div>
+</td>
+</tr>
+<tr data-tag="PQ0UVPPL0" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="27">27</td>
+<td data-sort-value=Ostry909>
+<a class="block member_link" data-tag="PQ0UVPPL0" href="/player/PQ0UVPPL0">
+Ostry909
+<div class="last_seen" data-seconds="" data-datetime="20190504T201238.000Z">
+6h 43m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+ </div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+118
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+190
+</div>
+</div>
+<div class="join_status" id="join-PQ0UVPPL0"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="72567083205828">
+PQ0UVPPL0
+</td>
+<td class="" data-sort-value="2134">
+2,134
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena7.png?t=1529143289.6061695" alt="Arena 7 / Royal Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="7">7</td>
+<td class="donations right aligned mobile-hide" data-sort-value="118">
+118
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="190">
+190
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-PQ0UVPPL0" class="compareme" type="checkbox" data-tag="PQ0UVPPL0" data-name="Ostry909" />
+</div>
+</td>
+</tr>
+<tr data-tag="9982GR8VQ" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="28">28</td>
+<td data-sort-value=Agorai Stark>
+<a class="block member_link" data-tag="9982GR8VQ" href="/player/9982GR8VQ">
+Agorai Stark
+<div class="last_seen" data-seconds="" data-datetime="20190503T074231.000Z">
+1d 19h 13m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+82
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+60
+</div>
+</div>
+<div class="join_status" id="join-9982GR8VQ"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="26112829980086">
+9982GR8VQ
+</td>
+<td class="" data-sort-value="2122">
+2,122
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena7.png?t=1529143289.6061695" alt="Arena 7 / Royal Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="82">
+82
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="60">
+60
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-9982GR8VQ" class="compareme" type="checkbox" data-tag="9982GR8VQ" data-name="Agorai Stark" />
+</div>
+</td>
+</tr>
+<tr data-tag="909UPL0LY" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="29">29</td>
+<td data-sort-value=pan czekoladka>
+<a class="block member_link" data-tag="909UPL0LY" href="/player/909UPL0LY">
+pan czekoladka
+<div class="last_seen" data-seconds="" data-datetime="20190501T110802.000Z">
+3d 15h 47m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+20
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+30
+</div>
+</div>
+<div class="join_status" id="join-909UPL0LY"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="25411437164374">
+909UPL0LY
+</td>
+<td class="" data-sort-value="2102">
+2,102
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena7.png?t=1529143289.6061695" alt="Arena 7 / Royal Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="20">
+20
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="30">
+30
+ <i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-909UPL0LY" class="compareme" type="checkbox" data-tag="909UPL0LY" data-name="pan czekoladka" />
+</div>
+</td>
+</tr>
+<tr data-tag="8V2Q2L20Q" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="30">30</td>
+<td data-sort-value=Émřĕ möŕ>
+<a class="block member_link" data-tag="8V2Q2L20Q" href="/player/8V2Q2L20Q">
+Émřĕ möŕ
+<div class="last_seen" data-seconds="" data-datetime="20190504T171322.000Z">
+9h 42m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+18
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+120
+</div>
+</div>
+<div class="join_status" id="join-8V2Q2L20Q"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="25004098373498">
+8V2Q2L20Q
+</td>
+<td class="" data-sort-value="2082">
+2,082
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena7.png?t=1529143289.6061695" alt="Arena 7 / Royal Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="18">
+18
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="120">
+120
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-8V2Q2L20Q" class="compareme" type="checkbox" data-tag="8V2Q2L20Q" data-name="Émřĕ möŕ" />
+</div>
+</td>
+</tr>
+<tr data-tag="PJUPVCQJV" data-role="Elder" class="role-Elder tr_member">
+<td data-sort-value="31">31</td>
+<td data-sort-value=anix>
+<a class="block member_link" data-tag="PJUPVCQJV" href="/player/PJUPVCQJV">
+anix
+<div class="last_seen" data-seconds="" data-datetime="20190504T190728.000Z">
+7h 48m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Elder
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+292
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+270
+</div>
+</div>
+<div class="join_status" id="join-PJUPVCQJV"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="2">Elder</td>
+<td class="mobile-hide tablet-hide" data-sort-value="72083534591083">
+PJUPVCQJV
+ </td>
+<td class="" data-sort-value="2069">
+2,069
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena7.png?t=1529143289.6061695" alt="Arena 7 / Royal Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="292">
+292
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="270">
+270
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-PJUPVCQJV" class="compareme" type="checkbox" data-tag="PJUPVCQJV" data-name="anix" />
+</div>
+</td>
+</tr>
+<tr data-tag="8LLJU02PR" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="32">32</td>
+<td data-sort-value=Dawid>
+<a class="block member_link" data-tag="8LLJU02PR" href="/player/8LLJU02PR">
+Dawid
+<div class="last_seen" data-seconds="" data-datetime="20190501T085641.000Z">
+3d 17h 59m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+0
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+0
+</div>
+</div>
+<div class="join_status" id="join-8LLJU02PR"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="24261438384063">
+8LLJU02PR
+</td>
+<td class="" data-sort-value="2067">
+2,067
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena7.png?t=1529143289.6061695" alt="Arena 7 / Royal Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="9">9</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-8LLJU02PR" class="compareme" type="checkbox" data-tag="8LLJU02PR" data-name="Dawid" />
+</div>
+</td>
+</tr>
+<tr data-tag="90C9QQ8VG" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="33">33</td>
+<td data-sort-value=Pawilk>
+<a class="block member_link" data-tag="90C9QQ8VG" href="/player/90C9QQ8VG">
+Pawilk
+<div class="last_seen" data-seconds="" data-datetime="20190504T181226.000Z">
+8h 43m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+58
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+ 120
+</div>
+</div>
+<div class="join_status" id="join-90C9QQ8VG"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="25416699645292">
+90C9QQ8VG
+</td>
+<td class="" data-sort-value="2037">
+2,037
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena7.png?t=1529143289.6061695" alt="Arena 7 / Royal Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="9">9</td>
+<td class="donations right aligned mobile-hide" data-sort-value="58">
+58
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="120">
+120
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-90C9QQ8VG" class="compareme" type="checkbox" data-tag="90C9QQ8VG" data-name="Pawilk" />
+</div>
+</td>
+</tr>
+<tr data-tag="9QP0Y98RV" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="34">34</td>
+<td data-sort-value=Mati 3>
+<a class="block member_link" data-tag="9QP0Y98RV" href="/player/9QP0Y98RV">
+Mati 3
+<div class="last_seen" data-seconds="" data-datetime="20190503T064339.000Z">
+1d 20h 12m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+ <i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+108
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+60
+</div>
+</div>
+<div class="join_status" id="join-9QP0Y98RV"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="27481934530219">
+9QP0Y98RV
+</td>
+<td class="" data-sort-value="2014">
+2,014
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena7.png?t=1529143289.6061695" alt="Arena 7 / Royal Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="9">9</td>
+<td class="donations right aligned mobile-hide" data-sort-value="108">
+108
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="60">
+60
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-9QP0Y98RV" class="compareme" type="checkbox" data-tag="9QP0Y98RV" data-name="Mati 3" />
+</div>
+</td>
+</tr>
+<tr data-tag="9GQ8J0CJP" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="35">35</td>
+<td data-sort-value=xd>
+<a class="block member_link" data-tag="9GQ8J0CJP" href="/player/9GQ8J0CJP">
+xd
+<div class="last_seen" data-seconds="" data-datetime="20190504T170527.000Z">
+9h 50m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+52
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+110
+</div>
+</div>
+<div class="join_status" id="join-9GQ8J0CJP"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="26700927791749">
+9GQ8J0CJP
+</td>
+<td class="" data-sort-value="2005">
+2,005
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena7.png?t=1529143289.6061695" alt="Arena 7 / Royal Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="52">
+52
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="110">
+110
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-9GQ8J0CJP" class="compareme" type="checkbox" data-tag="9GQ8J0CJP" data-name="xd" />
+</div>
+</td>
+</tr>
+ <tr data-tag="9JY0Q0GLP" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="36">36</td>
+<td data-sort-value=durian>
+<a class="block member_link" data-tag="9JY0Q0GLP" href="/player/9JY0Q0GLP">
+durian
+<div class="last_seen" data-seconds="" data-datetime="20190504T180923.000Z">
+8h 46m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+22
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+30
+</div>
+</div>
+<div class="join_status" id="join-9JY0Q0GLP"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="26952962575885">
+9JY0Q0GLP
+</td>
+<td class="" data-sort-value="2000">
+2,000
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena7.png?t=1529143289.6061695" alt="Arena 7 / Royal Arena" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="22">
+22
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="30">
+30
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-9JY0Q0GLP" class="compareme" type="checkbox" data-tag="9JY0Q0GLP" data-name="durian" />
+</div>
+</td>
+</tr>
+<tr data-tag="P9GGRC8J9" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="37">37</td>
+<td data-sort-value=GhostHome>
+<a class="block member_link" data-tag="P9GGRC8J9" href="/player/P9GGRC8J9">
+GhostHome
+<div class="last_seen" data-seconds="" data-datetime="20190430T113123.000Z">
+4d 15h 24m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+0
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+0
+</div>
+</div>
+<div class="join_status" id="join-P9GGRC8J9"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="71268867060021">
+P9GGRC8J9
+</td>
+<td class="" data-sort-value="1806">
+1,806
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena6.png?t=1529143289.6028361" alt="Arena 6 / Builder's Workshop" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P9GGRC8J9" class="compareme" type="checkbox" data-tag="P9GGRC8J9" data-name="GhostHome" />
+</div>
+</td>
+</tr>
+<tr data-tag="9VVGVUY8U" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="38">38</td>
+<td data-sort-value=TegW>
+<a class="block member_link" data-tag="9VVGVUY8U" href="/player/9VVGVUY8U">
+TegW
+<div class="last_seen" data-seconds="" data-datetime="20190430T174343.000Z">
+4d 9h 12m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+0
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+40
+</div>
+</div>
+<div class="join_status" id="join-9VVGVUY8U"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="27887779477470">
+9VVGVUY8U
+</td>
+<td class="" data-sort-value="1730">
+1,730
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena6.png?t=1529143289.6028361" alt="Arena 6 / Builder's Workshop" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="0">
+0
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="40">
+40
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-9VVGVUY8U" class="compareme" type="checkbox" data-tag="9VVGVUY8U" data-name="TegW" />
+</div>
+</td>
+</tr>
+<tr data-tag="9LG9U80PY" data-role="Elder" class="role-Elder tr_member">
+<td data-sort-value="39">39</td>
+<td data-sort-value=Pan Chlebcio YT>
+<a class="block member_link" data-tag="9LG9U80PY" href="/player/9LG9U80PY">
+Pan Chlebcio YT
+<div class="last_seen" data-seconds="" data-datetime="20190504T071113.000Z">
+19h 44m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Elder
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+58
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+40
+</div>
+</div>
+<div class="join_status" id="join-9LG9U80PY"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="2">Elder</td>
+<td class="mobile-hide tablet-hide" data-sort-value="27071060088742">
+9LG9U80PY
+</td>
+<td class="" data-sort-value="1626">
+1,626
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena6.png?t=1529143289.6028361" alt="Arena 6 / Builder's Workshop" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="58">
+58
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="40">
+40
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-9LG9U80PY" class="compareme" type="checkbox" data-tag="9LG9U80PY" data-name="Pan Chlebcio YT" />
+</div>
+</td>
+</tr>
+<tr data-tag="P2Q0V22JG" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="40">40</td>
+<td data-sort-value=tymek>
+<a class="block member_link" data-tag="P2Q0V22JG" href="/player/P2Q0V22JG">
+tymek
+ <div class="last_seen" data-seconds="" data-datetime="20190504T173155.000Z">
+9h 24m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+42
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+40
+</div>
+</div>
+<div class="join_status" id="join-P2Q0V22JG"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="70741124520028">
+P2Q0V22JG
+</td>
+<td class="" data-sort-value="1464">
+1,464
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena5.png?t=1529143289.6028361" alt="Arena 5 / Spell Valley" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="42">
+42
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="40">
+40
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-P2Q0V22JG" class="compareme" type="checkbox" data-tag="P2Q0V22JG" data-name="tymek" />
+ </div>
+</td>
+</tr>
+<tr data-tag="90J29VLRV" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="41">41</td>
+<td data-sort-value=Dominik yt>
+<a class="block member_link" data-tag="90J29VLRV" href="/player/90J29VLRV">
+Dominik yt
+<div class="last_seen" data-seconds="" data-datetime="20190503T170718.000Z">
+1d 9h 48m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+36
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+20
+</div>
+</div>
+<div class="join_status" id="join-90J29VLRV"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="25431485554939">
+90J29VLRV
+</td>
+<td class="" data-sort-value="1446">
+1,446
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena5.png?t=1529143289.6028361" alt="Arena 5 / Spell Valley" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="36">
+36
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="20">
+20
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-90J29VLRV" class="compareme" type="checkbox" data-tag="90J29VLRV" data-name="Dominik yt" />
+</div>
+</td>
+</tr>
+<tr data-tag="PJ8PP8VJ0" data-role="Member" class="role-Member tr_member">
+<td data-sort-value="42">42</td>
+<td data-sort-value=witek zd>
+<a class="block member_link" data-tag="PJ8PP8VJ0" href="/player/PJ8PP8VJ0">
+witek zd
+<div class="last_seen" data-seconds="" data-datetime="20190501T194809.000Z">
+3d 7h 7m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Member
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+192
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+100
+</div>
+</div>
+<div class="join_status" id="join-PJ8PP8VJ0"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="3">Member</td>
+<td class="mobile-hide tablet-hide" data-sort-value="72035635121820">
+PJ8PP8VJ0
+</td>
+<td class="" data-sort-value="1395">
+1,395
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena5.png?t=1529143289.6028361" alt="Arena 5 / Spell Valley" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="8">8</td>
+<td class="donations right aligned mobile-hide" data-sort-value="192">
+ 192
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="100">
+100
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-PJ8PP8VJ0" class="compareme" type="checkbox" data-tag="PJ8PP8VJ0" data-name="witek zd" />
+</div>
+</td>
+</tr>
+<tr data-tag="PY8QLPPVY" data-role="Elder" class="role-Elder tr_member">
+<td data-sort-value="43">43</td>
+<td data-sort-value=super gems>
+<a class="block member_link" data-tag="PY8QLPPVY" href="/player/PY8QLPPVY">
+super gems
+<div class="last_seen" data-seconds="" data-datetime="20190504T105843.000Z">
+15h 57m ago
+</div>
+</a>
+<div class="mobile-show">
+<div class="meta">
+Elder
+</div>
+</div>
+<div class="mobile-show mobile-member-summary">
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+2
+</div>
+<div>
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+30
+</div>
+</div>
+<div class="join_status" id="join-PY8QLPPVY"></div>
+</td>
+<td class="inactivity_content inactivity in_trophies">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-trophies.png" />
+</td>
+<td class="inactivity_content inactivity in_donations">
+<img class="inactive_bar" style="display:none;" src="/static/img/ui/inactivity-donations.png" />
+</td>
+<td class="mobile-hide" data-sort-value="2">Elder</td>
+<td class="mobile-hide tablet-hide" data-sort-value="73211152116814">
+PY8QLPPVY
+</td>
+<td class="" data-sort-value="912">
+ 912
+<img class="ui mini image arena_icon" src="/static/img/arenas/arena3.png?t=1529143289.6028361" alt="Arena 3 / Barbarian Bowl" />
+</td>
+<td class="right aligned mobile-hide" data-sort-value="5">5</td>
+<td class="donations right aligned mobile-hide" data-sort-value="2">
+2
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner blue arrow up icon"></i>
+</i>
+</td>
+<td class="donations right aligned mobile-hide" data-sort-value="30">
+30
+<i class="big icons">
+<img class="ui verytiny image" src="/static/img/icon/ic-cards.png" />
+<i class="corner orange arrow down icon"></i>
+</i>
+</td>
+<td class="mobile-hide">
+<div class="">
+<input id="compare-checkbox-PY8QLPPVY" class="compareme" type="checkbox" data-tag="PY8QLPPVY" data-name="super gems" />
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<style>
+            .item {
+                border-radius: 0 !important;
+            }
+        </style>
+</div>
+</div>
+
+<div class="ui sidemargin0  attached inverted segment ad-segment" style="border:0 !important; padding:0 !important;;">
+<div class="ui container sidemargin0">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7508750482993527" data-ad-slot="4803465586" data-ad-format="auto"></ins>
+<script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+</div>
+</div>
+
+<div class="ui inverted vertical footer segment">
+<div class="ui container">
+<div class="ui stackable inverted grid">
+<div class="row">
+<div class="four wide column">
+<div class="ui stackable doubling inverted two column grid">
+<div class="column">
+<div class="ui inverted link list">
+<h4 class="ui inverted tiny header">RoyaleAPI</h4>
+<a class="item" href="/">
+Home
+</a>
+<a class="item" href="/">
+Decks
+</a>
+<a class="item" href="/players">
+Players
+</a>
+<a class="item" href="/clans">
+Clans
+</a>
+<a class="item" href="/cards">
+Cards
+</a>
+<a class="item" href="/tournaments">
+Tournaments
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="four wide column">
+<div class="ui stackable inverted equal width column grid">
+<div class="column">
+<div class="ui inverted link list">
+<h4 class="ui inverted tiny header">Help</h4>
+<a class="item" href="/about">About Us</a>
+<a class="item" href="/blog">Blog</a>
+<a class="item" href="/faq">FAQ</a>
+<a class="item" href="/business-inquiries">
+Business Inquiries</a>
+<a class="item" href="https://github.com/RoyaleAPI/cr-api-ux/issues/new/choose">
+UX Feature Requests </a>
+<a class="item" href="http://docs.royaleapi.com">
+API Documentation</a>
+<a class="item" href="https://github.com/RoyaleAPI/cr-api">
+API Support </a>
+</div>
+</div>
+</div>
+</div>
+<div id="social_column" class="eight wide column">
+<h4 class="ui inverted tiny header">Social</h4>
+<a class="social_icon_link" href="https://twitter.com/RoyaleAPI">
+<img class="social_icon popup" src="/static/img/brands/circle/twitter.svg" data-content="Twitter" />
+</a>
+<a class="social_icon_link" href="https://www.facebook.com/RoyaleAPI">
+<img class="social_icon popup" src="/static/img/brands/circle/facebook.svg" data-content="Facebook" />
+</a>
+<a class="social_icon_link" href="https://discord.royaleapi.com">
+<img class="social_icon popup" src="/static/img/brands/circle/discord.svg" data-content="Discord" />
+</a>
+<a class="social_icon_link" href="https://github.com/RoyaleAPI">
+<img class="social_icon popup" src="/static/img/brands/circle/github.svg" data-content="Github" />
+</a>
+</div>
+</div>
+<div class="row">
+<div class="column">
+<a href="/donate" class="ui blue button">Donate</a>
+</div>
+</div>
+</div>
+<div class="ui divider"></div>
+<div class="ui vertical segment">
+<div class="ui inverted meta disclaimer">
+<p>
+This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see Supercell’s <a href="http://www.supercell.com/fan-content-policy" target="_blank">Fan Content Policy</a>.
+</p>
+</div>
+<div class="copyright">
+&copy;2019 RoyaleAPI.com. All rights reserved.
+</div>
+</div>
+</div>
+</div>
+
+<div id="search_all_modal" class="ui modal">
+<div class="content">
+<form class="ui form">
+<div class="player_search_container ui fluid search">
+<div class="field" data-name="player">
+<label>Player</label>
+<div class="ui icon large input">
+<input class="prompt" data-section="player" type="text" name="player" placeholder="Name or tag, e.g. C0G20PR2" />
+<i class="search link icon"></i>
+</div>
+</div>
+<div class="results"></div>
+</div>
+<div class="clan_search_container ui fluid search">
+<div class="field" data-name="clan">
+ <label>Clan</label>
+<div class="ui icon large input">
+<input class="prompt" data-section="clan" type="text" name="clan" placeholder="Name or tag, e.g. 9PJ82CRC" />
+<i class="search link icon"></i>
+</div>
+</div>
+<div class="results"></div>
+</div>
+<div class="tournament_search_container ui fluid search">
+<div class="field" data-name="tournament">
+<label>Tournament</label>
+<div class="ui icon large input">
+<input class="prompt" data-section="tournament" type="text" name="tournament" placeholder="Tag" />
+<i class="search link icon"></i>
+</div>
+</div>
+<div class="results"></div>
+</div>
+</form>
+</div>
+</div>
+<script>
+$(document).ready(function () {
+    // modal
+    $('#search_all_button')
+        .click(function () {
+            $('#search_all_modal')
+                .modal({
+                    centered: false
+                })
+                .modal('show');
+        })
+    ;
+
+    // ajax search
+    const AJAX_SEARCH_DELAY = 1300;
+
+    function getSearchSettings(section) {
+        let searchSettings = {
+            apiSettings: {
+                url: `/data/${section}/search?q={query}&t=1557021290`,
+            },
+            showNoResults: false,
+            error: {
+                noResults: ''
+            },
+            searchDelay: AJAX_SEARCH_DELAY,
+        };
+        return searchSettings;
+    }
+
+    $('.player_search_container')
+        .search(getSearchSettings('player'))
+    ;
+
+    $('.clan_search_container')
+        .search(getSearchSettings('clan'))
+    ;
+
+    // key input enter
+    function gotoSearch(section, tag) {
+        if (tag[0] === '#') {
+            tag = tag.substring(1)
+        }
+        window.location.href = `/${section}/${tag}`;
+    }
+
+    $('#search_all_modal input')
+        .on('keyup', function (e) {
+            if (e.keyCode === 13) {
+                let tag = $(this).val();
+                let section = $(this).data('section');
+                gotoSearch(section, tag);
+            }
+        })
+    ;
+
+})
+</script>
+</div>
+<div id="fullpage_screenshot_modal" class="ui fullscreen modal">
+<i class="close icon"></i>
+<div class="header">Full page screenshot</div>
+<div class="scrolling content">
+<div id="fullpage_screenshot_modal_dimmer" class="ui active inverted dimmer">
+<div class="ui text loader">Loading</div>
+</div>
+<img class="ui image" id="fullpage_screenshot_image" src="/static/img/ui/fpo/deck-wireframe.svg" data-src="" />
+</div>
+<div class="content">
+<div class="description">
+<p>Right click image to save to your computer, or tap and hold to save to your mobile device.</p>
+</div>
+</div>
+</div>
+<div id="language_modal" class="ui mini modal">
+<i class="close icon"></i>
+<div class="header"><i class="language large icon"></i> (Beta)</div>
+<div class="content">
+<div class="description">
+<div class="ui very relaxed selection list" style="font-size:120%;">
+<a class="item active" href="/language/en">
+<i class="us flag"></i>
+English
+</a>
+<a class="item " href="/language/es">
+<i class="es flag"></i>
+Español
+</a>
+<a class="item " href="/language/fr">
+<i class="fr flag"></i>
+Français
+</a>
+<a class="item " href="/language/de">
+<i class="de flag"></i>
+Deutsch
+</a>
+<a class="item " href="/language/zh">
+<i class="cn flag"></i>
+简体中文
+</a>
+<a class="item " href="/language/zh_Hant">
+<i class="tw flag"></i>
+繁體中文
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="qrcode_modal" class="ui tiny modal">
+<i class="close icon"></i>
+<div class="header">
+<div class="title"></div>
+</div>
+<div id="qrcode_content" class="content"></div>
+</div>
+
+<script data-cfasync="false" src="/static/jslib/handlebars.js"></script>
+<script data-cfasync="false" src="/static/jslib/store.everything.min.js"></script>
+<script data-cfasync="false" src="/static/jslib/sort_properties.js"></script>
+<script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+<script data-cfasync="false" src="/static/jslib/html2canvas.min.js"></script>
+<script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+<script data-cfasync="false" src="/static/chartjs/chartjs-plugin-stacked100-hojsim.js"></script>
+<script data-cfasync="false" src="/static/jslib/handlebars.js"></script>
+<script data-cfasync="false" src="/static/jslib/isotope.pkgd.min.js"></script>
+<script data-cfasync="false" src="/static/jslib/jquery.address-1.6.min.js"></script>
+<script data-cfasync="false" src="/static/jslib/qrcode/jquery.qrcode.min.js"></script>
+<script data-cfasync="false" src="/static/js/follow.js?t=1533782593.0857282"></script>
+<script data-cfasync="false" src="/static/js/storage/player_storage.js?t=1529143290.336164"></script>
+<script data-cfasync="false" src="/static/js/app.js?t=1554546816.4404967"></script>
+<script data-cfasync="false" src="/static/js/semantic_api.js?t=1531759873.7786462"></script>
+<script data-cfasync="false" src="/static/js/topnav.js?t=1529143290.336164"></script>
+<script data-cfasync="false" src="/static/js/sidebar.js?t=1529143290.336164"></script>
+<script data-cfasync="false" src="/static/js/ga_events.js?t=1529143290.3328307"></script>
+<script data-cfasync="false" src="/static/js/nav.js?t=1529143290.3328307"></script>
+<script data-cfasync="false" src="/static/js/storage/fave_menu.js?t=1529143290.336164"></script>
+<script data-cfasync="false" src="/static/js/qrcode_button.js?t=1541102339.401905"></script>
+<script data-cfasync="false" src="/static/js/ads.js?t=1541151325.068429"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    populate_fave_menu();
+});
+</script><script>
+$(document).ready(function () {
+    // init accordion
+    $('.sidebar.accordion').accordion();
+    // Chart defaults
+    Chart.defaults.global.animation.duration = 0;
+    Chart.defaults.global.elements.rectangle.borderWidth = 3;
+    Chart.defaults.global.elements.rectangle.backgroundColor = 'rgba(86, 182, 84, 1.000)';
+    Chart.defaults.global.elements.line.borderWidth = 3;
+    Chart.defaults.global.elements.line.borderColor = 'rgba(93, 154, 231, 1)';
+    Chart.defaults.global.elements.line.backgroundColor = 'rgba(93, 154, 231, 0.2)';
+    // app
+    initApp(1557021290)
+
+})
+</script>
+<script data-cfasync="false" src="/static/js/tablesort.js?t=1529143290.336164"></script>
+<script data-cfasync="false" src="/static/js/clan_roster.js?t=1529143290.3328307"></script>
+<script data-cfasync="false" src="/static/js/clan_roster_inactivity.js?t=1529143290.3328307"></script>
+<script type="text/javascript">
+        let selectedTime = '7d';
+
+        function updateInactivityPopup(time) {
+            // Add popup
+            $('.tr_member .inactivity_content.in_trophies')
+                .popup({
+                    content: `Trophy inactivity in last ${time}`
+                })
+            ;
+            $('.tr_member .inactivity_content.in_donations')
+                .popup({
+                    content: `Donation inactivity in last ${time}`
+                })
+            ;
+        }
+
+        function initInactivity() {
+            //  init inactivity filters
+            let member_tags = 'U8VJRG8,8JVQ9C8J,82LV9Q9J,9RU8PV8CJ,P9P9QYJYG,PL02UCRV0,8P8JQ90Y0,P8Q098GRP,P8UV8JVQ2,8V22LGRGV,PU8L2Y89Q,P2YLU2L2L,P2RGCUP28,P9GYGVU2J,8PQY808P9,PY0CYYV98,LJGQRURV,PYVY9YG89,P8PQ0GRQV,89Q20U2JQ,9QRJLQCV2,P8U0CJCV9,P8GRPJY09,2VCRRC2UU,9LJPJ8CJC,P9V98229Y,PQ0UVPPL0,9982GR8VQ,909UPL0LY,8V2Q2L20Q,PJUPVCQJV,8LLJU02PR,90C9QQ8VG,9QP0Y98RV,9GQ8J0CJP,9JY0Q0GLP,P9GGRC8J9,9VVGVUY8U,9LG9U80PY,P2Q0V22JG,90J29VLRV,PJ8PP8VJ0,PY8QLPPVY';
+
+            $('.inactivity_content').show();
+
+            load_inactivity(time = selectedTime, member_tags);
+            $('.inactivity_time').click(function () {
+                selectedTime = $(this).attr('data-time');
+                load_inactivity(selectedTime, member_tags);
+                updateInactivityPopup(selectedTime);
+            });
+            prep_filter_inactivity();
+
+            // sticky inactivity filter
+            $('#inactivity_filter_menu')
+                .sticky({
+                    context: '#roster',
+                    offset: 48,
+                })
+            ;
+
+            updateInactivityPopup(selectedTime);
+        }
+
+        $(document).ready(function () {
+            //  set table sort
+            $('#table_th_name').data('sortBy', function (th, td, tablesort) {
+                return td.text().toLowerCase();
+            });
+
+            // check if history active
+            let params = {
+                family: '',
+                clan_name: 'Pierwsza liga',
+                clan_tag: 'Y8YU8L08',
+                clan_description: 'Wymagamy🛑Czynny udział w wojnach⚔️Komplet ataków w zaczętej wojnie☠️ Dajemy🐑Niekończące się wojny⚔️Top 💯i brak przekleństw 👮'
+            };
+
+            let url = `/data/check_clan_tracking?${$.param(params)}`
+
+            $.ajax({
+                url: url
+            }).done(function (data) {
+                if (data.is_tracked) {
+                    initInactivity();
+                }
+
+            });
+
+            $.ajax({
+                url: '/data/clan/index/Y8YU8L08'
+            });
+
+
+            // member readiness
+
+        });
+
+    </script>
+</body>
+</html>

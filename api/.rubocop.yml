@@ -1,0 +1,84 @@
+require: rubocop-performance
+
+AllCops:
+  Exclude:
+    - 'db/schema.rb'
+
+Layout/AlignHash:
+  EnforcedColonStyle: table
+
+Layout/BlockAlignment:
+  EnforcedStyleAlignWith: start_of_block
+
+Layout/CaseIndentation:
+  IndentOneStep: true
+
+Layout/ExtraSpacing:
+  AllowForAlignment: true
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/routes.rb'
+    - 'lib/tasks/*'
+    - 'spec/**/*'
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20
+
+Naming/UncommunicativeMethodParamName:
+  AllowedNames:
+    - '_'
+
+Rails:
+  Enabled: true
+
+Rails/DynamicFindBy:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+
+Style/MixinUsage:
+  Exclude:
+    - 'bin/*'
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/RescueModifier:
+  Exclude:
+    - 'spec/**/*'
+
+Style/RescueStandardError:
+  EnforcedStyle: implicit
+
+Style/RegexpLiteral:
+  EnforcedStyle: slashes
+
+Style/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: compact
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/WordArray:
+  EnforcedStyle: brackets

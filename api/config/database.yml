@@ -1,0 +1,4 @@
+default: &default
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  url: <%= ENV.fetch("DATABASE_URL") %>

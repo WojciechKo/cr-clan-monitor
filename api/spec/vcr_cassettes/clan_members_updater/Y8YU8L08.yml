@@ -1,0 +1,1468 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://royaleapi.com/clan/Y8YU8L08
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 24 Jul 2019 13:40:28 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8a33c105ece334e7f9add6800afb4c351563975626; expires=Thu, 23-Jul-20
+        13:40:26 GMT; path=/; domain=.royaleapi.com; HttpOnly; Secure
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      A-New-Security-Header-Referrer-Policy:
+      - origin
+      Content-Security-Policy:
+      - 'default-src ''self'' googleads.g.doubleclick.net googlesyndication.com *.googlesyndication.com
+        ; script-src ''self'' ''unsafe-inline'' ''unsafe-eval'' blob: cdnjs.cloudflare.com
+        *.cloudflare.com * ; img-src ''self'' data: * ; style-src ''self'' ''unsafe-inline''
+        cdn.datatables.net cdn.jsdelivr.net fonts.googleapis.com assets.zendesk.com
+        cdn.datatables.net cdn.jsdelivr.net cdnjs.cloudflare.com fonts.googleapis.com
+        platform.twitter.com www.gstatic.com ; font-src ''self'' ''unsafe-inline''
+        data: fonts.googleapis.com fonts.gstatic.com themes.googleusercontent.com
+        ; frame-src nitropay.com s.nitropay.com *.nitropay.com * ; frame-ancestors
+        ''self'' royaleapi.com *.royaleapi.com cr-api.com *.cr-api.com openfam.com
+        fam.gg ; object-src ''self'' ; connect-src ''self'' wss: blob: cr-api.com
+        mc.yandex.ru o2.mouseflow.com *.google-analytics.com *.gstatic.com *.g.doubleclick.net
+        *.doubleclick.net *.jquery.com github.io *.github.io * ;'
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fb64e51bbfbcc73-WAW
+    body:
+      encoding: UTF-8
+      string: "<!doctype html>\n<html lang=\"en\">\n<head> <meta charset=\"UTF-8\"
+        />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"
+        />\n<title>Pierwsza liga #Y8YU8L08 | Clan - RoyaleAPI - Clash Royale Analytics</title>\n\n<link
+        rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://royaleapi.com/static/img/favicon/apple-touch-icon.png\">\n<link
+        rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://royaleapi.com/static/img/favicon/favicon-32x32.png\">\n<link
+        rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://royaleapi.com/static/img/favicon/favicon-16x16.png\">\n<link
+        rel=\"manifest\" href=\"https://royaleapi.com/static/img/favicon/manifest.json\">\n<link
+        rel=\"mask-icon\" href=\"https://royaleapi.com/static/img/favicon/safari-pinned-tab.svg\"
+        color=\"#5bbad5\">\n<link rel=\"shortcut icon\" href=\"https://royaleapi.com/static/img/favicon/favicon.ico\">\n<meta
+        name=\"msapplication-config\" content=\"https://royaleapi.com/static/img/favicon/browserconfig.xml\">\n<meta
+        name=\"theme-color\" content=\"#ffffff\">\n\n<meta name=\"google\" content=\"notranslate\"
+        />\n\n<meta name=\"title\" content=\"Pierwsza liga #Y8YU8L08 | Clan - RoyaleAPI
+        - Clash Royale Analytics\">\n<meta name=\"description\" content=\"The definitive
+        source about decks, players and teams in Clash Royale. Explore advanced statistics
+        about decks and cards based on millions of games per week.\">\n<meta name=\"keywords\"
+        content=\"Clash Royale, API, games, mobile, CR, cr-api, Clash Royale API,
+        RoyaleAPI, data, stats, statistics, meta, best, strategy, analytics\">\n<meta
+        property=\"og:title\" content=\"Pierwsza liga #Y8YU8L08 | Clan - RoyaleAPI
+        - Clash Royale Analytics\">\n<meta property=\"og:type\" content=\"website\">\n<meta
+        property=\"og:site_name\" content=\"Royale API\">\n\n<link rel=\"stylesheet\"
+        type=\"text/css\" href=\"/static/semantic/dist/semantic.min.css?t=1548314452.2199435\"
+        />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/static/css/app.css?t=1563030956.8744314\"
+        />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/static/css/cards-150.css?t=1561885251.2405462\"
+        />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/static/css/cards-75.css?t=1561885251.2405462\"
+        />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.datatables.net/1.10.16/css/dataTables.semanticui.min.css\"
+        />\n<style type=\"text/css\">\n        .arena_icon {\n            display:
+        inline-block !important;\n        }\n\n        #roster td a {\n            display:
+        block;\n        }\n\n        #roster td .ui.list {\n            margin-top:
+        0.5rem;\n        }\n\n        #roster td.crowns img {\n            width:
+        auto;\n            height: 1.4rem;\n            vertical-align: middle;\n
+        \           margin-left: 0.2rem;\n        }\n\n        #roster td.donations
+        img {\n            width: auto;\n            height: 1.4rem;\n            vertical-align:
+        middle;\n            margin-left: 0.2rem;\n        }\n\n        @media only
+        screen and (max-width: 768px) {\n            .mobile-hide {\n                display:
+        none;\n            }\n\n            #roster th.mobile-hide {\n                display:
+        none;\n            }\n\n            #roster td.mobile-hide {\n                display:
+        none;\n            }\n\n            .mobile-show .meta {\n                font-weight:
+        400 !important;\n                display: block;\n                color: rgba(1,
+        1, 1, 0.7);\n            }\n\n            .mobile-show .icon-meta {\n                content:
+        ' ';\n                background-size: contain;\n                background-position:
+        left center;\n                background-repeat: no-repeat;\n                display:
+        inline-block;\n                padding-left: 2rem;\n            }\n\n            .mobile-show
+        .icon-meta.donations {\n                background-image: url(/static/img/icon/ic-cards.png);\n
+        \           }\n\n            .mobile-show .icon-meta.crowns {\n                background-image:
+        url(/static/img/icon/ic-crowns.png);\n                height: calc(100% -
+        0.5rem)\n            }\n\n            #roster.ui.table td.inactivity, #roster
+        th.inactivity {\n                width: 20px;\n                height: 20px;\n
+        \               padding: 0 !important;\n                margin: 0 !important;\n
+        \           }\n\n            .clan_stats h5 {\n                margin: 0 !important;\n
+        \           }\n\n        }\n\n        #inactivity_filter_menu {\n            height:
+        48px !important;\n        }\n\n        .inactivity img {\n            height:
+        2rem !important;\n            border: 1px solid white !important;\n        }\n\n
+        \       th.inactivity, td.inactivity {\n            width: 5px !important;\n
+        \           margin: 0 !important;\n            padding: 0 !important;\n            border-left:
+        0;\n            border-right: 0;\n        }\n\n        tbody tr.inactive_trophies
+        .in_trophies img {\n            visibility: visible;\n        }\n\n        tbody
+        tr .in_trophies img {\n            visibility: hidden;\n        }\n\n        th.inactivity.in_crowns,
+        td.inactivity.in_crowns {\n            padding-right: 1rem !important;\n        }\n\n
+        \       div.join_status {\n            font-size: 0.7rem;\n            background-color:
+        rgb(255, 248, 179) !important;\n            line-height: 1rem;\n        }\n\n
+        \       .clan_stats .content {\n            background-position: top left;\n
+        \           background-repeat: no-repeat;\n            background-size: 2rem;\n
+        \           padding-left: 3rem;\n        }\n\n        .clan_stats h5 {\n            margin:
+        1rem 0 0 0 !important;\n        }\n\n        div.mobile-member-summary div
+        {\n            width: 30%;\n            display: inline-block;\n        }\n\n
+        \       /**\n        Inactivity container\n        hidden on load\n         */\n
+        \       .inactivity_content {\n            display: none;\n            cursor:
+        pointer;\n        }\n\n        .last_seen {\n            color: rgb(139, 139,
+        139);\n            font-size: 0.9rem;\n            margin-top:-0.1rem;\n        }\n\n
+        \   </style>\n<meta property=\"og:image\" content=\"/static/img/badge/Orange_02.png\">\n<meta
+        property=\"og:description\" content=\"Wymagamy: +8 level\U0001F934Pełna aktywność
+        na wojnach od pierwszego dnia⚔️ Dajemy: Elder za 10 wojen z rzędu\U0001F60EBrak
+        przekleństw\U0001F46E‍♂️\">\n\n<script>\n        window.ga = window.ga ||
+        function () {\n            (ga.q = ga.q || []).push(arguments)\n        };\n
+        \       ga.l = +new Date;\n        ga('create', 'UA-100687612-4', 'auto');\n
+        \       ga('send', 'pageview');\n    </script>\n<script async src='https://www.google-analytics.com/analytics.js'></script>\n\n\n<script>\n
+        \       if (window.self !== window.top) {\n            window.top.location.href
+        = window.location.href;\n        }\n    </script>\n\n<script data-cfasync=\"false\"
+        src=\"https://code.jquery.com/jquery-3.1.1.min.js\" integrity=\"sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=\"
+        crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.1/mobile-detect.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/semantic/dist/semantic.min.js?t=1548314452.2199435\"></script>\n\n<script
+        src=\"/static/js/newrelic/newrelic_royaleapi-web.js?t=1563293248.9102988\"></script>\n\n</head>\n<body
+        class=\"\">\n\n<div class=\"ui inverted sidebar vertical menu right\" id=\"toc\"
+        style=\"\">\n<div class=\"brand header item\">\n<a class=\"ui logo mini image\"
+        href=\"/\">\n<img src=\"/static/img/branding/cr-api-logo.png\" style=\"padding-right:
+        0.7rem;\" />\n</a>\n<a href=\"/\">RoyaleAPI</a>\n<a class=\"ui blue label
+        margin0\" href=\"/donate\">\nDonate </a>\n</div>\n<div id=\"language_sidebar_button\"
+        class=\"link item language_button\" style=\"text-align: right;\">\n<i class=\"us
+        flag\"></i>\nEnglish\n</div>\n<a class=\"item\" href=\"/decks\">\nDecks </a>\n<a
+        class=\"item\" href=\"/cards\">\nCards </a>\n<a class=\"item\" href=\"/players\">\nPlayers
+        </a>\n<a class=\"item\" href=\"/clans\">\nClans </a>\n<a class=\"item\" href=\"/crl\">\n<img
+        class=\"ui image sidebar_logo\" src=\"/static/img/event/crl.png?t=1551178154.3668382\"
+        />\nCRL </a>\n<a class=\"item\" href=\"/league/slo\">\n<img class=\"ui image
+        sidebar_logo\" src=\"/static/img/event/slo.png?t=1551178154.3768382\" />\nSLO
+        </a>\n<a class=\"item\" href=\"/rls\">\n<img class=\"ui image sidebar_logo\"
+        src=\"/static/img/event/rls.png?t=1551840924.041366\" />\nRLS </a>\n<a class=\"item\"
+        href=\"/tournaments\">\nTournaments </a>\n<div class=\"item\">\n<div class=\"header\">\nContent
+        </div>\n<div class=\"menu\">\n<a class=\"item\" href=\"/feature/gc\">\nGC
+        Portal </a>\n<a class=\"item\" href=\"/crl\">\nCRL Portal </a>\n<a class=\"item\"
+        href=\"/content/coltonw83\">\nColtonW83\n</a>\n<a class=\"item\" href=\"/content/sirtagcr\">\nSirTagCR\n</a>\n<a
+        class=\"item\" href=\"/content/malcaidecr\">\nMalcaideCR\n</a>\n<a class=\"item\"
+        href=\"/content/kfcclash\">\nKFC CLASH\n</a>\n</div>\n</div>\n<div class=\"item\">\n<div
+        class=\"header\">\nLeaderboard </div>\n<div class=\"menu\">\n<a class=\"item\"
+        href=\"/players/leaderboard\">\nTop Ladder Players </a>\n<a class=\"item\"
+        href=\"/decks/leaderboard\">\nTop Ladder Decks </a>\n<a class=\"item\" href=\"/decks/popular?players=PvP&type=Top200Ladder\">\nTop
+        Ladder Meta </a>\n<a class=\"item\" href=\"/players/12wins\">\nGC 12-win Players
+        </a>\n<a class=\"item\" href=\"/clans/leaderboard\">\nTop Global Clans </a>\n</div>\n</div>\n<div
+        class=\"item\">\n<div class=\"header\">Search</div>\n<div class=\"menu\">\n<div
+        class=\"item\">\n<form id=\"sidebar_player_search_form\" class=\"ui fluid
+        form\" action=\"/player\">\n<div class=\"ui transparent inverted icon input\">\n<i
+        class=\"search link icon\"></i>\n<input id=\"sidebar-player-search\" name=\"tag\"
+        type=\"text\" class=\"prompt\" placeholder=\"Player Tag…\">\n</div>\n<div
+        class=\"ui error message pointing label\">\nPlease enter a value\n</div>\n</form>\n</div>\n<div
+        class=\"item\">\n<form id=\"sidebar_clan_search_form\" class=\"ui fluid form\"
+        action=\"/clan\">\n<div class=\"ui transparent inverted icon input\">\n<input
+        id=\"sidebar-clan-search\" name=\"tag\" type=\"text\" placeholder=\"Clan Tag…\">\n<i
+        class=\"search link icon\"></i>\n</div>\n<div class=\"ui error message pointing
+        label\">\nPlease enter a value\n</div>\n</form>\n</div>\n<div class=\"item\">\n<form
+        id=\"sidebar_clan_name_search_form\" class=\"ui fluid form\" action=\"/clans/search\">\n<div
+        class=\"ui transparent inverted icon input\">\n<input id=\"sidebar-clan-name-search\"
+        name=\"name\" type=\"text\" placeholder=\"Clan Name…\">\n<i class=\"search
+        link icon\"></i>\n</div>\n<div class=\"ui error message pointing label\">\nPlease
+        enter a value\n</div>\n</form>\n</div>\n<div class=\"item\">\n<form id=\"sidebar_tournament_search_form\"
+        class=\"ui fluid form\" action=\"/tournament\">\n<div class=\"ui transparent
+        inverted icon input\">\n<input id=\"sidebar-tournament-search\" name=\"tag\"
+        type=\"text\" placeholder=\"Tournament Tag…\">\n<i class=\"search link icon\"></i>\n</div>\n<div
+        class=\"ui error message pointing label\">\nPlease enter a value\n</div>\n
+        </form>\n</div>\n</div>\n</div>\n<div class=\"item\">\n<div class=\"header\">\nHelp
+        </div>\n<div class=\"menu\">\n<a class=\"item\" href=\"/about\">About Us</a>\n<a
+        class=\"item\" href=\"/blog\">Blog</a>\n<a class=\"item\" href=\"/faq\">FAQ</a>\n<a
+        class=\"item\" href=\"/business-inquiries\">Business Inquiries</a>\n<a class=\"item\"
+        href=\"https://github.com/RoyaleAPI/cr-api-ux/issues/new/choose\">\nUX Feature
+        Requests </a>\n<a class=\"item\" href=\"http://docs.royaleapi.com\">\nAPI
+        Documentation </a>\n<a class=\"item\" href=\"https://github.com/RoyaleAPI/cr-api\">\nAPI
+        Support </a>\n</div>\n</div>\n<div class=\"item\">\n<a class=\"header\">\nSocial
+        </a>\n<div class=\"menu\">\n<a class=\"item\" href=\"https://github.com/RoyaleAPI/cr-api\">\n<i
+        class=\"github icon\"></i>\nGithub\n</a>\n<a class=\"item\" href=\"https://discord.royaleapi.com\">\n<i
+        class=\"discord icon\"></i>\nDiscord (Users)\n</a>\n<a class=\"item\" href=\"http://discord.me/RoyaleAPI\">\n<i
+        class=\"discord icon\"></i>\nDiscord (Developers)\n</a>\n<a class=\"item\"
+        href=\"http://twitter.com/RoyaleAPI\">\n<i class=\"twitter icon\"></i>\nTwitter\n</a>\n<a
+        class=\"item\" href=\"http://facebook.com/RoyaleAPI\">\n<i class=\"facebook
+        icon\"></i>\nFacebook\n</a>\n</div>\n</div>\n<a class=\"item\" href=\"/donate\">\nDonate
+        </a>\n</div>\n\n\n<div class=\"pusher\">\n<div id=\"top_menu\" class=\"ui
+        sticky borderless fluid menu\">\n<a class=\"brand item header\" href=\"/\">\n<img
+        src=\"/static/img/branding/cr-api-logo.png\" style=\"padding-right: 0.7rem;
+        height:2rem; width: auto;\" />\n<span class=\"mobile-hide\">RoyaleAPI</span>\n</a>\n<div
+        class=\"right compact menu\">\n<a class=\"mobile-hide nav item\" href=\"/decks\">\nDecks
+        </a>\n<a class=\"mobile-hide nav item\" href=\"/cards\">\nCards </a>\n<a class=\"mobile-hide
+        nav item\" href=\"/players\">\nPlayers </a>\n<a class=\"mobile-hide nav item\"
+        href=\"/clans\">\nClans </a>\n<a class=\"mobile-hide nav item\" href=\"/tournaments\">\nTournaments
+        </a>\n\n<div id=\"search_all_button\" class=\"link item\">\n<i class=\"search
+        icon\"></i>\n</div>\n\n<a id=\"user_button\" class=\"link item\" href=\"/login\">\n<i
+        class=\"user icon\"></i>\n</a>\n\n\n<div id=\"top-fave\" class=\"ui dropdown
+        item\">\n<i class=\"heart icon\"></i>\n<i class=\"dropdown icon\"></i>\n<div
+        id=\"player_saved_menu\" class=\"menu\">\n</div>\n</div>\n<div id=\"sidebar-toggle\"
+        class=\"link item\">\n<i class=\"content icon\"></i>\n</div>\n</div>\n</div>\n\n<div
+        id=\"page_content_container\">\n<div id=\"fullpage_screenshot_branding\" class=\"ui
+        attached borderless stackable menu\" style=\"display:none;\">\n<div class=\"ui
+        header item\">\n<img class=\"ui small image\" src=\"/static/img/branding/cr-api-logo.png\"
+        />\nRoyaleAPI\n</div>\n<div class=\"item\">http://royaleapi.com/clan/Y8YU8L08</div>\n<div
+        id=\"fullpage_screenshot_datetime\" class=\"right item\"></div>\n</div>\n<div
+        id=\"page_content\">\n\n<style>\n    .section-header {\n        width: 100%;\n
+        \       height: 2rem;\n        border: 0 !important;\n    }\n\n    .nav_menu
+        {\n        display: flex;\n    }\n</style>\n<div class=\"ui grid margin0\">\n<div
+        class=\"mobile only pad0 margin0 row\">\n<div class=\"section-header ui attached
+        mini purple inverted borderless menu\">\n<a class=\"ui tiny header item\"
+        href=\"/clans\">Clans</a>\n</div>\n</div>\n</div>\n<form id=\"clan_search_attached_form\"
+        class=\"ui fluid form\" action=\"/clan\">\n<div class=\"ui attached purple
+        inverted menu nav_menu\">\n<a class=\"header item mobile-hide\" href=\"/clans\"
+        style=\"flex:1;\">Clans</a>\n<div class=\"ui search item\" style=\"flex:5;\">\n<div
+        class=\"ui transparent icon input\">\n<input id=\"clan_search_input\" name=\"tag\"
+        class=\"prompt\" type=\"text\" placeholder=\"Name or tag, e.g. 2CCCP\">\n<i
+        class=\"inverted search link icon\"></i>\n</div>\n</div>\n<a class=\"item\"
+        href=\"/clans/families\" style=\"flex:1;\">\n<span class=\"mobile-hide\">Families</span>\n<span
+        class=\"mobile-show\">Fam</span>\n</a>\n<div class=\"ui dropdown item\" style=\"flex:1;\">\n<span
+        class=\"mobile-hide\">Leaderboard</span>\n<span class=\"mobile-show\">LB</span>\n<i
+        class=\"dropdown icon\"></i>\n<div class=\"menu\">\n<a class=\"item\" href=\"/clans/leaderboard\">\nLadder
+        </a>\n<a class=\"item\" href=\"/clans/war\">\nWar </a>\n</div>\n</div>\n<a
+        class=\"item\" href=\"/clans/search\" style=\"flex:1;\">Search</a>\n</div>\n<div
+        class=\"ui error message attached segment\" style=\" border:none;\">\nPlease
+        enter a value\n</div>\n</form>\n\n\n<div id=\"player-bg\" class=\"mobile-hide\"></div>\n<div
+        class=\"ui hidden divider mobile-hide\" style=\"margin:1rem;\"></div>\n<div
+        class=\"ui container sidemargin0\">\n<style type=\"text/css\">\n    .p_header_container
+        {\n        display: flex\n    }\n\n    .p_head_item {\n        margin-right:
+        1rem;\n    }\n\n    .p_head_item .button {\n        margin: 0.2rem;\n    }\n\n
+        \   @media only screen and (max-width: 767px) {\n        .p_header_container
+        {\n            flex-direction: column;\n        }\n    }\n</style>\n<div class=\"ui
+        top attached padded segment\" style=\"margin-top:0;\">\n<div style=\"float:right;
+        text-align:center; width:20vw; max-width:10rem; position:relative;\">\n<img
+        class=\"ui floated tiny right image\" src=\"/static/img/badge/bronze-3/Orange_02.png?t=1533013028.4648783\"
+        />\n</div>\n<div class=\"p_header_container\">\n<div class=\"p_head_item\">\n<h1
+        class=\"ui header margin0\">\nPierwsza liga\n</h1>\n</div>\n<div class=\"p_head_item\">\n<div
+        class=\"follow_button ui basic  pink icon circular button button_popup\" data-action=\"follow\"
+        data-content=\"Follow clan\" data-position=\"top center\" data-category=\"clan\"
+        data-tag=\"Y8YU8L08\" data-name=\"Pierwsza liga\" data-badge_name=\"Orange_02\">\n<i
+        class=\"outline heart icon\"></i>\n</div>\n<a href=\"clashroyale://clanInfo?id=Y8YU8L08\"
+        target=\"_blank\" class=\"ui circular icon blue basic button  button_popup\"
+        data-content=\"Open in Clash Royale\" data-position=\"top center\">\n<i class=\"external
+        icon\"></i>\n</a> </div>\n</div>\n<div class=\"ui horizontal list\" style=\"margin-top:0.5rem;\">\n<div
+        class=\"item\">\n#Y8YU8L08\n</div>\n<div class=\"item\">\n<img class=\"ui
+        verytiny image\" src=\"/static/img/ui/64x64/trophy.png\" />\n35,279\n</div>\n<div
+        class=\"item\">\n<img class=\"ui verytiny image\" src=\"/static/img/ui/64x64/cw-trophy.png\"
+        />\n470\n</div>\n</div>\n<div style=\"clear:both\">\n</div>\n</div>\n\n<div
+        class=\"ui attached segment pad0\">\n<div class=\"striped ad_container\">\n<div
+        id=\"google_ad_div\" class=\"google_ad_div\"></div>\n</div>\n<style>\n    .negative_margin
+        {\n        margin-left: -3.0px;\n    }\n</style>\n<script type=\"text/javascript\"
+        src=\"/static/js/ad_display.js?t=1562362464.987906\"></script>\n<script type=\"text/javascript\">\n\n
+        \       $(document).ready(function () {\n            showAds({\"ad_client\":
+        \"ca-pub-7508750482993527\", \"ad_div_id\": \"google_ad_div\", \"ad_slot\":
+        \"3954188813\", \"delay\": 0, \"use_viewport_width\": false, \"width_delta\":
+        6});\n        });\n\n</script>\n<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>\n</div>\n<div
+        class=\"ui attached menu\">\n<a class=\"item active\" href=\"/clan/Y8YU8L08\">\nInfo
+        </a>\n<a class=\"item \" href=\"/clan/Y8YU8L08/war\">\nWar </a>\n<a class=\"item
+        \" href=\"/clan/Y8YU8L08/battles\">\nBattles </a>\n<a class=\"item \" href=\"/clan/Y8YU8L08/stats\">\nStats
+        </a>\n<a class=\"item \" href=\"/clan/Y8YU8L08/history\">\nHistory </a>\n</div>\n\n\n\n</div>\n<div
+        class=\"ui attached container sidemargin0 content_container\">\n<div class=\"ui
+        attached segment\">\n<div class=\"ui grid clan_stats\">\n<div class=\"one
+        column row\">\n<div class=\"column\">Wymagamy: +8 level\U0001F934Pełna aktywność
+        na wojnach od pierwszego dnia⚔️ Dajemy: Elder za 10 wojen z rzędu\U0001F60EBrak
+        przekleństw\U0001F46E‍♂️</div>\n</div>\n<div class=\"doubling three column
+        row\">\n<div class=\"column\">\n<div class=\"content\" style=\"background-image:url(/static/img/ui/trophy-ribbon.png)\">\n
+        <h5 class=\"ui header\">Trophies</h5>\n<div class=\"value\">35,279</div>\n</div>\n</div>\n<div
+        class=\"column\">\n<div class=\"content\" style=\"background-image:url(/static/img/ui/trophy.png)\">\n<h5
+        class=\"ui header\">Required trophies</h5>\n<div class=\"value\">2,000</div>\n</div>\n</div>\n<div
+        class=\"column\">\n<div class=\"content\" style=\"background-image:url(/static/img/ui/cards.png)\">\n<h5
+        class=\"ui header\">Donations per week</h5>\n<div class=\"value\">3,247</div>\n</div>\n</div>\n<div
+        class=\"column\">\n<div class=\"content\" style=\"background-image:url(/static/img/ui/social.png)\">\n<h5
+        class=\"ui header\">Members</h5>\n<div class=\"value\">36 / 50</div>\n</div>\n</div>\n<div
+        class=\"column\">\n<div class=\"content\" style=\"background-image:url(/static/img/flags2/pl.png)\">\n<h5
+        class=\"ui header\">Region</h5>\n<a class=\"value\" href=\"/clans/leaderboard/pl\">Poland</a>\n</div>\n</div>\n<div
+        class=\"column\">\n<div class=\"content\" style=\"background-image:url(/static/img/ui/people.png)\">\n<h5
+        class=\"ui header\">Type</h5>\n<div class=\"value\">Open</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n\n<div
+        class=\"ui attached segment\">\n<h4 class=\"ui header\">\nRoster\n<a class=\"ui
+        label\" href=\"/clan/Y8YU8L08/csv\">Export to CSV</a>\n</h4>\n</div>\n\n\n<div
+        id=\"table-filter\" class=\"tablefilter \" style=\"padding-top:0; padding-bottom:0;
+        margin:0;\">\n<div class=\"ui stackable menu attached \">\n<div class=\"ui
+        pointing dropdown link item\">\n<i class=\"filter icon\"></i>\n<span class=\"text\">Filter
+        Roles</span>\n<div class=\"menu\">\n<a class=\"rolefilter item\">Leader</a>\n<a
+        class=\"rolefilter item\">Co-Leader</a>\n<a class=\"rolefilter item\">Elder</a>\n<a
+        class=\"rolefilter item\">Member</a>\n<a class=\"rolefilter item\">All</a>\n</div>\n</div>\n<div
+        class=\"ui pointing dropdown link item\">\n<i class=\"paint brush icon\"></i>\n<span
+        class=\"text\">Highlight</span>\n<div class=\"menu\">\n<a class=\"rowhighlight
+        item\">Roles</a>\n<a class=\"rowhighlight item\">Clear</a>\n</div>\n</div>\n<div
+        class=\"right menu\">\n<div class=\"ui right aligned category search item\">\n<div
+        class=\"ui transparent icon input\">\n<input id=\"membersearch\" class=\"prompt\"
+        type=\"text\" placeholder=\"Search members...\">\n<i class=\"search link icon\"></i>\n</div>\n
+        <div class=\"results\"></div>\n</div>\n</div>\n</div>\n</div>\n\n<div class=\"row
+        attached\">\n<div id=\"compare-selection-container\" class=\"ui hidden borderless
+        attached menu \" style=\"display:none;\">\n<div class=\"ui header item\">Compare:</div>\n<div
+        class=\"item\">\n<div id=\"compare-selection\" class=\"ui teal labels\">\n</div>\n</div>\n<div
+        class=\"right item\">\n<button class=\"ui button\">Go</button>\n</div>\n</div>\n</div>\n\n\n<div
+        class=\"inactivity_content\">\n<div class=\"row attached\">\n<div class=\"ui
+        lightwash attached menu\">\n<div class=\"item\">Inactivity</div>\n<div class=\"inactivity_time
+        item link\" data-time=\"7d\">7d</div>\n<div class=\"inactivity_time item link\"
+        data-time=\"14d\">14d</div>\n<div class=\"inactivity_time item link\" data-time=\"28d\">28d</div>\n</div>\n<div
+        id=\"inactivity_filter_menu\" class=\"ui attached  mini three item menu sticky\">\n<div
+        class=\"link filter_inactive reset item  active \">\n<i class=\"icon filter\"></i>\nReset
+        Filters\n</div>\n<div class=\"link filter_inactive trophies item orange active\">\n<i
+        class=\"icon trophy\"></i>\nTrophies\n</div>\n<div class=\"link filter_inactive
+        donations item blue active\">\n<i class=\"icon square\"></i>\nDonations\n</div>\n</div>\n</div>\n</div>\n\n\n<div
+        class=\"row attached\">\n<div id=\"ajax_dimmer\" class=\"ui inverted dimmer\">\n<div
+        class=\"ui loader\"></div>\n</div>\n<table id=\"roster\" class=\"ui unstackable
+        hover striped  attached compact  sortable table\">\n<thead>\n<tr>\n<th class=\"sorted
+        ascending\">R<span class=\"mobile-hide\">ank</span></th>\n<th id=\"table_th_name\">Name</th>\n<th
+        class=\"inactivity_content inactivity in_trophies\" style=\"border-left: 0;
+        border-right: 0;\">\n<img class=\"inactive_bar\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</th>\n<th class=\"inactivity_content inactivity in_donations\" style=\"border-left:
+        0; border-right: 0;\">\n<img class=\"inactive_bar\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</th>\n<th class=\"mobile-hide role\">Role</th>\n<th class=\"mobile-hide
+        tablet-hide\">Tag</th>\n<th><span class=\"mobile-show\"><i class=\"trophy
+        icon\"></i></span><span class=\"mobile-hide\">Trophies</span>\n</th>\n<th
+        class=\"mobile-hide\">Level</th>\n<th class=\"mobile-hide donations\">Donated</th>\n<th
+        class=\"mobile-hide donations\">Received</th>\n<th class=\"mobile-hide\"><i
+        class=\"adjust icon\"></i></th>\n</tr>\n</thead>\n<tbody>\n<tr data-tag=\"92PJ98JU0\"
+        data-role=\"Member\" class=\"role-Member tr_member\">\n<td data-sort-value=\"1\">1</td>\n<td
+        data-sort-value=AdamKSG!>\n<a class=\"block member_link\" data-tag=\"92PJ98JU0\"
+        href=\"/player/92PJ98JU0\">\nAdamKSG!\n<div class=\"last_seen\" data-seconds=\"\"
+        data-datetime=\"20190724T132608.000Z\">\n14m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div
+        class=\"meta\">\nMember\n</div>\n</div>\n<div class=\"mobile-show mobile-member-summary\">\n<div>\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n215\n</div>\n<div>\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n216\n</div>\n</div>\n<div
+        class=\"join_status\" id=\"join-92PJ98JU0\"></div>\n</td>\n<td class=\"inactivity_content
+        inactivity in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-trophies.png\" />\n</td>\n<td class=\"inactivity_content
+        inactivity in_donations\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-donations.png\" />\n</td>\n<td class=\"mobile-hide\"
+        data-sort-value=\"3\">Member</td>\n<td class=\"mobile-hide tablet-hide\" data-sort-value=\"25602301426536\">\n92PJ98JU0\n</td>\n<td
+        class=\"\" data-sort-value=\"5721\">\n5,721\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena18.png?t=1529143289.5995028\" alt=\"Master III
+        / Master III\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"12\">12</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"215\">\n215\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"216\">\n216\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-92PJ98JU0\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"92PJ98JU0\" data-name=\"AdamKSG!\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"U8VJRG8\" data-role=\"Co-Leader\" class=\"role-Co-Leader tr_member\">\n<td
+        data-sort-value=\"2\">2</td>\n<td data-sort-value=John>\n<a class=\"block
+        member_link\" data-tag=\"U8VJRG8\" href=\"/player/U8VJRG8\">\nJohn\n<div class=\"last_seen\"
+        data-seconds=\"\" data-datetime=\"20190724T133948.000Z\">\n0s ago\n</div>\n</a>\n<div
+        class=\"mobile-show\">\n<div class=\"meta\">\nCo-Leader\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n408\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n277\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-U8VJRG8\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"1\">Co-Leader</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"65840189624\">\nU8VJRG8\n</td>\n<td
+        class=\"\" data-sort-value=\"5543\">\n5,543\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena17.png?t=1529143289.5961695\" alt=\"Master II
+        / Master II\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"13\">13</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"408\">\n408\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"277\">\n277\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-U8VJRG8\" class=\"compareme\" type=\"checkbox\"
+        data-tag=\"U8VJRG8\" data-name=\"John\" />\n</div>\n</td>\n</tr>\n<tr data-tag=\"8JVQ9C8J\"
+        data-role=\"Leader\" class=\"role-Leader tr_member\">\n<td data-sort-value=\"3\">3</td>\n<td
+        data-sort-value=WojciechKo>\n<a class=\"block member_link\" data-tag=\"8JVQ9C8J\"
+        href=\"/player/8JVQ9C8J\">\nWojciechKo\n<div class=\"last_seen\" data-seconds=\"\"
+        data-datetime=\"20190724T124114.000Z\">\n59m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div
+        class=\"meta\">\nLeader\n</div>\n</div>\n<div class=\"mobile-show mobile-member-summary\">\n<div>\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n453\n</div>\n<div>\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n280\n</div>\n</div>\n<div
+        class=\"join_status\" id=\"join-8JVQ9C8J\"></div>\n</td>\n<td class=\"inactivity_content
+        inactivity in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-trophies.png\" />\n</td>\n<td class=\"inactivity_content
+        inactivity in_donations\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-donations.png\" />\n</td>\n<td class=\"mobile-hide\"
+        data-sort-value=\"0\">Leader</td>\n<td class=\"mobile-hide tablet-hide\" data-sort-value=\"670190734387\">\n8JVQ9C8J\n</td>\n<td
+        class=\"\" data-sort-value=\"5326\">\n5,326\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena17.png?t=1529143289.5961695\" alt=\"Master II
+        / Master II\" />\n</td>\n <td class=\"right aligned mobile-hide\" data-sort-value=\"12\">12</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"453\">\n453\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"280\">\n280\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-8JVQ9C8J\" class=\"compareme\" type=\"checkbox\"
+        data-tag=\"8JVQ9C8J\" data-name=\"WojciechKo\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PLCCCU99\" data-role=\"Elder\" class=\"role-Elder tr_member\">\n<td
+        data-sort-value=\"4\">4</td>\n<td data-sort-value=łukasz99>\n<a class=\"block
+        member_link\" data-tag=\"PLCCCU99\" href=\"/player/PLCCCU99\">\nłukasz99\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T111055.000Z\">\n2h
+        29m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nElder\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n104\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n110\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PLCCCU99\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"2\">Elder</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"2005562880045\">\nPLCCCU99\n</td>\n<td
+        class=\"\" data-sort-value=\"5131\">\n5,131\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena16.png?t=1529143289.5961695\" alt=\"Master I
+        / Master I\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"11\">11</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"104\">\n104\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"110\">\n110\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PLCCCU99\" class=\"compareme\" type=\"checkbox\"
+        data-tag=\"PLCCCU99\" data-name=\"łukasz99\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"GQC2GQCU\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"5\">5</td>\n<td data-sort-value=Tk>\n<a class=\"block member_link\"
+        data-tag=\"GQC2GQCU\" href=\"/player/GQC2GQCU\">\nTk\n<div class=\"last_seen\"
+        data-seconds=\"\" data-datetime=\"20190724T112930.000Z\">\n2h 10m ago\n</div>\n</a>\n<div
+        class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n34\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n160\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-GQC2GQCU\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"1311152700270\">\nGQC2GQCU\n</td>\n<td
+        class=\"\" data-sort-value=\"4213\">\n4,213\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena13.png?t=1529143289.5961695\" alt=\"Legendary
+        Arena / Legendary Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\"
+        data-sort-value=\"10\">10</td>\n<td class=\"donations right aligned mobile-hide\"
+        data-sort-value=\"34\">\n34\n<i class=\"big icons\">\n<img class=\"ui verytiny
+        image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner blue arrow
+        up icon\"></i>\n</i>\n</td>\n<td class=\"donations right aligned mobile-hide\"
+        data-sort-value=\"160\">\n160\n<i class=\"big icons\">\n<img class=\"ui verytiny
+        image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner orange
+        arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div class=\"\">\n<input
+        id=\"compare-checkbox-GQC2GQCU\" class=\"compareme\" type=\"checkbox\" data-tag=\"GQC2GQCU\"
+        data-name=\"Tk\" />\n</div>\n</td>\n</tr>\n<tr data-tag=\"P9P9QYJYG\" data-role=\"Elder\"
+        class=\"role-Elder tr_member\">\n<td data-sort-value=\"6\">6</td>\n<td data-sort-value=KapiraGamer>\n<a
+        class=\"block member_link\" data-tag=\"P9P9QYJYG\" href=\"/player/P9P9QYJYG\">\nKapiraGamer\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190723T142129.000Z\">\n23h
+        18m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nElder\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n109\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n120\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-P9P9QYJYG\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"2\">Elder</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"71288034199432\">\nP9P9QYJYG\n</td>\n<td
+        class=\"\" data-sort-value=\"4138\">\n4,138\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena13.png?t=1529143289.5961695\" alt=\"Legendary
+        Arena / Legendary Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\"
+        data-sort-value=\"10\">10</td>\n<td class=\"donations right aligned mobile-hide\"
+        data-sort-value=\"109\">\n109\n<i class=\"big icons\">\n<img class=\"ui verytiny
+        image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner blue arrow
+        up icon\"></i>\n</i>\n</td>\n<td class=\"donations right aligned mobile-hide\"
+        data-sort-value=\"120\">\n120\n<i class=\"big icons\">\n<img class=\"ui verytiny
+        image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner orange
+        arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div class=\"\">\n<input
+        id=\"compare-checkbox-P9P9QYJYG\" class=\"compareme\" type=\"checkbox\" data-tag=\"P9P9QYJYG\"
+        data-name=\"KapiraGamer\" />\n</div>\n</td>\n</tr>\n<tr data-tag=\"9J8JUQJQ2\"
+        data-role=\"Member\" class=\"role-Member tr_member\">\n<td data-sort-value=\"7\">7</td>\n<td
+        data-sort-value=Ewostring;)>\n<a class=\"block member_link\" data-tag=\"9J8JUQJQ2\"
+        href=\"/player/9J8JUQJQ2\">\nEwostring;)\n<div class=\"last_seen\" data-seconds=\"\"
+        data-datetime=\"20190723T172732.000Z\">\n20h 12m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div
+        class=\"meta\">\nMember\n</div>\n </div>\n<div class=\"mobile-show mobile-member-summary\">\n<div>\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n58\n</div>\n<div>\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n40\n</div>\n</div>\n<div
+        class=\"join_status\" id=\"join-9J8JUQJQ2\"></div>\n</td>\n<td class=\"inactivity_content
+        inactivity in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-trophies.png\" />\n</td>\n<td class=\"inactivity_content
+        inactivity in_donations\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-donations.png\" />\n</td>\n<td class=\"mobile-hide\"
+        data-sort-value=\"3\">Member</td>\n<td class=\"mobile-hide tablet-hide\" data-sort-value=\"26897523028058\">\n9J8JUQJQ2\n</td>\n<td
+        class=\"\" data-sort-value=\"4010\">\n4,010\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena13.png?t=1529143289.5961695\" alt=\"Legendary
+        Arena / Legendary Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\"
+        data-sort-value=\"8\">8</td>\n<td class=\"donations right aligned mobile-hide\"
+        data-sort-value=\"58\">\n58\n<i class=\"big icons\">\n<img class=\"ui verytiny
+        image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner blue arrow
+        up icon\"></i>\n</i>\n</td>\n<td class=\"donations right aligned mobile-hide\"
+        data-sort-value=\"40\">\n40\n<i class=\"big icons\">\n<img class=\"ui verytiny
+        image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner orange
+        arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div class=\"\">\n<input
+        id=\"compare-checkbox-9J8JUQJQ2\" class=\"compareme\" type=\"checkbox\" data-tag=\"9J8JUQJQ2\"
+        data-name=\"Ewostring;)\" />\n</div>\n</td>\n</tr>\n<tr data-tag=\"PU8L2Y89Q\"
+        data-role=\"Elder\" class=\"role-Elder tr_member\">\n<td data-sort-value=\"8\">8</td>\n<td
+        data-sort-value=Rafterpl>\n<a class=\"block member_link\" data-tag=\"PU8L2Y89Q\"
+        href=\"/player/PU8L2Y89Q\">\nRafterpl\n<div class=\"last_seen\" data-seconds=\"\"
+        data-datetime=\"20190724T083136.000Z\">\n5h 8m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div
+        class=\"meta\">\nElder\n</div>\n</div>\n<div class=\"mobile-show mobile-member-summary\">\n<div>\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n215\n</div>\n<div>\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n230\n</div>\n </div>\n<div
+        class=\"join_status\" id=\"join-PU8L2Y89Q\"></div>\n</td>\n<td class=\"inactivity_content
+        inactivity in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-trophies.png\" />\n</td>\n<td class=\"inactivity_content
+        inactivity in_donations\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-donations.png\" />\n</td>\n<td class=\"mobile-hide\"
+        data-sort-value=\"2\">Elder</td>\n<td class=\"mobile-hide tablet-hide\" data-sort-value=\"72897361613918\">\nPU8L2Y89Q\n</td>\n<td
+        class=\"\" data-sort-value=\"3938\">\n3,938\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena12.png?t=1548683748.3388467\" alt=\"Arena 12
+        / Spooky Town\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"9\">9</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"215\">\n215\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"230\">\n230\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PU8L2Y89Q\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PU8L2Y89Q\" data-name=\"Rafterpl\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PQJ2LV0JU\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"9\">9</td>\n<td data-sort-value=Nickynick217>\n<a class=\"block
+        member_link\" data-tag=\"PQJ2LV0JU\" href=\"/player/PQJ2LV0JU\">\nNickynick217\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T122638.000Z\">\n1h
+        13m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n
+        <img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i
+        class=\"corner blue arrow up icon\"></i>\n</i>\n116\n</div>\n<div>\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n40\n</div>\n</div>\n<div
+        class=\"join_status\" id=\"join-PQJ2LV0JU\"></div>\n</td>\n<td class=\"inactivity_content
+        inactivity in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-trophies.png\" />\n</td>\n<td class=\"inactivity_content
+        inactivity in_donations\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-donations.png\" />\n</td>\n<td class=\"mobile-hide\"
+        data-sort-value=\"3\">Member</td>\n<td class=\"mobile-hide tablet-hide\" data-sort-value=\"72606732468618\">\nPQJ2LV0JU\n</td>\n<td
+        class=\"\" data-sort-value=\"3806\">\n3,806\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena12.png?t=1548683748.3388467\" alt=\"Arena 12
+        / Spooky Town\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"10\">10</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"116\">\n116\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"40\">\n40\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PQJ2LV0JU\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PQJ2LV0JU\" data-name=\"Nickynick217\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"P2Q20QV2C\" data-role=\"Elder\" class=\"role-Elder tr_member\">\n<td
+        data-sort-value=\"10\">10</td>\n<td data-sort-value=Wroncia>\n<a class=\"block
+        member_link\" data-tag=\"P2Q20QV2C\" href=\"/player/P2Q20QV2C\">\nWroncia\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T133254.000Z\">\n
+        7m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nElder\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n204\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n200\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-P2Q20QV2C\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"2\">Elder</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"70741194540996\">\nP2Q20QV2C\n</td>\n<td
+        class=\"\" data-sort-value=\"3722\">\n3,722\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena12.png?t=1548683748.3388467\" alt=\"Arena 12
+        / Spooky Town\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"9\">9</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"204\">\n204\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"200\">\n200\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-P2Q20QV2C\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"P2Q20QV2C\" data-name=\"Wroncia\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"9VYP2PJYG\" data-role=\"Elder\" class=\"role-Elder tr_member\">\n<td
+        data-sort-value=\"11\">11</td>\n<td data-sort-value=NoOne2000>\n<a class=\"block
+        member_link\" data-tag=\"9VYP2PJYG\" href=\"/player/9VYP2PJYG\">\nNoOne2000\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T075230.000Z\">\n5h
+        47m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nElder\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n242\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n260\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-9VYP2PJYG\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"2\">Elder</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"27894805059400\">\n9VYP2PJYG\n</td>\n<td
+        class=\"\" data-sort-value=\"3687\">\n3,687\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena12.png?t=1548683748.3388467\" alt=\"Arena 12
+        / Spooky Town\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"9\">9</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"242\">\n242\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"260\">\n260\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n
+        <div class=\"\">\n<input id=\"compare-checkbox-9VYP2PJYG\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"9VYP2PJYG\" data-name=\"NoOne2000\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"9JL9209CL\" data-role=\"Elder\" class=\"role-Elder tr_member\">\n<td
+        data-sort-value=\"12\">12</td>\n<td data-sort-value=patrycja>\n<a class=\"block
+        member_link\" data-tag=\"9JL9209CL\" href=\"/player/9JL9209CL\">\npatrycja\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T092054.000Z\">\n4h
+        19m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nElder\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n59\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-9JL9209CL\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"2\">Elder</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"26925168280917\">\n9JL9209CL\n</td>\n<td
+        class=\"\" data-sort-value=\"3582\">\n3,582\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena11.png?t=1529143289.5928361\" alt=\"Arena 11
+        / Electro Valley\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"9\">9</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"59\">\n59\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n <i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-9JL9209CL\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"9JL9209CL\" data-name=\"patrycja\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"9992GQQ8U\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"13\">13</td>\n<td data-sort-value=...>\n<a class=\"block
+        member_link\" data-tag=\"9992GQQ8U\" href=\"/player/9992GQQ8U\">\n...\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190721T122521.000Z\">\n3d
+        1h 15m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n0\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-9992GQQ8U\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"26115006738270\">\n9992GQQ8U\n</td>\n<td
+        class=\"\" data-sort-value=\"3503\">\n3,503\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena11.png?t=1529143289.5928361\" alt=\"Arena 11
+        / Electro Valley\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-9992GQQ8U\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"9992GQQ8U\" data-name=\"...\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PR00RQYP0\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"14\">14</td>\n<td data-sort-value=5b2mx2>\n<a class=\"block
+        member_link\" data-tag=\"PR00RQYP0\" href=\"/player/PR00RQYP0\">\n5b2mx2\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T122607.000Z\">\n1h
+        14m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n78\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n80\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PR00RQYP0\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"72643626724644\">\nPR00RQYP0\n</td>\n<td
+        class=\"\" data-sort-value=\"3459\">\n3,459\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena11.png?t=1529143289.5928361\" alt=\"Arena 11
+        / Electro Valley\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"9\">9</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"78\">\n78\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"80\">\n80\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PR00RQYP0\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PR00RQYP0\" data-name=\"5b2mx2\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PGQJ2U8GC\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"15\">15</td>\n<td data-sort-value=mmiki>\n<a class=\"block
+        member_link\" data-tag=\"PGQJ2U8GC\" href=\"/player/PGQJ2U8GC\">\nmmiki\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T095905.000Z\">\n3h
+        41m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n57\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PGQJ2U8GC\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n <img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"71839324279884\">\nPGQJ2U8GC\n</td>\n<td
+        class=\"\" data-sort-value=\"3408\">\n3,408\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena11.png?t=1529143289.5928361\" alt=\"Arena 11
+        / Electro Valley\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"57\">\n57\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PGQJ2U8GC\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PGQJ2U8GC\" data-name=\"mmiki\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"8RQGP088J\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"16\">16</td>\n<td data-sort-value=asdef 47>\n<a class=\"block
+        member_link\" data-tag=\"8RQGP088J\" href=\"/player/8RQGP088J\">\nasdef 47\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T120228.000Z\">\n1h
+        38m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n8\n</div>\n <div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-8RQGP088J\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"24742317490867\">\n8RQGP088J\n</td>\n<td
+        class=\"\" data-sort-value=\"3350\">\n3,350\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena11.png?t=1529143289.5928361\" alt=\"Arena 11
+        / Electro Valley\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"10\">10</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"8\">\n8\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-8RQGP088J\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"8RQGP088J\" data-name=\"asdef 47\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PRJQ2Q9CQ\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"17\">17</td>\n<td data-sort-value=kacper>\n<a class=\"block
+        member_link\" data-tag=\"PRJQ2Q9CQ\" href=\"/player/PRJQ2Q9CQ\">\nkacper\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T090150.000Z\">\n4h
+        38m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\n
+        Member\n</div>\n</div>\n<div class=\"mobile-show mobile-member-summary\">\n<div>\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n116\n</div>\n<div>\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n40\n</div>\n</div>\n<div
+        class=\"join_status\" id=\"join-PRJQ2Q9CQ\"></div>\n</td>\n<td class=\"inactivity_content
+        inactivity in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-trophies.png\" />\n</td>\n<td class=\"inactivity_content
+        inactivity in_donations\">\n<img class=\"inactive_bar\" style=\"display:none;\"
+        src=\"/static/img/ui/inactivity-donations.png\" />\n</td>\n<td class=\"mobile-hide\"
+        data-sort-value=\"3\">Member</td>\n<td class=\"mobile-hide tablet-hide\" data-sort-value=\"72686515686362\">\nPRJQ2Q9CQ\n</td>\n<td
+        class=\"\" data-sort-value=\"3212\">\n3,212\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena10.png?t=1529143289.5928361\" alt=\"Arena 10
+        / Hog Mountain\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"116\">\n116\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"40\">\n40\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PRJQ2Q9CQ\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PRJQ2Q9CQ\" data-name=\"kacper\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PJYVQY2VV\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"18\">18</td>\n<td data-sort-value=gui>\n<a class=\"block
+        member_link\" data-tag=\"PJYVQY2VV\" href=\"/player/PJYVQY2VV\">\ngui\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T011649.000Z\">\n12h
+        23m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n38\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n160\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PJYVQY2VV\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"72092597115163\">\nPJYVQY2VV\n</td>\n<td
+        class=\"\" data-sort-value=\"3164\">\n3,164\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena10.png?t=1529143289.5928361\" alt=\"Arena 10
+        / Hog Mountain\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"38\">\n38\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"160\">\n160\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PJYVQY2VV\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PJYVQY2VV\" data-name=\"gui\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PQ20UV90V\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"19\">19</td>\n<td data-sort-value=ev3v>\n<a class=\"block
+        member_link\" data-tag=\"PQ20UV90V\" href=\"/player/PQ20UV90V\">\nev3v\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T101754.000Z\">\n3h
+        22m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n188\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n200\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PQ20UV90V\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n </td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"72569621364079\">\nPQ20UV90V\n</td>\n<td
+        class=\"\" data-sort-value=\"3061\">\n3,061\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena10.png?t=1529143289.5928361\" alt=\"Arena 10
+        / Hog Mountain\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"188\">\n188\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"200\">\n200\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PQ20UV90V\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PQ20UV90V\" data-name=\"ev3v\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"YP00LVYC2\" data-role=\"Elder\" class=\"role-Elder tr_member\">\n<td
+        data-sort-value=\"20\">20</td>\n<td data-sort-value=adison1601>\n<a class=\"block
+        member_link\" data-tag=\"YP00LVYC2\" href=\"/player/YP00LVYC2\">\nadison1601\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T121842.000Z\">\n1h
+        21m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nElder\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n162\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n280\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-YP00LVYC2\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"2\">Elder</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"97876877718674\">\nYP00LVYC2\n</td>\n<td
+        class=\"\" data-sort-value=\"3041\">\n3,041\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena10.png?t=1529143289.5928361\" alt=\"Arena 10
+        / Hog Mountain\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"9\">9</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"162\">\n162\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"280\">\n280\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-YP00LVYC2\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"YP00LVYC2\" data-name=\"adison1601\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"YPPYVRVJY\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"21\">21</td>\n<td data-sort-value=FC DIABEŁEK>\n<a class=\"block
+        member_link\" data-tag=\"YPPYVRVJY\" href=\"/player/YPPYVRVJY\">\nFC DIABEŁEK\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T072831.000Z\">\n6h
+        11m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n66\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n110\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-YPPYVRVJY\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"97933369732990\">\nYPPYVRVJY\n</td>\n<td
+        class=\"\" data-sort-value=\"3006\">\n3,006\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena10.png?t=1529143289.5928361\" alt=\"Arena 10
+        / Hog Mountain\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"66\">\n66\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"110\">\n110\n<i class=\"big
+        icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-YPPYVRVJY\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"YPPYVRVJY\" data-name=\"FC DIABEŁEK\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"8Q0Y02PGG\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"22\">22</td>\n<td data-sort-value=elibossi>\n<a class=\"block
+        member_link\" data-tag=\"8Q0Y02PGG\" href=\"/player/8Q0Y02PGG\">\nelibossi\n
+        <div class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T040441.000Z\">\n9h
+        35m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n0\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-8Q0Y02PGG\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"24608403502432\">\n8Q0Y02PGG\n</td>\n<td
+        class=\"\" data-sort-value=\"2779\">\n2,779\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena9.png?t=1529143289.6061695\" alt=\"Arena 9 /
+        Jungle Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"9\">9</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-8Q0Y02PGG\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"8Q0Y02PGG\" data-name=\"elibossi\" />\n </div>\n</td>\n</tr>\n<tr
+        data-tag=\"PRGGLLJPQ\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"23\">23</td>\n<td data-sort-value=lama>\n<a class=\"block
+        member_link\" data-tag=\"PRGGLLJPQ\" href=\"/player/PRGGLLJPQ\">\nlama\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T110503.000Z\">\n2h
+        35m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n22\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n90\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PRGGLLJPQ\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"72679412370446\">\nPRGGLLJPQ\n</td>\n<td
+        class=\"\" data-sort-value=\"2680\">\n2,680\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena9.png?t=1529143289.6061695\" alt=\"Arena 9 /
+        Jungle Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"22\">\n22\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"90\">\n90\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PRGGLLJPQ\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PRGGLLJPQ\" data-name=\"lama\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"89YJPRCQL\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"24\">24</td>\n<td data-sort-value=adamg11>\n<a class=\"block
+        member_link\" data-tag=\"89YJPRCQL\" href=\"/player/89YJPRCQL\">\nadamg11\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T130238.000Z\">\n37m
+        ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n45\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n84\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-89YJPRCQL\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"23349359459901\">\n89YJPRCQL\n</td>\n<td
+        class=\"\" data-sort-value=\"2543\">\n2,543\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena8.png?t=1529143289.6061695\" alt=\"Arena 8 /
+        Frozen Peak\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"10\">10</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"45\">\n45\n
+        <i class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"84\">\n84\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-89YJPRCQL\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"89YJPRCQL\" data-name=\"adamg11\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"9CLUY2ULJ\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"25\">25</td>\n<td data-sort-value=krecisław>\n<a class=\"block
+        member_link\" data-tag=\"9CLUY2ULJ\" href=\"/player/9CLUY2ULJ\">\nkrecisław\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190723T220730.000Z\">\n15h
+        32m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n6\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n60\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-9CLUY2ULJ\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"26377942790503\">\n9CLUY2ULJ\n</td>\n<td
+        class=\"\" data-sort-value=\"2540\">\n2,540\n <img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena8.png?t=1529143289.6061695\" alt=\"Arena 8 /
+        Frozen Peak\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"6\">\n6\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"60\">\n60\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-9CLUY2ULJ\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"9CLUY2ULJ\" data-name=\"krecisław\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PVR8PJ2GU\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"26\">26</td>\n<td data-sort-value=Ogursson16>\n<a class=\"block
+        member_link\" data-tag=\"PVR8PJ2GU\" href=\"/player/PVR8PJ2GU\">\nOgursson16\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190723T122631.000Z\">\n1d
+        1h 13m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n0\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PVR8PJ2GU\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"73016336505918\">\nPVR8PJ2GU\n</td>\n<td
+        class=\"\" data-sort-value=\"2499\">\n2,499\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena8.png?t=1529143289.6061695\" alt=\"Arena 8 /
+        Frozen Peak\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PVR8PJ2GU\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PVR8PJ2GU\" data-name=\"Ogursson16\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"Y2G2G9P20\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"27\">27</td>\n<td data-sort-value=x4Xx PL>\n<a class=\"block
+        member_link\" data-tag=\"Y2G2G9P20\" href=\"/player/Y2G2G9P20\">\nx4Xx PL\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190723T205503.000Z\">\n16h
+        45m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n6\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-Y2G2G9P20\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"96109441957656\">\nY2G2G9P20\n</td>\n<td
+        class=\"\" data-sort-value=\"2300\">\n2,300\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena8.png?t=1529143289.6061695\" alt=\"Arena 8 /
+        Frozen Peak\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"6\">\n6\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-Y2G2G9P20\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"Y2G2G9P20\" data-name=\"x4Xx PL\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PUPGQ88VP\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"28\">28</td>\n<td data-sort-value=kapi>\n<a class=\"block
+        member_link\" data-tag=\"PUPGQ88VP\" href=\"/player/PUPGQ88VP\">\nkapi\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T094424.000Z\">\n3h
+        56m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n10\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n30\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PUPGQ88VP\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"72934103681269\">\nPUPGQ88VP\n</td>\n<td
+        class=\"\" data-sort-value=\"2239\">\n2,239\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena7.png?t=1529143289.6061695\" alt=\"Arena 7 /
+        Royal Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"10\">\n10\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"30\">\n30\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PUPGQ88VP\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PUPGQ88VP\" data-name=\"kapi\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PV0090UYQ\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"29\">29</td>\n<td data-sort-value=Adamcio king>\n<a class=\"block
+        member_link\" data-tag=\"PV0090UYQ\" href=\"/player/PV0090UYQ\">\nAdamcio
+        king\n<div class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190723T082518.000Z\">\n1d
+        5h 15m ago\n</div>\n </a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n10\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PV0090UYQ\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"72957051930050\">\nPV0090UYQ\n</td>\n<td
+        class=\"\" data-sort-value=\"2192\">\n2,192\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena7.png?t=1529143289.6061695\" alt=\"Arena 7 /
+        Royal Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"10\">\n10\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PV0090UYQ\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PV0090UYQ\" data-name=\"Adamcio king\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"9GJ9ULCJY\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"30\">30</td>\n<td data-sort-value=vhh>\n<a class=\"block
+        member_link\" data-tag=\"9GJ9ULCJY\" href=\"/player/9GJ9ULCJY\">\nvhh\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190723T172143.000Z\">\n20h
+        18m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n10\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-9GJ9ULCJY\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"26685770237134\">\n9GJ9ULCJY\n</td>\n<td
+        class=\"\" data-sort-value=\"2169\">\n2,169\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena7.png?t=1529143289.6061695\" alt=\"Arena 7 /
+        Royal Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"10\">\n10\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-9GJ9ULCJY\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"9GJ9ULCJY\" data-name=\"vhh\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"8QR0VULPC\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"31\">31</td>\n<td data-sort-value=nhahwhah>\n<a class=\"block
+        member_link\" data-tag=\"8QR0VULPC\" href=\"/player/8QR0VULPC\">\nnhahwhah\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190722T172119.000Z\">\n1d
+        20h 19m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n20\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-8QR0VULPC\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"24665174145120\">\n8QR0VULPC\n</td>\n<td
+        class=\"\" data-sort-value=\"2168\">\n2,168\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena7.png?t=1529143289.6061695\" alt=\"Arena 7 /
+        Royal Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"9\">9</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"20\">\n20\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-8QR0VULPC\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"8QR0VULPC\" data-name=\"nhahwhah\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"8GLQ9GYC8\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"32\">32</td>\n<td data-sort-value=.:Kozioł:.>\n<a class=\"block
+        member_link\" data-tag=\"8GLQ9GYC8\" href=\"/player/8GLQ9GYC8\">\n.:Kozioł:.\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190723T214055.000Z\">\n15h
+        59m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n10\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n30\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-8GLQ9GYC8\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"23870006342360\">\n8GLQ9GYC8\n</td>\n<td
+        class=\"\" data-sort-value=\"2102\">\n2,102\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena7.png?t=1529143289.6061695\" alt=\"Arena 7 /
+        Royal Arena\" />\n</td>\n <td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"10\">\n10\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"30\">\n30\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-8GLQ9GYC8\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"8GLQ9GYC8\" data-name=\".:Kozioł:.\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"89RGJQ888\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"33\">33</td>\n<td data-sort-value=Kacper2037>\n<a class=\"block
+        member_link\" data-tag=\"89RGJQ888\" href=\"/player/89RGJQ888\">\nKacper2037\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T084529.000Z\">\n4h
+        54m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n0\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n30\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-89RGJQ888\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"23333930454824\">\n89RGJQ888\n</td>\n<td
+        class=\"\" data-sort-value=\"2037\">\n2,037\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena7.png?t=1529143289.6061695\" alt=\"Arena 7 /
+        Royal Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"30\">\n30\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-89RGJQ888\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"89RGJQ888\" data-name=\"Kacper2037\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PQPLRCUVC\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"34\">34</td>\n<td data-sort-value=skkf5506 + uru>\n<a class=\"block
+        member_link\" data-tag=\"PQPLRCUVC\" href=\"/player/PQPLRCUVC\">\nskkf5506
+        + uru\n<div class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190724T122036.000Z\">\n1h
+        19m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n26\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n30\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PQPLRCUVC\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"72620951250504\">\nPQPLRCUVC\n</td>\n
+        <td class=\"\" data-sort-value=\"2011\">\n2,011\n<img class=\"ui mini image
+        arena_icon\" src=\"/static/img/arenas/arena7.png?t=1529143289.6061695\" alt=\"Arena
+        7 / Royal Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"26\">\n26\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"30\">\n30\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PQPLRCUVC\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PQPLRCUVC\" data-name=\"skkf5506 + uru\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PGG2898LU\" data-role=\"Member\" class=\"role-Member tr_member\">\n<td
+        data-sort-value=\"35\">35</td>\n<td data-sort-value=PirdolJp>\n<a class=\"block
+        member_link\" data-tag=\"PGG2898LU\" href=\"/player/PGG2898LU\">\nPirdolJp\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190722T215803.000Z\">\n1d
+        15h 42m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nMember\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n0\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PGG2898LU\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"3\">Member</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"71816537629650\">\nPGG2898LU\n</td>\n<td
+        class=\"\" data-sort-value=\"2000\">\n2,000\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena7.png?t=1529143289.6061695\" alt=\"Arena 7 /
+        Royal Arena\" />\n</td>\n<td class=\"right aligned mobile-hide\" data-sort-value=\"8\">8</td>\n<td
+        class=\"donations right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i
+        class=\"big icons\">\n<img class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\"
+        />\n<i class=\"corner blue arrow up icon\"></i>\n</i>\n</td>\n<td class=\"donations
+        right aligned mobile-hide\" data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div
+        class=\"\">\n<input id=\"compare-checkbox-PGG2898LU\" class=\"compareme\"
+        type=\"checkbox\" data-tag=\"PGG2898LU\" data-name=\"PirdolJp\" />\n</div>\n</td>\n</tr>\n<tr
+        data-tag=\"PY8QLPPVY\" data-role=\"Elder\" class=\"role-Elder tr_member\">\n<td
+        data-sort-value=\"36\">36</td>\n<td data-sort-value=super gems>\n<a class=\"block
+        member_link\" data-tag=\"PY8QLPPVY\" href=\"/player/PY8QLPPVY\">\nsuper gems\n<div
+        class=\"last_seen\" data-seconds=\"\" data-datetime=\"20190721T173759.000Z\">\n2d
+        20h 2m ago\n</div>\n</a>\n<div class=\"mobile-show\">\n<div class=\"meta\">\nElder\n</div>\n</div>\n<div
+        class=\"mobile-show mobile-member-summary\">\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        blue arrow up icon\"></i>\n</i>\n0\n</div>\n<div>\n<i class=\"big icons\">\n<img
+        class=\"ui verytiny image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner
+        orange arrow down icon\"></i>\n</i>\n 0\n</div>\n</div>\n<div class=\"join_status\"
+        id=\"join-PY8QLPPVY\"></div>\n</td>\n<td class=\"inactivity_content inactivity
+        in_trophies\">\n<img class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-trophies.png\"
+        />\n</td>\n<td class=\"inactivity_content inactivity in_donations\">\n<img
+        class=\"inactive_bar\" style=\"display:none;\" src=\"/static/img/ui/inactivity-donations.png\"
+        />\n</td>\n<td class=\"mobile-hide\" data-sort-value=\"2\">Elder</td>\n<td
+        class=\"mobile-hide tablet-hide\" data-sort-value=\"73211152116814\">\nPY8QLPPVY\n</td>\n<td
+        class=\"\" data-sort-value=\"1255\">\n1,255\n<img class=\"ui mini image arena_icon\"
+        src=\"/static/img/arenas/arena4.png?t=1529143289.6028361\" alt=\"Arena 4 /
+        P.E.K.K.A's Playhouse\" />\n</td>\n<td class=\"right aligned mobile-hide\"
+        data-sort-value=\"6\">6</td>\n<td class=\"donations right aligned mobile-hide\"
+        data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img class=\"ui verytiny
+        image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner blue arrow
+        up icon\"></i>\n</i>\n</td>\n<td class=\"donations right aligned mobile-hide\"
+        data-sort-value=\"0\">\n0\n<i class=\"big icons\">\n<img class=\"ui verytiny
+        image\" src=\"/static/img/icon/ic-cards.png\" />\n<i class=\"corner orange
+        arrow down icon\"></i>\n</i>\n</td>\n<td class=\"mobile-hide\">\n<div class=\"\">\n<input
+        id=\"compare-checkbox-PY8QLPPVY\" class=\"compareme\" type=\"checkbox\" data-tag=\"PY8QLPPVY\"
+        data-name=\"super gems\" />\n</div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<style>\n
+        \           .item {\n                border-radius: 0 !important;\n            }\n
+        \       </style>\n</div>\n</div>\n\n<div class=\"ui sidemargin0  attached
+        inverted segment ad-segment\" style=\"border:0 !important; padding:0 !important;;\">\n<div
+        class=\"ui container sidemargin0\">\n<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>\n\n<ins
+        class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-7508750482993527\"
+        data-ad-slot=\"4803465586\" data-ad-format=\"auto\"></ins>\n<script>\n        (adsbygoogle
+        = window.adsbygoogle || []).push({});\n        </script>\n</div>\n</div>\n\n<div
+        class=\"ui inverted vertical footer segment\">\n<div class=\"ui container\">\n<div
+        class=\"ui stackable inverted grid\">\n<div class=\"row\">\n<div class=\"four
+        wide column\">\n<div class=\"ui stackable doubling inverted two column grid\">\n<div
+        class=\"column\">\n<div class=\"ui inverted link list\">\n<h4 class=\"ui inverted
+        tiny header\">RoyaleAPI</h4>\n<a class=\"item\" href=\"/\">\nHome\n</a>\n<a
+        class=\"item\" href=\"/\">\nDecks\n</a>\n<a class=\"item\" href=\"/players\">\nPlayers\n</a>\n<a
+        class=\"item\" href=\"/clans\">\nClans\n</a>\n<a class=\"item\" href=\"/cards\">\nCards\n</a>\n<a
+        class=\"item\" href=\"/tournaments\">\nTournaments\n</a>\n</div>\n</div>\n</div>\n</div>\n<div
+        class=\"four wide column\">\n<div class=\"ui stackable inverted equal width
+        column grid\">\n<div class=\"column\">\n<div class=\"ui inverted link list\">\n<h4
+        class=\"ui inverted tiny header\">Help</h4>\n<a class=\"item\" href=\"/about\">About
+        Us</a>\n<a class=\"item\" href=\"/blog\">Blog</a>\n<a class=\"item\" href=\"/faq\">FAQ</a>\n<a
+        class=\"item\" href=\"/business-inquiries\">\nBusiness Inquiries</a>\n<a class=\"item\"
+        href=\"https://github.com/RoyaleAPI/cr-api-ux/issues/new/choose\">\nUX Feature
+        Requests </a>\n<a class=\"item\" href=\"http://docs.royaleapi.com\">\nAPI
+        Documentation</a>\n<a class=\"item\" href=\"https://github.com/RoyaleAPI/cr-api\">\nAPI
+        Support </a>\n</div>\n</div>\n</div>\n</div>\n<div id=\"social_column\" class=\"eight
+        wide column\">\n<h4 class=\"ui inverted tiny header\">Social</h4>\n<a class=\"social_icon_link\"
+        href=\"https://twitter.com/RoyaleAPI\">\n<img class=\"social_icon popup\"
+        src=\"/static/img/brands/circle/twitter.svg\" data-content=\"Twitter\" />\n</a>\n<a
+        class=\"social_icon_link\" href=\"https://www.facebook.com/RoyaleAPI\">\n<img
+        class=\"social_icon popup\" src=\"/static/img/brands/circle/facebook.svg\"
+        data-content=\"Facebook\" />\n</a>\n<a class=\"social_icon_link\" href=\"https://discord.royaleapi.com\">\n<img
+        class=\"social_icon popup\" src=\"/static/img/brands/circle/discord.svg\"
+        data-content=\"Discord\" />\n</a>\n<a class=\"social_icon_link\" href=\"https://github.com/RoyaleAPI\">\n<img
+        class=\"social_icon popup\" src=\"/static/img/brands/circle/github.svg\" data-content=\"Github\"
+        />\n</a>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"column\">\n<a
+        href=\"/donate\" class=\"ui blue button\">Donate</a>\n</div>\n</div>\n</div>\n<div
+        class=\"ui divider\"></div>\n<div class=\"ui vertical segment\">\n<div class=\"ui
+        inverted meta disclaimer\">\n<p>\nThis content is not affiliated with, endorsed,
+        sponsored, or specifically approved by Supercell and Supercell is not responsible
+        for it. For more information see Supercell’s <a href=\"http://www.supercell.com/fan-content-policy\"
+        target=\"_blank\">Fan Content Policy</a>.\n</p>\n</div>\n<div class=\"copyright\">\n&copy;2019
+        RoyaleAPI.com. All rights reserved.\n</div>\n</div>\n</div>\n</div>\n\n<div
+        id=\"search_all_modal\" class=\"ui modal\">\n<div class=\"content\">\n<form
+        class=\"ui form\">\n<div class=\"player_search_container ui fluid search\">\n<div
+        class=\"field\" data-name=\"player\">\n<label>Player</label>\n<div class=\"ui
+        icon large input\">\n<input class=\"prompt\" data-section=\"player\" type=\"text\"
+        name=\"player\" placeholder=\"Name or tag, e.g. C0G20PR2\" />\n<i class=\"search
+        link icon\"></i>\n</div>\n</div>\n<div class=\"results\"></div>\n</div>\n<div
+        class=\"clan_search_container ui fluid search\">\n<div class=\"field\" data-name=\"clan\">\n<label>Clan</label>\n<div
+        class=\"ui icon large input\">\n<input class=\"prompt\" data-section=\"clan\"
+        type=\"text\" name=\"clan\" placeholder=\"Name or tag, e.g. 9PJ82CRC\" />\n<i
+        class=\"search link icon\"></i>\n</div>\n</div>\n<div class=\"results\"></div>\n</div>\n<div
+        class=\"tournament_search_container ui fluid search\">\n<div class=\"field\"
+        data-name=\"tournament\">\n<label>Tournament</label>\n<div class=\"ui icon
+        large input\">\n<input class=\"prompt\" data-section=\"tournament\" type=\"text\"
+        name=\"tournament\" placeholder=\"Tag\" />\n<i class=\"search link icon\"></i>\n</div>\n</div>\n<div
+        class=\"results\"></div>\n</div>\n</form>\n</div>\n</div>\n<script>\n$(document).ready(function
+        () {\n    // modal\n    $('#search_all_button')\n        .click(function ()
+        {\n            $('#search_all_modal')\n                .modal({\n                    centered:
+        false\n                })\n                .modal('show');\n        })\n    ;\n\n
+        \   // ajax search\n    const AJAX_SEARCH_DELAY = 1300;\n\n    function getSearchSettings(section)
+        {\n        let searchSettings = {\n            apiSettings: {\n                url:
+        `/data/${section}/search?q={query}&t=1563952567`,\n            },\n            showNoResults:
+        false,\n            error: {\n                noResults: ''\n            },\n
+        \           searchDelay: AJAX_SEARCH_DELAY,\n        };\n        return searchSettings;\n
+        \   }\n\n    $('.player_search_container')\n        .search(getSearchSettings('player'))\n
+        \   ;\n\n    $('.clan_search_container')\n        .search(getSearchSettings('clan'))\n
+        \   ;\n\n    // key input enter\n    function gotoSearch(section, tag) {\n
+        \       if (tag[0] === '#') {\n            tag = tag.substring(1)\n        }\n
+        \       window.location.href = `/${section}/${tag}`;\n    }\n\n    $('#search_all_modal
+        input')\n        .on('keyup', function (e) {\n            if (e.keyCode ===
+        13) {\n                let tag = $(this).val();\n                let section
+        = $(this).data('section');\n                gotoSearch(section, tag);\n            }\n
+        \       })\n    ;\n\n})\n</script>\n</div>\n<div id=\"fullpage_screenshot_modal\"
+        class=\"ui fullscreen modal\">\n<i class=\"close icon\"></i>\n<div class=\"header\">Full
+        page screenshot</div>\n<div class=\"scrolling content\">\n<div id=\"fullpage_screenshot_modal_dimmer\"
+        class=\"ui active inverted dimmer\">\n<div class=\"ui text loader\">Loading</div>\n</div>\n<img
+        class=\"ui image\" id=\"fullpage_screenshot_image\" src=\"/static/img/ui/fpo/deck-wireframe.svg\"
+        data-src=\"\" />\n</div>\n<div class=\"content\">\n<div class=\"description\">\n<p>Right
+        click image to save to your computer, or tap and hold to save to your mobile
+        device.</p>\n</div>\n</div>\n</div>\n<div id=\"language_modal\" class=\"ui
+        mini modal\">\n<i class=\"close icon\"></i>\n<div class=\"header\"><i class=\"language
+        large icon\"></i> (Beta)</div>\n<div class=\"content\">\n<div class=\"description\">\n<div
+        class=\"ui very relaxed selection list\" style=\"font-size:120%;\">\n<a class=\"item
+        active\" href=\"/language/en\">\n<i class=\"us flag\"></i>\nEnglish\n</a>\n<a
+        class=\"item \" href=\"/language/es\">\n<i class=\"es flag\"></i>\nEspañol\n</a>\n<a
+        class=\"item \" href=\"/language/fr\">\n<i class=\"fr flag\"></i>\nFrançais\n</a>\n<a
+        class=\"item \" href=\"/language/de\">\n<i class=\"de flag\"></i>\nDeutsch\n</a>\n<a
+        class=\"item \" href=\"/language/pt\">\n<i class=\"br flag\"></i>\nPortuguês\n</a>\n<a
+        class=\"item \" href=\"/language/zh\">\n<i class=\"cn flag\"></i>\n简体中文\n</a>\n<a
+        class=\"item \" href=\"/language/zh_Hant\">\n<i class=\"tw flag\"></i>\n繁體中文\n</a>\n</div>\n</div>\n</div>\n</div>\n<div
+        id=\"qrcode_modal\" class=\"ui tiny modal\">\n<i class=\"close icon\"></i>\n<div
+        class=\"header\">\n<div class=\"title\"></div>\n</div>\n<div id=\"qrcode_content\"
+        class=\"content\"></div>\n</div>\n\n<script data-cfasync=\"false\" src=\"/static/jslib/handlebars.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/store.everything.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/sort_properties.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/html2canvas.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/chartjs/chartjs-plugin-stacked100-hojsim.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/handlebars.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/isotope.pkgd.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/jquery.address-1.6.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/qrcode/jquery.qrcode.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/follow.js?t=1559021952.3028183\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/storage/player_storage.js?t=1529143290.336164\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/app.js?t=1554546816.4404967\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/semantic_api.js?t=1531759873.7786462\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/topnav.js?t=1529143290.336164\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/sidebar.js?t=1529143290.336164\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/ga_events.js?t=1529143290.3328307\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/nav.js?t=1529143290.3328307\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/storage/fave_menu.js?t=1529143290.336164\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/qrcode_button.js?t=1541102339.401905\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/ads.js?t=1541151325.068429\"></script>\n<script
+        type=\"text/javascript\">\n$(document).ready(function () {\n    populate_fave_menu();\n});\n</script><script>\n
+        \   $(document).ready(function () {\n        // init accordion\n        $('.sidebar.accordion').accordion();\n
+        \       // Chart defaults\n        Chart.defaults.global.animation.duration
+        = 0;\n        Chart.defaults.global.elements.rectangle.borderWidth = 3;\n
+        \       Chart.defaults.global.elements.rectangle.backgroundColor = 'rgba(86,
+        182, 84, 1.000)';\n        Chart.defaults.global.elements.line.borderWidth
+        = 3;\n        Chart.defaults.global.elements.line.borderColor = 'rgba(93,
+        154, 231, 1)';\n        Chart.defaults.global.elements.line.backgroundColor
+        = 'rgba(93, 154, 231, 0.2)';\n        // app\n        initApp(1563952567)\n\n
+        \   })\n</script>\n<script data-cfasync=\"false\" src=\"/static/js/tablesort.js?t=1529143290.336164\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/clan_roster.js?t=1529143290.3328307\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/clan_roster_inactivity.js?t=1529143290.3328307\"></script>\n<script
+        type=\"text/javascript\">\n        let selectedTime = '7d';\n\n        function
+        updateInactivityPopup(time) {\n            // Add popup\n            $('.tr_member
+        .inactivity_content.in_trophies')\n                .popup({\n                    content:
+        `Trophy inactivity in last ${time}`\n                })\n            ;\n            $('.tr_member
+        .inactivity_content.in_donations')\n                .popup({\n                    content:
+        `Donation inactivity in last ${time}`\n                })\n            ;\n
+        \       }\n\n        function initInactivity() {\n            //  init inactivity
+        filters\n            let member_tags = '92PJ98JU0,U8VJRG8,8JVQ9C8J,PLCCCU99,GQC2GQCU,P9P9QYJYG,9J8JUQJQ2,PU8L2Y89Q,PQJ2LV0JU,P2Q20QV2C,9VYP2PJYG,9JL9209CL,9992GQQ8U,PR00RQYP0,PGQJ2U8GC,8RQGP088J,PRJQ2Q9CQ,PJYVQY2VV,PQ20UV90V,YP00LVYC2,YPPYVRVJY,8Q0Y02PGG,PRGGLLJPQ,89YJPRCQL,9CLUY2ULJ,PVR8PJ2GU,Y2G2G9P20,PUPGQ88VP,PV0090UYQ,9GJ9ULCJY,8QR0VULPC,8GLQ9GYC8,89RGJQ888,PQPLRCUVC,PGG2898LU,PY8QLPPVY';\n\n
+        \           $('.inactivity_content').show();\n\n            load_inactivity(time
+        = selectedTime, member_tags);\n            $('.inactivity_time').click(function
+        () {\n                selectedTime = $(this).attr('data-time');\n                load_inactivity(selectedTime,
+        member_tags);\n                updateInactivityPopup(selectedTime);\n            });\n
+        \           prep_filter_inactivity();\n\n            // sticky inactivity
+        filter\n            $('#inactivity_filter_menu')\n                .sticky({\n
+        \                   context: '#roster',\n                    offset: 48,\n
+        \               })\n            ;\n\n            updateInactivityPopup(selectedTime);\n
+        \       }\n\n        $(document).ready(function () {\n            //  set
+        table sort\n            $('#table_th_name').data('sortBy', function (th, td,
+        tablesort) {\n                return td.text().toLowerCase();\n            });\n\n
+        \           // check if history active\n            let params = {\n                family:
+        '',\n                clan_name: 'Pierwsza liga',\n                clan_tag:
+        'Y8YU8L08',\n                clan_description: 'Wymagamy: +8 level\U0001F934Pełna
+        aktywność na wojnach od pierwszego dnia⚔️ Dajemy: Elder za 10 wojen z rzędu\U0001F60EBrak
+        przekleństw\U0001F46E‍♂️'\n            };\n\n            let url = `/data/check_clan_tracking?${$.param(params)}`\n\n
+        \           $.ajax({\n                url: url\n            }).done(function
+        (data) {\n                if (data.is_tracked) {\n                    initInactivity();\n
+        \               }\n\n            });\n\n            $.ajax({\n                url:
+        '/data/clan/index/Y8YU8L08'\n            });\n\n\n            // member readiness\n\n
+        \       });\n\n    </script>\n</body>\n</html>"
+    http_version: 
+  recorded_at: Wed, 24 Jul 2019 13:40:28 GMT
+recorded_with: VCR 4.0.0

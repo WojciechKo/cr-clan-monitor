@@ -1,0 +1,580 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://royaleapi.com/clan/some-unknown-clan-tag
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Mon, 12 Aug 2019 14:40:14 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7144c55e1bf0dcb2c9e7ea5e5d1589a31565620813; expires=Tue, 11-Aug-20
+        14:40:13 GMT; path=/; domain=.royaleapi.com; HttpOnly; Secure
+      Location:
+      - "/clans/search?name=some-unknown-clan-tag"
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      A-New-Security-Header-Referrer-Policy:
+      - origin
+      Content-Security-Policy:
+      - 'default-src ''self'' googleads.g.doubleclick.net googlesyndication.com *.googlesyndication.com
+        ; script-src ''self'' ''unsafe-inline'' ''unsafe-eval'' blob: cdnjs.cloudflare.com
+        *.cloudflare.com * ; img-src ''self'' data: * ; style-src ''self'' ''unsafe-inline''
+        cdn.datatables.net cdn.jsdelivr.net fonts.googleapis.com assets.zendesk.com
+        cdn.datatables.net cdn.jsdelivr.net cdnjs.cloudflare.com fonts.googleapis.com
+        platform.twitter.com www.gstatic.com ; font-src ''self'' ''unsafe-inline''
+        data: fonts.googleapis.com fonts.gstatic.com themes.googleusercontent.com
+        ; frame-src nitropay.com s.nitropay.com *.nitropay.com * ; frame-ancestors
+        ''self'' royaleapi.com *.royaleapi.com cr-api.com *.cr-api.com openfam.com
+        fam.gg ; object-src ''self'' ; connect-src ''self'' wss: blob: cr-api.com
+        mc.yandex.ru o2.mouseflow.com *.google-analytics.com *.gstatic.com *.g.doubleclick.net
+        *.doubleclick.net *.jquery.com github.io *.github.io * ;'
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 505334074b04b87b-WAW
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 12 Aug 2019 14:40:14 GMT
+- request:
+    method: get
+    uri: https://royaleapi.com/clans/search?name=some-unknown-clan-tag
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 12 Aug 2019 14:40:15 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d42402d8d0cdbba46b95a1ff574d1287f1565620814; expires=Tue, 11-Aug-20
+        14:40:14 GMT; path=/; domain=.royaleapi.com; HttpOnly; Secure
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      A-New-Security-Header-Referrer-Policy:
+      - origin
+      Content-Security-Policy:
+      - 'default-src ''self'' googleads.g.doubleclick.net googlesyndication.com *.googlesyndication.com
+        ; script-src ''self'' ''unsafe-inline'' ''unsafe-eval'' blob: cdnjs.cloudflare.com
+        *.cloudflare.com * ; img-src ''self'' data: * ; style-src ''self'' ''unsafe-inline''
+        cdn.datatables.net cdn.jsdelivr.net fonts.googleapis.com assets.zendesk.com
+        cdn.datatables.net cdn.jsdelivr.net cdnjs.cloudflare.com fonts.googleapis.com
+        platform.twitter.com www.gstatic.com ; font-src ''self'' ''unsafe-inline''
+        data: fonts.googleapis.com fonts.gstatic.com themes.googleusercontent.com
+        ; frame-src nitropay.com s.nitropay.com *.nitropay.com * ; frame-ancestors
+        ''self'' royaleapi.com *.royaleapi.com cr-api.com *.cr-api.com openfam.com
+        fam.gg ; object-src ''self'' ; connect-src ''self'' wss: blob: cr-api.com
+        mc.yandex.ru o2.mouseflow.com *.google-analytics.com *.gstatic.com *.g.doubleclick.net
+        *.doubleclick.net *.jquery.com github.io *.github.io * ;'
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5053340abcb6cc87-WAW
+    body:
+      encoding: UTF-8
+      string: "<!doctype html>\n<html lang=\"en\">\n<head> <meta charset=\"UTF-8\"
+        />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"
+        />\n<title>Clans Search - RoyaleAPI - Clash Royale Analytics</title>\n\n<link
+        rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://royaleapi.com/static/img/favicon/apple-touch-icon.png\">\n<link
+        rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://royaleapi.com/static/img/favicon/favicon-32x32.png\">\n<link
+        rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://royaleapi.com/static/img/favicon/favicon-16x16.png\">\n<link
+        rel=\"manifest\" href=\"https://royaleapi.com/static/img/favicon/manifest.json\">\n<link
+        rel=\"mask-icon\" href=\"https://royaleapi.com/static/img/favicon/safari-pinned-tab.svg\"
+        color=\"#5bbad5\">\n<link rel=\"shortcut icon\" href=\"https://royaleapi.com/static/img/favicon/favicon.ico\">\n<meta
+        name=\"msapplication-config\" content=\"https://royaleapi.com/static/img/favicon/browserconfig.xml\">\n<meta
+        name=\"theme-color\" content=\"#ffffff\">\n\n<meta name=\"google\" content=\"notranslate\"
+        />\n\n<meta name=\"title\" content=\"Clans Search - RoyaleAPI - Clash Royale
+        Analytics\">\n<meta name=\"description\" content=\"The definitive source about
+        decks, players and teams in Clash Royale. Explore advanced statistics about
+        decks and cards based on millions of games per week.\">\n<meta name=\"keywords\"
+        content=\"Clash Royale, API, games, mobile, CR, cr-api, Clash Royale API,
+        RoyaleAPI, data, stats, statistics, meta, best, strategy, analytics\">\n<meta
+        property=\"og:title\" content=\"Clans Search - RoyaleAPI - Clash Royale Analytics\">\n<meta
+        property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\"
+        content=\"Royale API\">\n\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/static/semantic/dist/semantic.min.css?t=1562066813.4731712\"
+        />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/static/css/app.css?t=1564805570.786601\"
+        />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/static/css/cards-150.css?t=1562066810.7292666\"
+        />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/static/css/cards-75.css?t=1562066810.7292666\"
+        />\n<link rel=\"stylesheet\" href=\"/static/noUiSlider.11.0.0/nouislider.min.css\"
+        />\n<meta property=\"og:image\" content=\"https://royaleapi.com/static/img/branding/cr-api-logo.png\">\n<meta
+        property=\"og:description\" content=\"The definitive source about decks, players
+        and teams in Clash Royale. Explore advanced statistics about decks and cards
+        based on millions of games per week.\">\n\n<script>\n        window.ga = window.ga
+        || function () {\n            (ga.q = ga.q || []).push(arguments)\n        };\n
+        \       ga.l = +new Date;\n        ga('create', 'UA-100687612-4', 'auto');\n
+        \       ga('send', 'pageview');\n    </script>\n<script async src='https://www.google-analytics.com/analytics.js'></script>\n\n\n<script>\n
+        \       if (window.self !== window.top) {\n            window.top.location.href
+        = window.location.href;\n        }\n    </script>\n\n<script data-cfasync=\"false\"
+        src=\"https://code.jquery.com/jquery-3.1.1.min.js\" integrity=\"sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=\"
+        crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.1/mobile-detect.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/semantic/dist/semantic.min.js?t=1562066813.4771712\"></script>\n\n<script
+        src=\"/static/js/newrelic/newrelic_royaleapi-web.js?t=1563293254.5691884\"></script>\n\n</head>\n<body
+        class=\"\">\n\n<div class=\"ui inverted sidebar vertical menu right\" id=\"toc\"
+        style=\"\">\n<div class=\"brand header item\">\n<a class=\"ui logo mini image\"
+        href=\"/\">\n<img src=\"/static/img/branding/cr-api-logo.png\" style=\"padding-right:
+        0.7rem;\" />\n</a>\n<a href=\"/\">RoyaleAPI</a>\n<a class=\"ui blue label
+        margin0\" href=\"/donate\">\nDonate </a>\n</div>\n<div id=\"language_sidebar_button\"
+        class=\"link item language_button\" style=\"text-align: right;\">\n<i class=\"us
+        flag\"></i>\nEnglish\n</div>\n<a class=\"item\" href=\"/decks\">\nDecks </a>\n<a
+        class=\"item\" href=\"/cards\">\nCards </a>\n<a class=\"item\" href=\"/players\">\nPlayers
+        </a>\n<a class=\"item\" href=\"/clans\">\nClans </a>\n<a class=\"item\" href=\"/league/ql\">\n<img
+        class=\"ui image sidebar_logo\" src=\"/static/img/event/ql.png?t=1565281350.2210586\"
+        />\nQL </a>\n<a class=\"item\" href=\"/crl\">\n<img class=\"ui image sidebar_logo\"
+        src=\"/static/img/event/crl.png?t=1562066812.325206\" />\nCRL </a>\n<a class=\"item\"
+        href=\"/league/slo\">\n<img class=\"ui image sidebar_logo\" src=\"/static/img/event/slo.png?t=1562066812.3372056\"
+        />\nSLO </a>\n<a class=\"item\" href=\"/feature/gc\">\n<img class=\"ui image
+        sidebar_logo\" src=\"/static/img/ui/challenge-grand.png?t=1562066812.9371827\"
+        />\nGC </a>\n<a class=\"item\" href=\"/tournaments\">\nTournaments </a>\n<div
+        class=\"item\">\n<div class=\"header\">\nContent </div>\n<div class=\"menu\">\n<a
+        class=\"item\" href=\"/content/coltonw83\">\nColtonW83\n</a>\n<a class=\"item\"
+        href=\"/content/sirtagcr\">\nSirTagCR\n</a>\n<a class=\"item\" href=\"/content/malcaidecr\">\nMalcaideCR\n</a>\n<a
+        class=\"item\" href=\"/content/kfcclash\">\nKFC CLASH\n</a>\n</div>\n</div>\n<div
+        class=\"item\">\n<div class=\"header\">\nLeaderboard </div>\n<div class=\"menu\">\n<a
+        class=\"item\" href=\"/players/leaderboard\">\nTop Ladder Players </a>\n<a
+        class=\"item\" href=\"/decks/leaderboard\">\nTop Ladder Decks </a>\n<a class=\"item\"
+        href=\"/decks/popular?players=PvP&type=Top200Ladder\">\nTop Ladder Meta </a>\n<a
+        class=\"item\" href=\"/players/12wins\">\nGC 12-win Players </a>\n<a class=\"item\"
+        href=\"/clans/leaderboard\">\nTop Global Clans </a>\n</div>\n</div>\n<div
+        class=\"item\">\n<div class=\"header\">Search</div>\n<div class=\"menu\">\n<div
+        class=\"item\">\n<form id=\"sidebar_player_search_form\" class=\"ui fluid
+        form\" action=\"/player\">\n<div class=\"ui transparent inverted icon input\">\n<i
+        class=\"search link icon\"></i>\n<input id=\"sidebar-player-search\" name=\"tag\"
+        type=\"text\" class=\"prompt\" placeholder=\"Player Tag…\">\n</div>\n<div
+        class=\"ui error message pointing label\">\nPlease enter a value\n</div>\n</form>\n</div>\n<div
+        class=\"item\">\n<form id=\"sidebar_clan_search_form\" class=\"ui fluid form\"
+        action=\"/clan\">\n<div class=\"ui transparent inverted icon input\">\n<input
+        id=\"sidebar-clan-search\" name=\"tag\" type=\"text\" placeholder=\"Clan Tag…\">\n<i
+        class=\"search link icon\"></i>\n</div>\n<div class=\"ui error message pointing
+        label\">\nPlease enter a value\n</div>\n</form>\n</div>\n<div class=\"item\">\n<form
+        id=\"sidebar_clan_name_search_form\" class=\"ui fluid form\" action=\"/clans/search\">\n<div
+        class=\"ui transparent inverted icon input\">\n<input id=\"sidebar-clan-name-search\"
+        name=\"name\" type=\"text\" placeholder=\"Clan Name…\">\n<i class=\"search
+        link icon\"></i>\n</div>\n<div class=\"ui error message pointing label\">\nPlease
+        enter a value\n</div>\n</form>\n</div>\n<div class=\"item\">\n<form id=\"sidebar_tournament_search_form\"
+        class=\"ui fluid form\" action=\"/tournament\">\n<div class=\"ui transparent
+        inverted icon input\">\n<input id=\"sidebar-tournament-search\" name=\"tag\"
+        type=\"text\" placeholder=\"Tournament Tag…\">\n<i class=\"search link icon\"></i>\n</div>\n<div
+        class=\"ui error message pointing label\">\nPlease enter a value\n</div>\n</form>\n</div>\n</div>\n</div>\n<div
+        class=\"item\">\n<div class=\"header\">\nHelp </div>\n<div class=\"menu\">\n<a
+        class=\"item\" href=\"/about\">About Us</a>\n<a class=\"item\" href=\"/blog\">Blog</a>\n<a
+        class=\"item\" href=\"/faq\">FAQ</a>\n<a class=\"item\" href=\"/business-inquiries\">Business
+        Inquiries</a>\n<a class=\"item\" href=\"https://github.com/RoyaleAPI/cr-api-ux/issues/new/choose\">\nUX
+        Feature Requests </a>\n<a class=\"item\" href=\"http://docs.royaleapi.com\">\nAPI
+        Documentation </a>\n<a class=\"item\" href=\"https://github.com/RoyaleAPI/cr-api\">\nAPI
+        Support </a>\n</div>\n</div>\n<div class=\"item\">\n<a class=\"header\">\nSocial
+        </a>\n<div class=\"menu\">\n<a class=\"item\" href=\"https://github.com/RoyaleAPI/cr-api\">\n<i
+        class=\"github icon\"></i>\nGithub\n</a>\n<a class=\"item\" href=\"https://discord.royaleapi.com\">\n<i
+        class=\"discord icon\"></i>\nDiscord (Users)\n</a>\n<a class=\"item\" href=\"http://discord.me/RoyaleAPI\">\n<i
+        class=\"discord icon\"></i>\nDiscord (Developers)\n</a>\n<a class=\"item\"
+        href=\"http://twitter.com/RoyaleAPI\">\n<i class=\"twitter icon\"></i>\nTwitter\n</a>\n<a
+        class=\"item\" href=\"http://facebook.com/RoyaleAPI\">\n<i class=\"facebook
+        icon\"></i>\nFacebook\n</a>\n</div>\n</div>\n<a class=\"item\" href=\"/donate\">\nDonate
+        </a>\n</div>\n\n\n<div class=\"pusher\">\n<div id=\"top_menu\" class=\"ui
+        sticky borderless fluid menu\">\n<a class=\"brand item header\" href=\"/\">\n<img
+        src=\"/static/img/branding/cr-api-logo.png\" style=\"padding-right: 0.7rem;
+        height:2rem; width: auto;\" />\n<span class=\"mobile-hide\">RoyaleAPI</span>\n</a>\n<div
+        class=\"right compact menu\">\n<a class=\"mobile-hide nav item\" href=\"/decks\">\nDecks
+        </a>\n<a class=\"mobile-hide nav item\" href=\"/cards\">\nCards </a>\n<a class=\"mobile-hide
+        nav item\" href=\"/players\">\nPlayers </a>\n<a class=\"mobile-hide nav item\"
+        href=\"/clans\">\nClans </a>\n<a class=\"mobile-hide nav item\" href=\"/tournaments\">\nTournaments
+        </a>\n\n<div id=\"search_all_button\" class=\"link item\">\n<i class=\"search
+        icon\"></i>\n</div>\n\n<a id=\"user_button\" class=\"link item\" href=\"/login\">\n<i
+        class=\"user icon\"></i>\n</a>\n\n\n<div id=\"top-fave\" class=\"ui dropdown
+        item\">\n<i class=\"heart icon\"></i>\n<i class=\"dropdown icon\"></i>\n<div
+        id=\"player_saved_menu\" class=\"menu\">\n</div>\n</div>\n<div id=\"sidebar-toggle\"
+        class=\"link item\">\n<i class=\"content icon\"></i>\n</div>\n</div>\n</div>\n\n<div
+        id=\"page_content_container\">\n<div id=\"fullpage_screenshot_branding\" class=\"ui
+        attached borderless stackable menu\" style=\"display:none;\">\n<div class=\"ui
+        header item\">\n <img class=\"ui small image\" src=\"/static/img/branding/cr-api-logo.png\"
+        />\nRoyaleAPI\n</div>\n<div class=\"item\">http://royaleapi.com/clans/search?name=some-unknown-clan-tag</div>\n<div
+        id=\"fullpage_screenshot_datetime\" class=\"right item\"></div>\n</div>\n<div
+        id=\"page_content\">\n\n<style>\n    .section-header {\n        width: 100%;\n
+        \       height: 2rem;\n        border: 0 !important;\n    }\n\n    .nav_menu
+        {\n        display: flex;\n    }\n</style>\n<div class=\"ui grid margin0\">\n<div
+        class=\"mobile only pad0 margin0 row\">\n<div class=\"section-header ui attached
+        mini purple inverted borderless menu\">\n<a class=\"ui tiny header item\"
+        href=\"/clans\">Clans</a>\n</div>\n</div>\n</div>\n<form id=\"clan_search_attached_form\"
+        class=\"ui fluid form\" action=\"/clan\">\n<div class=\"ui attached purple
+        inverted menu nav_menu\">\n<a class=\"header item mobile-hide\" href=\"/clans\"
+        style=\"flex:1;\">Clans</a>\n<div class=\"ui search item\" style=\"flex:5;\">\n<div
+        class=\"ui transparent icon input\">\n<input id=\"clan_search_input\" name=\"tag\"
+        class=\"prompt\" type=\"text\" placeholder=\"Name or tag, e.g. 2CCCP\">\n<i
+        class=\"inverted search link icon\"></i>\n</div>\n</div>\n<a class=\"item\"
+        href=\"/clans/families\" style=\"flex:1;\">\n<span class=\"mobile-hide\">Families</span>\n<span
+        class=\"mobile-show\">Fam</span>\n</a>\n<div class=\"ui dropdown item\" style=\"flex:1;\">\n<span
+        class=\"mobile-hide\">Leaderboard</span>\n<span class=\"mobile-show\">LB</span>\n<i
+        class=\"dropdown icon\"></i>\n<div class=\"menu\">\n<a class=\"item\" href=\"/clans/leaderboard\">\nLadder
+        </a>\n<a class=\"item\" href=\"/clans/war\">\nWar </a>\n</div>\n</div>\n<a
+        class=\"item\" href=\"/clans/search\" style=\"flex:1;\">Search</a>\n</div>\n<div
+        class=\"ui error message attached segment\" style=\" border:none;\">\nPlease
+        enter a value\n</div>\n</form>\n<div class=\"ui inverted attached basic segment
+        background-fade-right\" style=\"background-color:#63337c;\">\n<div class=\"ui
+        inverted attached secondary pointing menu\" style=\"margin:-0.5rem 0 1rem
+        -1rem;\">\n<a class=\" item\" href=\"/clans/leaderboard\">\nLadder </a>\n<a
+        class=\" item\" href=\"/clans/war\">\nWar </a>\n</div> <div class=\"ui grid\">\n<div
+        class=\"thirteen wide column\">\n<h1 class=\"page_title\">Clans Search</h1>\n</div>\n<div
+        class=\"three wide column\"></div>\n</div>\n</div> \n<div id=\"clans-bg\"
+        class=\"background-gradient\"></div> <div class=\"ui hidden divider\"></div>\n<div
+        class=\"ui container\">\n<div class=\"ui negative message\">\n<i class=\"close
+        icon\"></i>\n<div class=\"header\">\nYour search gives 0 results.\n</div>\n<p>Please
+        try to search again.</p>\n</div>\n</div>\n\n<div class=\"ui hidden divider\"></div>\n<div
+        class=\"ui container\">\n<div class=\"ui attached segment\">\n<form class=\"ui
+        form\" action=\"/clans/search\" method=\"get\">\n<div class=\"ui error message\"></div>\n<div
+        class=\"field\">\n<div class=\"ui icon input\">\n<input name=\"name\" class=\"name\"
+        type=\"text\" placeholder=\"Clan Name (minimum 3 characters)\" value=\"some-unknown-clan-tag\">\n<i
+        class=\"search link icon\"></i>\n</div>\n</div>\n<div class=\"field\">\n<div
+        class=\"ui checkbox\">\n<input name=\"exactNameMatch\" type=\"checkbox\">\n<label>Must
+        contain all words</label>\n </div>\n</div>\n<div id=\"moreOptionsAccordion\"
+        class=\"ui accordion\">\n<div class=\"active title\">\n<i class=\"dropdown
+        icon\"></i>\nMore options\n</div>\n<div class=\"active content\">\n<div class=\"field\">\n<label>Location</label>\n<select
+        name=\"location\" class=\"ui fluid search dropdown\" tabindex=\"0\">\n<option
+        value=\"_\">Anywhere</option>\n<option value=\"_AF\">Africa</option>\n<option
+        value=\"_AS\">Asia</option>\n<option value=\"_EU\">Europe</option>\n<option
+        value=\"_INT\">International</option>\n<option value=\"_NA\">North America</option>\n<option
+        value=\"_AU\">Oceania</option>\n<option value=\"_SA\">South America</option>\n<option
+        value=\"AF\">Afghanistan</option>\n<option value=\"AL\">Albania</option>\n<option
+        value=\"DZ\">Algeria</option>\n<option value=\"AS\">American Samoa</option>\n<option
+        value=\"AD\">Andorra</option>\n<option value=\"AO\">Angola</option>\n<option
+        value=\"AI\">Anguilla</option>\n<option value=\"AQ\">Antarctica</option>\n<option
+        value=\"AG\">Antigua and Barbuda</option>\n<option value=\"AR\">Argentina</option>\n<option
+        value=\"AM\">Armenia</option>\n<option value=\"AW\">Aruba</option>\n<option
+        value=\"AC\">Ascension Island</option>\n<option value=\"AU\">Australia</option>\n<option
+        value=\"AT\">Austria</option>\n<option value=\"AZ\">Azerbaijan</option>\n<option
+        value=\"BS\">Bahamas</option>\n<option value=\"BH\">Bahrain</option>\n<option
+        value=\"BD\">Bangladesh</option>\n<option value=\"BB\">Barbados</option>\n<option
+        value=\"BY\">Belarus</option>\n<option value=\"BE\">Belgium</option>\n<option
+        value=\"BZ\">Belize</option>\n<option value=\"BJ\">Benin</option>\n<option
+        value=\"BM\">Bermuda</option>\n<option value=\"BT\">Bhutan</option>\n<option
+        value=\"BO\">Bolivia</option>\n<option value=\"BA\">Bosnia and Herzegovina</option>\n<option
+        value=\"BW\">Botswana</option>\n<option value=\"BV\">Bouvet Island</option>\n<option
+        value=\"BR\">Brazil</option>\n<option value=\"IO\">British Indian Ocean Territory</option>\n<option
+        value=\"VG\">British Virgin Islands</option>\n<option value=\"BN\">Brunei</option>\n<option
+        value=\"BG\">Bulgaria</option>\n<option value=\"BF\">Burkina Faso</option>\n<option
+        value=\"BI\">Burundi</option>\n<option value=\"KH\">Cambodia</option>\n<option
+        value=\"CM\">Cameroon</option>\n <option value=\"CA\">Canada</option>\n<option
+        value=\"IC\">Canary Islands</option>\n<option value=\"CV\">Cape Verde</option>\n<option
+        value=\"BQ\">Caribbean Netherlands</option>\n<option value=\"KY\">Cayman Islands</option>\n<option
+        value=\"CF\">Central African Republic</option>\n<option value=\"EA\">Ceuta
+        and Melilla</option>\n<option value=\"TD\">Chad</option>\n<option value=\"CL\">Chile</option>\n<option
+        value=\"CN\">China</option>\n<option value=\"CX\">Christmas Island</option>\n<option
+        value=\"CC\">Cocos (Keeling) Islands</option>\n<option value=\"CO\">Colombia</option>\n<option
+        value=\"KM\">Comoros</option>\n<option value=\"CG\">Congo (DRC)</option>\n<option
+        value=\"CD\">Congo (Republic)</option>\n<option value=\"CK\">Cook Islands</option>\n<option
+        value=\"CR\">Costa Rica</option>\n<option value=\"HR\">Croatia</option>\n<option
+        value=\"CU\">Cuba</option>\n<option value=\"CW\">Curaçao</option>\n<option
+        value=\"CY\">Cyprus</option>\n<option value=\"CZ\">Czech Republic</option>\n<option
+        value=\"CI\">Côte d’Ivoire</option>\n<option value=\"DK\">Denmark</option>\n<option
+        value=\"DG\">Diego Garcia</option>\n<option value=\"DJ\">Djibouti</option>\n<option
+        value=\"DM\">Dominica</option>\n<option value=\"DO\">Dominican Republic</option>\n<option
+        value=\"EC\">Ecuador</option>\n<option value=\"EG\">Egypt</option>\n<option
+        value=\"SV\">El Salvador</option>\n<option value=\"GQ\">Equatorial Guinea</option>\n<option
+        value=\"ER\">Eritrea</option>\n<option value=\"EE\">Estonia</option>\n<option
+        value=\"ET\">Ethiopia</option>\n<option value=\"FK\">Falkland Islands</option>\n<option
+        value=\"FO\">Faroe Islands</option>\n<option value=\"FJ\">Fiji</option>\n<option
+        value=\"FI\">Finland</option>\n<option value=\"FR\">France</option>\n<option
+        value=\"GF\">French Guiana</option>\n<option value=\"PF\">French Polynesia</option>\n<option
+        value=\"TF\">French Southern Territories</option>\n<option value=\"GA\">Gabon</option>\n<option
+        value=\"GM\">Gambia</option>\n<option value=\"GE\">Georgia</option>\n<option
+        value=\"DE\">Germany</option>\n<option value=\"GH\">Ghana</option>\n<option
+        value=\"GI\">Gibraltar</option>\n<option value=\"GR\">Greece</option>\n<option
+        value=\"GL\">Greenland</option>\n<option value=\"GD\">Grenada</option>\n<option
+        value=\"GP\">Guadeloupe</option>\n<option value=\"GU\">Guam</option>\n<option
+        value=\"GT\">Guatemala</option>\n<option value=\"GG\">Guernsey</option>\n<option
+        value=\"GN\">Guinea</option>\n<option value=\"GW\">Guinea-Bissau</option>\n<option
+        value=\"GY\">Guyana</option>\n<option value=\"HT\">Haiti</option>\n<option
+        value=\"HM\">Heard & McDonald Islands</option>\n<option value=\"HN\">Honduras</option>\n<option
+        value=\"HK\">Hong Kong</option>\n<option value=\"HU\">Hungary</option>\n<option
+        value=\"IS\">Iceland</option>\n<option value=\"IN\">India</option>\n<option
+        value=\"ID\">Indonesia</option>\n<option value=\"IR\">Iran</option>\n<option
+        value=\"IQ\">Iraq</option>\n<option value=\"IE\">Ireland</option>\n<option
+        value=\"IM\">Isle of Man</option>\n<option value=\"IL\">Israel</option>\n<option
+        value=\"IT\">Italy</option>\n<option value=\"JM\">Jamaica</option>\n<option
+        value=\"JP\">Japan</option>\n<option value=\"JE\">Jersey</option>\n<option
+        value=\"JO\">Jordan</option>\n<option value=\"KZ\">Kazakhstan</option>\n<option
+        value=\"KE\">Kenya</option>\n<option value=\"KI\">Kiribati</option>\n<option
+        value=\"XK\">Kosovo</option>\n<option value=\"KW\">Kuwait</option>\n<option
+        value=\"KG\">Kyrgyzstan</option>\n<option value=\"LA\">Laos</option>\n<option
+        value=\"LV\">Latvia</option>\n<option value=\"LB\">Lebanon</option>\n<option
+        value=\"LS\">Lesotho</option>\n<option value=\"LR\">Liberia</option>\n<option
+        value=\"LY\">Libya</option>\n<option value=\"LI\">Liechtenstein</option>\n<option
+        value=\"LT\">Lithuania</option>\n<option value=\"LU\">Luxembourg</option>\n<option
+        value=\"MO\">Macau</option>\n<option value=\"MK\">Macedonia (FYROM)</option>\n<option
+        value=\"MG\">Madagascar</option>\n<option value=\"MW\">Malawi</option>\n<option
+        value=\"MY\">Malaysia</option>\n<option value=\"MV\">Maldives</option>\n<option
+        value=\"ML\">Mali</option>\n<option value=\"MT\">Malta</option>\n<option value=\"MH\">Marshall
+        Islands</option>\n<option value=\"MQ\">Martinique</option>\n<option value=\"MR\">Mauritania</option>\n<option
+        value=\"MU\">Mauritius</option>\n<option value=\"YT\">Mayotte</option>\n<option
+        value=\"MX\">Mexico</option>\n<option value=\"FM\">Micronesia</option>\n<option
+        value=\"MD\">Moldova</option>\n <option value=\"MC\">Monaco</option>\n<option
+        value=\"MN\">Mongolia</option>\n<option value=\"ME\">Montenegro</option>\n<option
+        value=\"MS\">Montserrat</option>\n<option value=\"MA\">Morocco</option>\n<option
+        value=\"MZ\">Mozambique</option>\n<option value=\"MM\">Myanmar (Burma)</option>\n<option
+        value=\"NA\">Namibia</option>\n<option value=\"NR\">Nauru</option>\n<option
+        value=\"NP\">Nepal</option>\n<option value=\"NL\">Netherlands</option>\n<option
+        value=\"NC\">New Caledonia</option>\n<option value=\"NZ\">New Zealand</option>\n<option
+        value=\"NI\">Nicaragua</option>\n<option value=\"NE\">Niger</option>\n<option
+        value=\"NG\">Nigeria</option>\n<option value=\"NU\">Niue</option>\n<option
+        value=\"NF\">Norfolk Island</option>\n<option value=\"KP\">North Korea</option>\n<option
+        value=\"MP\">Northern Mariana Islands</option>\n<option value=\"NO\">Norway</option>\n<option
+        value=\"OM\">Oman</option>\n<option value=\"PK\">Pakistan</option>\n<option
+        value=\"PW\">Palau</option>\n<option value=\"PS\">Palestine</option>\n<option
+        value=\"PA\">Panama</option>\n<option value=\"PG\">Papua New Guinea</option>\n<option
+        value=\"PY\">Paraguay</option>\n<option value=\"PE\">Peru</option>\n<option
+        value=\"PH\">Philippines</option>\n<option value=\"PN\">Pitcairn Islands</option>\n<option
+        value=\"PL\">Poland</option>\n<option value=\"PT\">Portugal</option>\n<option
+        value=\"PR\">Puerto Rico</option>\n<option value=\"QA\">Qatar</option>\n<option
+        value=\"RO\">Romania</option>\n<option value=\"RU\">Russia</option>\n<option
+        value=\"RW\">Rwanda</option>\n<option value=\"RE\">Réunion</option>\n<option
+        value=\"BL\">Saint Barthélemy</option>\n<option value=\"SH\">Saint Helena</option>\n<option
+        value=\"KN\">Saint Kitts and Nevis</option>\n<option value=\"LC\">Saint Lucia</option>\n<option
+        value=\"MF\">Saint Martin</option>\n<option value=\"PM\">Saint Pierre and
+        Miquelon</option>\n<option value=\"WS\">Samoa</option>\n<option value=\"SM\">San
+        Marino</option>\n<option value=\"SA\">Saudi Arabia</option>\n<option value=\"SN\">Senegal</option>\n<option
+        value=\"RS\">Serbia</option>\n<option value=\"SC\">Seychelles</option>\n<option
+        value=\"SL\">Sierra Leone</option>\n<option value=\"SG\">Singapore</option>\n<option
+        value=\"SX\">Sint Maarten</option>\n <option value=\"SK\">Slovakia</option>\n<option
+        value=\"SI\">Slovenia</option>\n<option value=\"SB\">Solomon Islands</option>\n<option
+        value=\"SO\">Somalia</option>\n<option value=\"ZA\">South Africa</option>\n<option
+        value=\"KR\">South Korea</option>\n<option value=\"SS\">South Sudan</option>\n<option
+        value=\"ES\">Spain</option>\n<option value=\"LK\">Sri Lanka</option>\n<option
+        value=\"VC\">St. Vincent & Grenadines</option>\n<option value=\"SD\">Sudan</option>\n<option
+        value=\"SR\">Suriname</option>\n<option value=\"SJ\">Svalbard and Jan Mayen</option>\n<option
+        value=\"SZ\">Swaziland</option>\n<option value=\"SE\">Sweden</option>\n<option
+        value=\"CH\">Switzerland</option>\n<option value=\"SY\">Syria</option>\n<option
+        value=\"ST\">São Tomé and Príncipe</option>\n<option value=\"TW\">Taiwan</option>\n<option
+        value=\"TJ\">Tajikistan</option>\n<option value=\"TZ\">Tanzania</option>\n<option
+        value=\"TH\">Thailand</option>\n<option value=\"TL\">Timor-Leste</option>\n<option
+        value=\"TG\">Togo</option>\n<option value=\"TK\">Tokelau</option>\n<option
+        value=\"TO\">Tonga</option>\n<option value=\"TT\">Trinidad and Tobago</option>\n<option
+        value=\"TA\">Tristan da Cunha</option>\n<option value=\"TN\">Tunisia</option>\n<option
+        value=\"TR\">Turkey</option>\n<option value=\"TM\">Turkmenistan</option>\n<option
+        value=\"TC\">Turks and Caicos Islands</option>\n<option value=\"TV\">Tuvalu</option>\n<option
+        value=\"UM\">U.S. Outlying Islands</option>\n<option value=\"VI\">U.S. Virgin
+        Islands</option>\n<option value=\"UG\">Uganda</option>\n<option value=\"UA\">Ukraine</option>\n<option
+        value=\"AE\">United Arab Emirates</option>\n<option value=\"GB\">United Kingdom</option>\n<option
+        value=\"US\">United States</option>\n<option value=\"UY\">Uruguay</option>\n<option
+        value=\"UZ\">Uzbekistan</option>\n<option value=\"VU\">Vanuatu</option>\n<option
+        value=\"VA\">Vatican City</option>\n<option value=\"VE\">Venezuela</option>\n<option
+        value=\"VN\">Vietnam</option>\n<option value=\"WF\">Wallis and Futuna</option>\n<option
+        value=\"EH\">Western Sahara</option>\n<option value=\"YE\">Yemen</option>\n<option
+        value=\"ZM\">Zambia</option>\n<option value=\"ZW\">Zimbabwe</option>\n<option
+        value=\"AX\">Åland Islands</option>\n</select>\n</div>\n<div class=\"two fields\">\n
+        <div class=\"field\">\n<label>\nMinimum Clan Score:\n<span id=\"minScoreValue\"></span>\n</label>\n<input
+        id=\"minScore\" type=\"hidden\" name=\"minScore\" value=\"\" />\n<div id=\"minScoreRange\"
+        class=\"range\"></div>\n</div>\n<div class=\"field\">\n<label>\nNumber of
+        Members:\n<span id=\"minMembersValue\">0</span> -\n<span id=\"maxMembersValue\">50</span>\n</label>\n<input
+        id=\"minMembers\" type=\"hidden\" name=\"minMembers\" value=\"0\" />\n<input
+        id=\"maxMembers\" type=\"hidden\" name=\"maxMembers\" value=\"50\" />\n<div
+        id=\"memberCountRange\" class=\"range\"></div>\n</div>\n</div>\n<div id=\"clan_search_button\"
+        class=\"ui teal submit button\">Search</div>\n</div>\n</div>\n</form>\n</div>\n</div>\n<div
+        class=\"ui hidden divider\" style=\"height:1rem;\"></div>\n</div>\n</div>\n\n<div
+        class=\"ui sidemargin0  attached inverted segment ad-segment\" style=\"border:0
+        !important; padding:0 !important;;\">\n<div class=\"ui container sidemargin0\">\n<script
+        async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>\n\n<ins
+        class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-7508750482993527\"
+        data-ad-slot=\"4803465586\" data-ad-format=\"auto\"></ins>\n<script>\n        (adsbygoogle
+        = window.adsbygoogle || []).push({});\n        </script>\n</div>\n</div>\n\n<div
+        class=\"ui inverted vertical footer segment\">\n<div class=\"ui container\">\n<div
+        class=\"ui stackable inverted grid\">\n<div class=\"row\">\n<div class=\"four
+        wide column\">\n<div class=\"ui stackable doubling inverted two column grid\">\n<div
+        class=\"column\">\n<div class=\"ui inverted link list\">\n<h4 class=\"ui inverted
+        tiny header\">RoyaleAPI</h4>\n<a class=\"item\" href=\"/\">\nHome\n</a>\n<a
+        class=\"item\" href=\"/\">\nDecks\n</a>\n<a class=\"item\" href=\"/players\">\nPlayers\n</a>\n<a
+        class=\"item\" href=\"/clans\">\nClans\n</a>\n<a class=\"item\" href=\"/cards\">\nCards\n</a>\n<a
+        class=\"item\" href=\"/tournaments\">\nTournaments\n</a>\n</div>\n</div>\n</div>\n</div>\n<div
+        class=\"four wide column\">\n<div class=\"ui stackable inverted equal width
+        column grid\">\n<div class=\"column\">\n<div class=\"ui inverted link list\">\n<h4
+        class=\"ui inverted tiny header\">Help</h4>\n<a class=\"item\" href=\"/about\">About
+        Us</a>\n<a class=\"item\" href=\"/blog\">Blog</a>\n<a class=\"item\" href=\"/faq\">FAQ</a>\n<a
+        class=\"item\" href=\"/business-inquiries\">\nBusiness Inquiries</a>\n<a class=\"item\"
+        href=\"https://github.com/RoyaleAPI/cr-api-ux/issues/new/choose\">\nUX Feature
+        Requests </a>\n<a class=\"item\" href=\"http://docs.royaleapi.com\">\nAPI
+        Documentation</a>\n<a class=\"item\" href=\"https://github.com/RoyaleAPI/cr-api\">\nAPI
+        Support </a>\n</div>\n</div>\n</div>\n</div>\n<div id=\"social_column\" class=\"eight
+        wide column\">\n<h4 class=\"ui inverted tiny header\">Social</h4>\n<a class=\"social_icon_link\"
+        href=\"https://twitter.com/RoyaleAPI\">\n<img class=\"social_icon popup\"
+        src=\"/static/img/brands/circle/twitter.svg\" data-content=\"Twitter\" />\n</a>\n<a
+        class=\"social_icon_link\" href=\"https://www.facebook.com/RoyaleAPI\">\n<img
+        class=\"social_icon popup\" src=\"/static/img/brands/circle/facebook.svg\"
+        data-content=\"Facebook\" />\n</a>\n<a class=\"social_icon_link\" href=\"https://discord.royaleapi.com\">\n<img
+        class=\"social_icon popup\" src=\"/static/img/brands/circle/discord.svg\"
+        data-content=\"Discord\" />\n</a>\n<a class=\"social_icon_link\" href=\"https://github.com/RoyaleAPI\">\n<img
+        class=\"social_icon popup\" src=\"/static/img/brands/circle/github.svg\" data-content=\"Github\"
+        />\n</a>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"column\">\n<a
+        href=\"/donate\" class=\"ui blue button\">Donate</a>\n</div>\n</div>\n</div>\n<div
+        class=\"ui divider\"></div>\n<div class=\"ui vertical segment\">\n<div class=\"ui
+        inverted meta disclaimer\">\n<p>\nThis content is not affiliated with, endorsed,
+        sponsored, or specifically approved by Supercell and Supercell is not responsible
+        for it. For more information see Supercell’s <a href=\"http://www.supercell.com/fan-content-policy\"
+        target=\"_blank\">Fan Content Policy</a>.\n</p>\n</div>\n<div class=\"copyright\">\n&copy;2019
+        RoyaleAPI.com. All rights reserved.\n</div>\n</div>\n</div>\n</div>\n\n<div
+        id=\"search_all_modal\" class=\"ui modal\">\n<div class=\"content\">\n<form
+        class=\"ui form\">\n<div class=\"player_search_container ui fluid search\">\n<div
+        class=\"field\" data-name=\"player\">\n<label>Player</label>\n<div class=\"ui
+        icon large input\">\n<input class=\"prompt\" data-section=\"player\" type=\"text\"
+        name=\"player\" placeholder=\"Name or tag, e.g. C0G20PR2\" />\n<i class=\"search
+        link icon\"></i>\n</div>\n</div>\n<div class=\"results\"></div>\n</div>\n<div
+        class=\"clan_search_container ui fluid search\">\n<div class=\"field\" data-name=\"clan\">\n<label>Clan</label>\n<div
+        class=\"ui icon large input\">\n<input class=\"prompt\" data-section=\"clan\"
+        type=\"text\" name=\"clan\" placeholder=\"Name or tag, e.g. 9PJ82CRC\" />\n<i
+        class=\"search link icon\"></i>\n</div>\n</div>\n<div class=\"results\"></div>\n</div>\n<div
+        class=\"tournament_search_container ui fluid search\">\n<div class=\"field\"
+        data-name=\"tournament\">\n <label>Tournament</label>\n<div class=\"ui icon
+        large input\">\n<input class=\"prompt\" data-section=\"tournament\" type=\"text\"
+        name=\"tournament\" placeholder=\"Tag\" />\n<i class=\"search link icon\"></i>\n</div>\n</div>\n<div
+        class=\"results\"></div>\n</div>\n</form>\n</div>\n</div>\n<script>\n$(document).ready(function
+        () {\n    // modal\n    $('#search_all_button')\n        .click(function ()
+        {\n            $('#search_all_modal')\n                .modal({\n                    centered:
+        false\n                })\n                .modal('show');\n        })\n    ;\n\n
+        \   // ajax search\n    const AJAX_SEARCH_DELAY = 1300;\n\n    function getSearchSettings(section)
+        {\n        let searchSettings = {\n            apiSettings: {\n                url:
+        `/data/${section}/search?q={query}&t=1565605547`,\n            },\n            showNoResults:
+        false,\n            error: {\n                noResults: ''\n            },\n
+        \           searchDelay: AJAX_SEARCH_DELAY,\n        };\n        return searchSettings;\n
+        \   }\n\n    $('.player_search_container')\n        .search(getSearchSettings('player'))\n
+        \   ;\n\n    $('.clan_search_container')\n        .search(getSearchSettings('clan'))\n
+        \   ;\n\n    // key input enter\n    function gotoSearch(section, tag) {\n
+        \       if (tag[0] === '#') {\n            tag = tag.substring(1)\n        }\n
+        \       window.location.href = `/${section}/${tag}`;\n    }\n\n    $('#search_all_modal
+        input')\n        .on('keyup', function (e) {\n            if (e.keyCode ===
+        13) {\n                let tag = $(this).val();\n                let section
+        = $(this).data('section');\n                gotoSearch(section, tag);\n            }\n
+        \       })\n    ;\n\n})\n</script>\n</div>\n<div id=\"fullpage_screenshot_modal\"
+        class=\"ui fullscreen modal\">\n<i class=\"close icon\"></i>\n<div class=\"header\">Full
+        page screenshot</div>\n<div class=\"scrolling content\">\n<div id=\"fullpage_screenshot_modal_dimmer\"
+        class=\"ui active inverted dimmer\">\n<div class=\"ui text loader\">Loading</div>\n</div>\n<img
+        class=\"ui image\" id=\"fullpage_screenshot_image\" src=\"/static/img/ui/fpo/deck-wireframe.svg\"
+        data-src=\"\" />\n</div>\n<div class=\"content\">\n<div class=\"description\">\n<p>Right
+        click image to save to your computer, or tap and hold to save to your mobile
+        device.</p>\n</div>\n</div>\n</div>\n<div id=\"language_modal\" class=\"ui
+        mini modal\">\n<i class=\"close icon\"></i>\n<div class=\"header\"><i class=\"language
+        large icon\"></i> (Beta)</div>\n<div class=\"content\">\n<div class=\"description\">\n<div
+        class=\"ui very relaxed selection list\" style=\"font-size:120%;\">\n<a class=\"item
+        active\" href=\"/language/en\">\n<i class=\"us flag\"></i>\nEnglish\n</a>\n<a
+        class=\"item \" href=\"/language/es\">\n<i class=\"es flag\"></i>\nEspañol\n</a>\n<a
+        class=\"item \" href=\"/language/fr\">\n<i class=\"fr flag\"></i>\nFrançais\n</a>\n<a
+        class=\"item \" href=\"/language/de\">\n<i class=\"de flag\"></i>\nDeutsch\n</a>\n<a
+        class=\"item \" href=\"/language/pt\">\n<i class=\"br flag\"></i>\nPortuguês\n</a>\n<a
+        class=\"item \" href=\"/language/ja\">\n<i class=\"jp flag\"></i>\n日本語\n</a>\n<a
+        class=\"item \" href=\"/language/zh\">\n<i class=\"cn flag\"></i>\n简体中文\n</a>\n<a
+        class=\"item \" href=\"/language/zh_Hant\">\n<i class=\"tw flag\"></i>\n 繁體中文\n</a>\n</div>\n</div>\n</div>\n</div>\n<div
+        id=\"qrcode_modal\" class=\"ui tiny modal\">\n<i class=\"close icon\"></i>\n<div
+        class=\"header\">\n<div class=\"title\"></div>\n</div>\n<div id=\"qrcode_content\"
+        class=\"content\"></div>\n</div>\n\n<script data-cfasync=\"false\" src=\"/static/jslib/handlebars.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/store.everything.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/sort_properties.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/html2canvas.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/chartjs/chartjs-plugin-stacked100-hojsim.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/handlebars.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/isotope.pkgd.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/jquery.address-1.6.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/jslib/qrcode/jquery.qrcode.min.js\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/follow.js?t=1562066812.9691815\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/storage/player_storage.js?t=1562066812.9691815\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/app.js?t=1562066812.9651816\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/semantic_api.js?t=1562066812.9691815\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/topnav.js?t=1562066812.9691815\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/sidebar.js?t=1562066812.9691815\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/ga_events.js?t=1562066812.9691815\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/nav.js?t=1562066812.9691815\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/storage/fave_menu.js?t=1562066812.9691815\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/qrcode_button.js?t=1562066812.9691815\"></script>\n<script
+        data-cfasync=\"false\" src=\"/static/js/ads.js?t=1562066812.9651816\"></script>\n<script
+        type=\"text/javascript\">\n$(document).ready(function () {\n    populate_fave_menu();\n});\n</script><script>\n
+        \   $(document).ready(function () {\n        // init accordion\n        $('.sidebar.accordion').accordion();\n
+        \       // Chart defaults\n        Chart.defaults.global.animation.duration
+        = 0;\n        Chart.defaults.global.elements.rectangle.borderWidth = 3;\n
+        \       Chart.defaults.global.elements.rectangle.backgroundColor = 'rgba(86,
+        182, 84, 1.000)';\n        Chart.defaults.global.elements.line.borderWidth
+        = 3;\n        Chart.defaults.global.elements.line.borderColor = 'rgba(93,
+        154, 231, 1)';\n        Chart.defaults.global.elements.line.backgroundColor
+        = 'rgba(93, 154, 231, 0.2)';\n        // app\n        initApp(1565605547)\n\n
+        \   })\n</script>\n<script type=\"text/javascript\" src=\"https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://cdn.datatables.net/1.10.19/js/dataTables.semanticui.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"/static/js/palette.js\"></script>\n<script
+        type=\"text/javascript\" src=\"/static/jslib/hsluv.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"/static/js/clans_search.js?1565605547\"></script>\n<script
+        type=\"text/javascript\" src=\"/static/noUiSlider.11.0.0/nouislider.min.js\"></script>\n<script
+        type=\"text/javascript\">\n    $(document).ready(function () {\n\n        var
+        minScoreRange = document.getElementById('minScoreRange');\n        noUiSlider.create(minScoreRange,
+        {\n            start: 0,\n            connect: [true, false],\n            step:
+        1,\n            range: {\n                'min': 0,\n                'max':
+        70000\n            },\n        });\n        minScoreRange.noUiSlider.on('slide',
+        function () {\n            var value = minScoreRange.noUiSlider.get();\n            value
+        = Math.round(value);\n            $('#minScoreValue').text(value);\n            $('#minScore').val(value);\n
+        \       })\n        var memberCountRange = document.getElementById('memberCountRange');\n
+        \       noUiSlider.create(memberCountRange, {\n            start: [0, 50],\n
+        \           connect: true,\n            step: 1,\n            range: {\n                'min':
+        2,\n                'max': 50\n            }\n        });\n        memberCountRange.noUiSlider.on('slide',
+        function () {\n            var values = memberCountRange.noUiSlider.get();\n
+        \           var minMembersValue = parseInt(values[0]);\n            var maxMembersValue
+        = parseInt(values[1]);\n            $('#minMembersValue').text(minMembersValue);\n
+        \           $('#maxMembersValue').text(maxMembersValue);\n            $('#minMembers').val(minMembersValue);\n
+        \           $('#maxMembers').val(maxMembersValue);\n        });\n\n        $('#moreOptionsAccordion').accordion('close',
+        0)\n    });\n    </script>\n<style>\n        .range {\n            margin:
+        1rem 1.2rem;\n        }\n\n        .range .noUi-connect {\n            background:
+        rgba(76, 178, 172, 1.000);\n        }\n    </style>\n</body>\n</html>"
+    http_version: 
+  recorded_at: Mon, 12 Aug 2019 14:40:15 GMT
+recorded_with: VCR 5.0.0

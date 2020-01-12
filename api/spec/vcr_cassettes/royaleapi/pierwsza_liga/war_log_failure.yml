@@ -1,0 +1,695 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://royaleapi.com/clan/someunknownclantag/war/log
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 May 2019 19:57:42 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db4065fe3487984933e2c857db1df86731557777461; expires=Tue, 12-May-20
+        19:57:41 GMT; path=/; domain=.royaleapi.com; HttpOnly; Secure
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      A-New-Security-Header-Referrer-Policy:
+      - origin
+      Content-Security-Policy:
+      - 'default-src ''self'' googleads.g.doubleclick.net googlesyndication.com *.googlesyndication.com
+        ; script-src ''self'' ''unsafe-inline'' ''unsafe-eval'' blob: cdnjs.cloudflare.com
+        *.cloudflare.com * ; img-src ''self'' data: * ; style-src ''self'' ''unsafe-inline''
+        cdn.datatables.net cdn.jsdelivr.net fonts.googleapis.com assets.zendesk.com
+        cdn.datatables.net cdn.jsdelivr.net cdnjs.cloudflare.com fonts.googleapis.com
+        platform.twitter.com www.gstatic.com ; font-src ''self'' ''unsafe-inline''
+        data: fonts.googleapis.com fonts.gstatic.com themes.googleusercontent.com
+        ; frame-src nitropay.com s.nitropay.com *.nitropay.com * ; frame-ancestors
+        ''self'' royaleapi.com *.royaleapi.com cr-api.com *.cr-api.com openfam.com
+        fam.gg ; object-src ''self'' ; connect-src ''self'' wss: blob: cr-api.com
+        mc.yandex.ru o2.mouseflow.com *.google-analytics.com *.gstatic.com *.g.doubleclick.net
+        *.doubleclick.net *.jquery.com github.io *.github.io * ;'
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d6733f02addbdc8-AMS
+    body:
+      encoding: UTF-8
+      string: |-
+        <!doctype html>
+        <html lang="en">
+        <head> <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Error 404 - RoyaleAPI - Clash Royale Analytics</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://royaleapi.com/static/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://royaleapi.com/static/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://royaleapi.com/static/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://royaleapi.com/static/img/favicon/manifest.json">
+        <link rel="mask-icon" href="https://royaleapi.com/static/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="https://royaleapi.com/static/img/favicon/favicon.ico">
+        <meta name="msapplication-config" content="https://royaleapi.com/static/img/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta name="google" content="notranslate" />
+
+        <meta name="title" content="Error 404 - RoyaleAPI - Clash Royale Analytics">
+        <meta name="description" content="The definitive source about decks, players and teams in Clash Royale. Explore advanced statistics about decks and cards based on millions of games per week.">
+        <meta name="keywords" content="Clash Royale, API, games, mobile, CR, cr-api, Clash Royale API, RoyaleAPI, data, stats, statistics, meta, best, strategy, analytics">
+        <meta property="og:title" content="Error 404 - RoyaleAPI - Clash Royale Analytics">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Royale API">
+
+        <link rel="stylesheet" type="text/css" href="/static/semantic/dist/semantic.min.css?t=1548314452.2199435" />
+        <link rel="stylesheet" type="text/css" href="/static/css/app.css?t=1556551405.910108" />
+        <link rel="stylesheet" type="text/css" href="/static/css/cards-150.css?t=1555347632.937212" />
+        <link rel="stylesheet" type="text/css" href="/static/css/cards-75.css?t=1555347632.937212" />
+        <meta property="og:image" content="https://royaleapi.com/static/img/branding/cr-api-logo.png">
+        <meta property="og:description" content="The definitive source about decks, players and teams in Clash Royale. Explore advanced statistics about decks and cards based on millions of games per week.">
+
+        <script>
+            window.ga = window.ga || function () {
+                (ga.q = ga.q || []).push(arguments)
+            };
+            ga.l = +new Date;
+            ga('create', 'UA-100687612-4', 'auto');
+            ga('send', 'pageview');
+            </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+        <script>
+            if (window.self !== window.top) {
+                window.top.location.href = window.location.href;
+            }
+            </script>
+
+        <script data-cfasync="false" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.1/mobile-detect.min.js"></script>
+        <script data-cfasync="false" src="/static/semantic/dist/semantic.min.js?t=1548314452.2199435"></script>
+
+        <script src="/static/jslib/newrelic.js"></script>
+
+        </head>
+        <body class="">
+
+        <div class="ui inverted sidebar vertical menu right" id="toc" style="">
+        <div class="brand header item">
+        <a class="ui logo mini image" href="/">
+        <img src="/static/img/branding/cr-api-logo.png" style="padding-right: 0.7rem;" />
+        </a>
+        <a href="/">RoyaleAPI</a>
+        <a class="ui blue label margin0" href="/donate">
+        Donate </a>
+        </div>
+        <div id="language_sidebar_button" class="link item language_button" style="text-align: right;">
+        <i class="us flag"></i>
+        English
+        </div>
+        <a class="item" href="/decks">
+        Decks </a>
+        <a class="item" href="/players">
+        Players </a>
+        <a class="item" href="/clans">
+        Clans </a>
+        <a class="item" href="/cards">
+        Cards </a>
+        <a class="item" href="/rls">
+        <img class="ui image sidebar_logo" src="/static/img/event/rls.png?t=1551840924.041366" />
+        RLS </a>
+        <a class="item" href="/crl">
+        <img class="ui image sidebar_logo" src="/static/img/event/crl.png?t=1551178154.3668382" />
+        CRL </a>
+        <a class="item" href="/league/slo">
+        <img class="ui image sidebar_logo" src="/static/img/event/slo.png?t=1551178154.3768382" />
+        SLO </a>
+        <a class="item" href="/tournaments">
+        Tournaments </a>
+        <div class="item">
+        <div class="header">
+        Content </div>
+        <div class="menu">
+        <a class="item" href="/feature/gc">
+        GC Portal </a>
+        <a class="item" href="/crl">
+        CRL Portal </a>
+        <a class="item" href="/content/coltonw83">
+        ColtonW83
+        </a>
+        <a class="item" href="/content/sirtagcr">
+        SirTagCR
+        </a>
+        <a class="item" href="/content/malcaidecr">
+        MalcaideCR
+        </a>
+        </div>
+        </div>
+        <div class="item">
+        <div class="header">
+        Leaderboard </div>
+        <div class="menu">
+        <a class="item" href="/players/leaderboard">
+        Top Ladder Players </a>
+        <a class="item" href="/decks/leaderboard">
+        Top Ladder Decks </a>
+        <a class="item" href="/decks/popular?players=PvP&type=Top200Ladder">
+        Top Ladder Meta </a>
+        <a class="item" href="/players/12wins">
+        GC 12-win Players </a>
+        <a class="item" href="/clans/leaderboard">
+        Top Global Clans </a>
+        </div>
+        </div>
+        <div class="item">
+        <div class="header">Search</div>
+        <div class="menu">
+        <div class="item">
+        <form id="sidebar_player_search_form" class="ui fluid form" action="/player">
+        <div class="ui transparent inverted icon input">
+        <i class="search link icon"></i>
+        <input id="sidebar-player-search" name="tag" type="text" class="prompt" placeholder="Player Tag…">
+        </div>
+        <div class="ui error message pointing label">
+        Please enter a value
+        </div>
+        </form>
+        </div>
+        <div class="item">
+        <form id="sidebar_clan_search_form" class="ui fluid form" action="/clan">
+        <div class="ui transparent inverted icon input">
+        <input id="sidebar-clan-search" name="tag" type="text" placeholder="Clan Tag…">
+        <i class="search link icon"></i>
+        </div>
+        <div class="ui error message pointing label">
+        Please enter a value
+        </div>
+        </form>
+        </div>
+        <div class="item">
+        <form id="sidebar_clan_name_search_form" class="ui fluid form" action="/clans/search">
+        <div class="ui transparent inverted icon input">
+        <input id="sidebar-clan-name-search" name="name" type="text" placeholder="Clan Name…">
+        <i class="search link icon"></i>
+        </div>
+        <div class="ui error message pointing label">
+        Please enter a value
+        </div>
+        </form>
+        </div>
+        <div class="item">
+        <form id="sidebar_tournament_search_form" class="ui fluid form" action="/tournament">
+        <div class="ui transparent inverted icon input">
+        <input id="sidebar-tournament-search" name="tag" type="text" placeholder="Tournament Tag…">
+        <i class="search link icon"></i>
+        </div>
+        <div class="ui error message pointing label">
+        Please enter a value
+        </div>
+        </form>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="header">
+        Help </div>
+        <div class="menu">
+        <a class="item" href="/about">About Us</a>
+        <a class="item" href="/blog">Blog</a>
+        <a class="item" href="/faq">FAQ</a>
+        <a class="item" href="/business-inquiries">Business Inquiries</a>
+        <a class="item" href="https://github.com/RoyaleAPI/cr-api-ux/issues/new/choose">
+        UX Feature Requests </a>
+        <a class="item" href="http://docs.royaleapi.com">
+        API Documentation </a>
+        <a class="item" href="https://github.com/RoyaleAPI/cr-api">
+        API Support </a>
+        </div>
+        </div>
+        <div class="item">
+        <a class="header">
+        Social </a>
+        <div class="menu">
+        <a class="item" href="https://github.com/RoyaleAPI/cr-api">
+        <i class="github icon"></i>
+        Github
+        </a>
+        <a class="item" href="https://discord.royaleapi.com">
+        <i class="discord icon"></i>
+        Discord (Users)
+        </a>
+        <a class="item" href="http://discord.me/RoyaleAPI">
+        <i class="discord icon"></i>
+        Discord (Developers)
+        </a>
+        <a class="item" href="http://twitter.com/RoyaleAPI">
+        <i class="twitter icon"></i>
+        Twitter
+        </a>
+        <a class="item" href="http://facebook.com/RoyaleAPI">
+        <i class="facebook icon"></i>
+        Facebook
+        </a>
+        </div>
+        </div>
+        <a class="item" href="/donate">
+        Donate </a>
+        </div>
+
+
+        <div class="pusher">
+        <div id="top_menu" class="ui sticky borderless fluid menu">
+        <a class="brand item header" href="/">
+        <img src="/static/img/branding/cr-api-logo.png" style="padding-right: 0.7rem; height:2rem; width: auto;" />
+        <span class="mobile-hide">RoyaleAPI</span>
+        </a>
+        <div class="right compact menu">
+        <a class="mobile-hide nav item" href="/decks">
+        Decks </a>
+        <a class="mobile-hide nav item" href="/players">
+        Players </a>
+        <a class="mobile-hide nav item" href="/clans">
+        Clans </a>
+        <a class="mobile-hide nav item" href="/cards">
+        Cards </a>
+        <a class="mobile-hide nav item" href="/tournaments">
+        Tournaments </a>
+
+        <div id="search_all_button" class="link item">
+        <i class="search icon"></i>
+        </div>
+
+        <a id="user_button" class="link item" href="/login">
+        <i class="user icon"></i>
+        </a>
+
+
+        <div id="top-fave" class="ui dropdown item">
+        <i class="heart icon"></i>
+        <i class="dropdown icon"></i>
+        <div id="player_saved_menu" class="menu">
+        </div>
+        </div>
+        <div id="sidebar-toggle" class="link item">
+        <i class="content icon"></i>
+        </div>
+        </div>
+        </div>
+
+        <div id="page_content_container">
+        <div id="fullpage_screenshot_branding" class="ui attached borderless stackable menu" style="display:none;">
+        <div class="ui header item">
+        <img class="ui small image" src="/static/img/branding/cr-api-logo.png" />
+        RoyaleAPI
+        </div>
+        <div class="item">http://royaleapi.com/clan/someunknownclantag/war/log</div>
+        <div id="fullpage_screenshot_datetime" class="right item"></div>
+        </div>
+        <div id="page_content">
+        <style>
+            .section-header {
+                width: 100%;
+                height: 2rem;
+                border: 0 !important;
+            }
+
+            .nav_menu {
+                display: flex;
+            }
+        </style>
+        <div class="ui grid margin0">
+        <div class="mobile only pad0 margin0 row">
+        <div class="section-header ui attached mini purple inverted borderless menu">
+        <a class="ui tiny header item" href="/clans">Clans</a>
+        </div>
+        </div>
+        </div>
+        <form id="clan_search_attached_form" class="ui fluid form" action="/clan">
+        <div class="ui attached purple inverted menu nav_menu">
+        <a class="header item mobile-hide" href="/clans" style="flex:1;">Clans</a>
+        <div class="ui search item" style="flex:5;">
+        <div class="ui transparent icon input">
+        <input id="clan_search_input" name="tag" class="prompt" type="text" placeholder="Name or tag, e.g. 2CCCP">
+        <i class="inverted search link icon"></i>
+        </div>
+        </div>
+        <a class="item" href="/clans/families" style="flex:1;">
+        <span class="mobile-hide">Families</span>
+        <span class="mobile-show">Fam</span>
+        </a>
+        <div class="ui dropdown item" style="flex:1;">
+        <span class="mobile-hide">Leaderboard</span>
+        <span class="mobile-show">LB</span>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+        <a class="item" href="/clans/leaderboard">
+        Ladder </a>
+        <a class="item" href="/clans/war">
+        War </a>
+        </div>
+        </div>
+        <a class="item" href="/clans/search" style="flex:1;">Search</a>
+        </div>
+        <div class="ui error message attached segment" style=" border:none;">
+        Please enter a value
+        </div>
+        </form>
+        <div class="ui hidden divider"></div>
+        <div class="ui text container">
+        <div class="ui container">
+        <div class="ui attached negative message">
+        <div class="header">Clan tag #S0MEUNKN0WNCLANTAG not found (404)</div>
+        <p>
+        Please verify that you have entered correctly and try again.
+        </p>
+        </div>
+        </div>
+        <div class="ui hidden divider"></div>
+        </div>
+        </div>
+        </div>
+
+        <div class="ui sidemargin0  attached inverted segment ad-segment" style="border:0 !important; padding:0 !important;;">
+        <div class="ui container sidemargin0">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7508750482993527" data-ad-slot="4803465586" data-ad-format="auto"></ins>
+        <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+        </div>
+
+        <div class="ui inverted vertical footer segment">
+        <div class="ui container">
+        <div class="ui stackable inverted grid">
+        <div class="row">
+        <div class="four wide column">
+        <div class="ui stackable doubling inverted two column grid">
+        <div class="column">
+        <div class="ui inverted link list">
+        <h4 class="ui inverted tiny header">RoyaleAPI</h4>
+        <a class="item" href="/">
+        Home
+        </a>
+        <a class="item" href="/">
+        Decks
+        </a>
+        <a class="item" href="/players">
+        Players
+        </a>
+        <a class="item" href="/clans">
+        Clans
+        </a>
+        <a class="item" href="/cards">
+        Cards
+        </a>
+        <a class="item" href="/tournaments">
+        Tournaments
+        </a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="four wide column">
+        <div class="ui stackable inverted equal width column grid">
+        <div class="column">
+        <div class="ui inverted link list">
+        <h4 class="ui inverted tiny header">Help</h4>
+        <a class="item" href="/about">About Us</a>
+        <a class="item" href="/blog">Blog</a>
+        <a class="item" href="/faq">FAQ</a>
+        <a class="item" href="/business-inquiries">
+        Business Inquiries</a>
+        <a class="item" href="https://github.com/RoyaleAPI/cr-api-ux/issues/new/choose">
+        UX Feature Requests </a>
+        <a class="item" href="http://docs.royaleapi.com">
+        API Documentation</a>
+        <a class="item" href="https://github.com/RoyaleAPI/cr-api">
+        API Support </a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="social_column" class="eight wide column">
+        <h4 class="ui inverted tiny header">Social</h4>
+        <a class="social_icon_link" href="https://twitter.com/RoyaleAPI">
+        <img class="social_icon popup" src="/static/img/brands/circle/twitter.svg" data-content="Twitter" />
+        </a>
+        <a class="social_icon_link" href="https://www.facebook.com/RoyaleAPI">
+        <img class="social_icon popup" src="/static/img/brands/circle/facebook.svg" data-content="Facebook" />
+        </a>
+        <a class="social_icon_link" href="https://discord.royaleapi.com">
+        <img class="social_icon popup" src="/static/img/brands/circle/discord.svg" data-content="Discord" />
+        </a>
+        <a class="social_icon_link" href="https://github.com/RoyaleAPI">
+        <img class="social_icon popup" src="/static/img/brands/circle/github.svg" data-content="Github" />
+        </a>
+        </div>
+        </div>
+        <div class="row">
+        <div class="column">
+        <a href="/donate" class="ui blue button">Donate</a>
+        </div>
+        </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="ui vertical segment">
+        <div class="ui inverted meta disclaimer">
+        <p>
+        This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see Supercell’s <a href="http://www.supercell.com/fan-content-policy" target="_blank">Fan Content Policy</a>.
+        </p>
+        </div>
+        <div class="copyright">
+        &copy;2019 RoyaleAPI.com. All rights reserved.
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div id="search_all_modal" class="ui modal">
+        <div class="content">
+        <form class="ui form">
+        <div class="player_search_container ui fluid search">
+        <div class="field" data-name="player">
+        <label>Player</label>
+        <div class="ui icon large input">
+        <input class="prompt" data-section="player" type="text" name="player" placeholder="Name or tag, e.g. C0G20PR2" />
+        <i class="search link icon"></i>
+        </div>
+        </div>
+        <div class="results"></div>
+        </div>
+        <div class="clan_search_container ui fluid search">
+        <div class="field" data-name="clan">
+        <label>Clan</label>
+        <div class="ui icon large input">
+        <input class="prompt" data-section="clan" type="text" name="clan" placeholder="Name or tag, e.g. 9PJ82CRC" />
+        <i class="search link icon"></i>
+        </div>
+        </div>
+        <div class="results"></div>
+        </div>
+        <div class="tournament_search_container ui fluid search">
+        <div class="field" data-name="tournament">
+        <label>Tournament</label>
+        <div class="ui icon large input">
+        <input class="prompt" data-section="tournament" type="text" name="tournament" placeholder="Tag" />
+        <i class="search link icon"></i>
+        </div>
+        </div>
+        <div class="results"></div>
+        </div>
+        </form>
+        </div>
+        </div>
+        <script>
+        $(document).ready(function () {
+            // modal
+            $('#search_all_button')
+                .click(function () {
+                    $('#search_all_modal')
+                        .modal({
+                            centered: false
+                        })
+                        .modal('show');
+                })
+            ;
+
+            // ajax search
+            const AJAX_SEARCH_DELAY = 1300;
+
+            function getSearchSettings(section) {
+                let searchSettings = {
+                    apiSettings: {
+                        url: `/data/${section}/search?q={query}&t=1557777002`,
+                    },
+                    showNoResults: false,
+                    error: {
+                        noResults: ''
+                    },
+                    searchDelay: AJAX_SEARCH_DELAY,
+                };
+                return searchSettings;
+            }
+
+            $('.player_search_container')
+                .search(getSearchSettings('player'))
+            ;
+
+            $('.clan_search_container')
+                .search(getSearchSettings('clan'))
+            ;
+
+            // key input enter
+            function gotoSearch(section, tag) {
+                if (tag[0] === '#') {
+                    tag = tag.substring(1)
+                }
+                window.location.href = `/${section}/${tag}`;
+            }
+
+            $('#search_all_modal input')
+                .on('keyup', function (e) {
+                    if (e.keyCode === 13) {
+                        let tag = $(this).val();
+                        let section = $(this).data('section');
+                        gotoSearch(section, tag);
+                    }
+                })
+            ;
+
+        })
+        </script>
+        </div>
+        <div id="fullpage_screenshot_modal" class="ui fullscreen modal">
+        <i class="close icon"></i>
+        <div class="header">Full page screenshot</div>
+        <div class="scrolling content">
+        <div id="fullpage_screenshot_modal_dimmer" class="ui active inverted dimmer">
+        <div class="ui text loader">Loading</div>
+        </div>
+        <img class="ui image" id="fullpage_screenshot_image" src="/static/img/ui/fpo/deck-wireframe.svg" data-src="" />
+        </div>
+        <div class="content">
+        <div class="description">
+        <p>Right click image to save to your computer, or tap and hold to save to your mobile device.</p>
+        </div>
+        </div>
+        </div>
+        <div id="language_modal" class="ui mini modal">
+        <i class="close icon"></i>
+        <div class="header"><i class="language large icon"></i> (Beta)</div>
+        <div class="content">
+        <div class="description">
+        <div class="ui very relaxed selection list" style="font-size:120%;">
+        <a class="item active" href="/language/en">
+        <i class="us flag"></i>
+        English
+        </a>
+        <a class="item " href="/language/es">
+        <i class="es flag"></i>
+        Español
+        </a>
+         <a class="item " href="/language/fr">
+        <i class="fr flag"></i>
+        Français
+        </a>
+        <a class="item " href="/language/de">
+        <i class="de flag"></i>
+        Deutsch
+        </a>
+        <a class="item " href="/language/zh">
+        <i class="cn flag"></i>
+        简体中文
+        </a>
+        <a class="item " href="/language/zh_Hant">
+        <i class="tw flag"></i>
+        繁體中文
+        </a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="qrcode_modal" class="ui tiny modal">
+        <i class="close icon"></i>
+        <div class="header">
+        <div class="title"></div>
+        </div>
+        <div id="qrcode_content" class="content"></div>
+        </div>
+
+        <script data-cfasync="false" src="/static/jslib/handlebars.js"></script>
+        <script data-cfasync="false" src="/static/jslib/store.everything.min.js"></script>
+        <script data-cfasync="false" src="/static/jslib/sort_properties.js"></script>
+        <script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+        <script data-cfasync="false" src="/static/jslib/html2canvas.min.js"></script>
+        <script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+        <script data-cfasync="false" src="/static/chartjs/chartjs-plugin-stacked100-hojsim.js"></script>
+        <script data-cfasync="false" src="/static/jslib/handlebars.js"></script>
+        <script data-cfasync="false" src="/static/jslib/isotope.pkgd.min.js"></script>
+        <script data-cfasync="false" src="/static/jslib/jquery.address-1.6.min.js"></script>
+        <script data-cfasync="false" src="/static/jslib/qrcode/jquery.qrcode.min.js"></script>
+        <script data-cfasync="false" src="/static/js/follow.js?t=1533782593.0857282"></script>
+        <script data-cfasync="false" src="/static/js/storage/player_storage.js?t=1529143290.336164"></script>
+        <script data-cfasync="false" src="/static/js/app.js?t=1554546816.4404967"></script>
+        <script data-cfasync="false" src="/static/js/semantic_api.js?t=1531759873.7786462"></script>
+        <script data-cfasync="false" src="/static/js/topnav.js?t=1529143290.336164"></script>
+        <script data-cfasync="false" src="/static/js/sidebar.js?t=1529143290.336164"></script>
+        <script data-cfasync="false" src="/static/js/ga_events.js?t=1529143290.3328307"></script>
+        <script data-cfasync="false" src="/static/js/nav.js?t=1529143290.3328307"></script>
+        <script data-cfasync="false" src="/static/js/storage/fave_menu.js?t=1529143290.336164"></script>
+        <script data-cfasync="false" src="/static/js/qrcode_button.js?t=1541102339.401905"></script>
+        <script data-cfasync="false" src="/static/js/ads.js?t=1541151325.068429"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            populate_fave_menu();
+        });
+        </script><script>
+        $(document).ready(function () {
+            // init accordion
+            $('.sidebar.accordion').accordion();
+            // Chart defaults
+            Chart.defaults.global.animation.duration = 0;
+            Chart.defaults.global.elements.rectangle.borderWidth = 3;
+            Chart.defaults.global.elements.rectangle.backgroundColor = 'rgba(86, 182, 84, 1.000)';
+            Chart.defaults.global.elements.line.borderWidth = 3;
+            Chart.defaults.global.elements.line.borderColor = 'rgba(93, 154, 231, 1)';
+            Chart.defaults.global.elements.line.backgroundColor = 'rgba(93, 154, 231, 0.2)';
+            // app
+            initApp(1557777002)
+
+        })
+        </script>
+        </body>
+        </html>
+    http_version: 
+  recorded_at: Mon, 13 May 2019 19:57:42 GMT
+recorded_with: VCR 4.0.0
