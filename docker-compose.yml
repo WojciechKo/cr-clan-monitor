@@ -43,13 +43,9 @@ services:
   postgres:
     image: postgres:12.0
     volumes:
-      - 'postgres:/var/lib/postgresql/data'
+      - './backend/.docker-volumes/postgres:/var/lib/postgresql/data'
 
   redis_sidekiq:
     image: redis:5.0
     volumes:
-      - 'redis:/data'
-
-volumes:
-  postgres:
-  redis:
+      - './backend/.docker-volumes/redis_sidekiq:/data'

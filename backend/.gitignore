@@ -34,3 +34,5 @@ examples.txt
 
 .env*
 !.env.sample
+
+.docker-volumes
