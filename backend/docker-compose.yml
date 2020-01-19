@@ -1,30 +1,33 @@
 version: '3'
 services:
-  web:
-    environment:
-      - DATABASE_URL=postgresql://postgres@postgres/cr-clan-monitor
-      - REDIS_SIDEKIQ_URL=redis://redis_sidekiq
-    build: .
-    command: bundle exec rails server --port 3000 --binding 0.0.0.0
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile-api
+    volumes:
+      - .:/app
+    depends_on:
+      - background_jobs
+      - postgres
+      - redis_sidekiq
     ports:
       - "3000:3000"
-    depends_on:
-      - postgres
-      - redis_sidekiq
-    volumes:
-      - .:/myapp
-
-  sidekiq:
     environment:
       - DATABASE_URL=postgresql://postgres@postgres/cr-clan-monitor
       - REDIS_SIDEKIQ_URL=redis://redis_sidekiq
-    build: .
-    command: bundle exec sidekiq -C config/sidekiq.yml
+
+  background_jobs:
+    build:
+      context: .
+      dockerfile: Dockerfile-background_jobs
+    volumes:
+      - .:/app
     depends_on:
       - postgres
       - redis_sidekiq
-    volumes:
-      - .:/myapp
+    environment:
+      - DATABASE_URL=postgresql://postgres@postgres/cr-clan-monitor
+      - REDIS_SIDEKIQ_URL=redis://redis_sidekiq
 
   postgres:
     image: postgres:12.0
@@ -37,5 +40,5 @@ services:
       - 'redis:/data'
 
 volumes:
-  redis:
   postgres:
+  redis:

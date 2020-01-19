@@ -16,7 +16,7 @@ RUN apt-get install -y nodejs
 # Install newest bundler
 RUN gem install bundler -v '2.0.2'
 
-ENV APP_HOME /myapp
+ENV APP_HOME /app
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
@@ -24,3 +24,5 @@ ADD Gemfile* $APP_HOME/
 RUN bundle install
 
 ADD . $APP_HOME
+
+CMD [ "bundle", "exec", "sidekiq", "-C", "config/sidekiq.yml"]
