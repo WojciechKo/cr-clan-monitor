@@ -9,13 +9,13 @@ who is a member of the Clan for a while but is not participating in Clan Wars.
 # Development setup
 
 ## Create the database
-`docker-compose run web rake db:create`
+`docker-compose run api rake db:create`
 
 ## Run database migrations
-`docker-compose run web rake db:migrate`
+`docker-compose run api rake db:migrate`
 
 ## Run the server
-`docker-compose up --build web`
+`docker-compose up --build api`
 
 ## Run specs
-`docker-compose run web bundle exec rspec`
+`docker-compose run api bundle exec rspec`
