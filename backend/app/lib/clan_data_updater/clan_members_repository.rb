@@ -1,9 +1,12 @@
 require 'monads'
+require 'import'
 require_relative 'errors'
 
 module ClanDataUpdater
   class ClanMembersRepository
     include Monads::Result::Mixin
+
+    include Import['logger']
 
     def find_by_tag(clan_tag)
       clan = Clan
@@ -27,7 +30,7 @@ module ClanDataUpdater
 
     def store_clan_details(clan)
       clan_model = Clan.new(tag: clan.tag, name: clan.name)
-      Rails.logger.debug 'clan_details - # '
+      logger.debug 'clan_details - # '
       result = Clan.import(
         [clan_model],
         on_duplicate_key_update: {
@@ -35,7 +38,7 @@ module ClanDataUpdater
           columns:         [:name]
         }
       )
-      Rails.logger.debug 'clan_details - # '
+      logger.debug 'clan_details - # '
       clan_model.id
     end
 
@@ -49,7 +52,7 @@ module ClanDataUpdater
         )
       end
 
-      Rails.logger.debug 'update - # '
+      logger.debug 'update - # '
 
       result = Player.import(
         players,
@@ -79,7 +82,7 @@ module ClanDataUpdater
         )
       end
 
-      Rails.logger.debug 'update - $ '
+      logger.debug 'update - $ '
     end
 
     def store_new_members(clan, clan_id)
@@ -99,7 +102,7 @@ module ClanDataUpdater
         end
       end
 
-      Rails.logger.debug 'new - # '
+      logger.debug 'new - # '
       Player.import(
         new_members_in_the_clan,
         on_duplicate_key_update: {
@@ -107,7 +110,7 @@ module ClanDataUpdater
         },
         recursive:               true
       )
-      Rails.logger.debug 'new - $ '
+      logger.debug 'new - $ '
     end
 
     def delete_lost_members(clan)

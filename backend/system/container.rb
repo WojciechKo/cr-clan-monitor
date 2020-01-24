@@ -10,9 +10,13 @@ class Container < Dry::System::Container
 end
 
 Container.register(:logger) do
-  if Kernel.const_defined?('Rails')
-    Rails.logger
+  logger_target = if ENV['LOG_TO_STDOUT']
+    STDOUT
   else
-    Logger.new(STDOUT)
+    "./log/#{ENV['RAILS_ENV']}.log"
   end
+
+  logger = ActiveSupport::Logger.new(logger_target)
+  logger.formatter = ::Logger::Formatter.new
+  ActiveSupport::TaggedLogging.new(logger)
 end
