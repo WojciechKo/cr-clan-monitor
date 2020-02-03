@@ -33,7 +33,7 @@ RSpec.describe ClanDataUpdater::ClanMembersUpdater do
     end
   end
 
-  def with_real_request(clan_tag)
-    VCR.use_cassette("clan_members_updater/#{clan_tag}", &Proc.new)
+  def with_real_request(clan_tag, &block)
+    VCR.use_cassette("clan_members_updater/#{clan_tag}", &block)
   end
 end

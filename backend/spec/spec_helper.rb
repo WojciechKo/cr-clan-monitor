@@ -2,7 +2,7 @@ SPEC_ROOT = Pathname(__dir__)
 
 require SPEC_ROOT.join('../system/import')
 
-Dir[SPEC_ROOT.join('support', 'unit', '**', '*.rb')].each { |f| require f }
+Dir[SPEC_ROOT.join('support', 'unit', '**', '*.rb')].sort.each { |f| require f }
 
 require 'active_support/all'
 require 'pry'
