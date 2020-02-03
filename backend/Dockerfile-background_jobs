@@ -25,4 +25,5 @@ RUN bundle install
 
 ADD . $APP_HOME
 
+ENTRYPOINT ["bundle", "exec"]
 CMD [ "bundle", "exec", "sidekiq", "-C", "config/sidekiq.yml"]
